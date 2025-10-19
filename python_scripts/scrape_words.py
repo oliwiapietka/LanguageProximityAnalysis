@@ -81,7 +81,7 @@ SOURCES = {
         "selector": "div.wordlist-item"
     },
     "driving": {
-        "url": "https://www.enchantedlearning.com/wordlist/cooking.shtml",
+        "url": "https://www.enchantedlearning.com/wordlist/driving.shtml",
         "selector": "div.wordlist-item"
     },
     "desserts": {
@@ -118,6 +118,50 @@ SOURCES = {
     },
     "shopping": {
         "url": "https://www.enchantedlearning.com/wordlist/shopping.shtml",
+        "selector": "div.wordlist-item"
+    },
+    "flowers": {
+        "url": "https://www.enchantedlearning.com/wordlist/flowers.shtml",
+        "selector": "div.wordlist-item"
+    },
+    "christmas": {
+        "url": "https://www.enchantedlearning.com/wordlist/christmas.shtml",
+        "selector": "div.wordlist-item"
+    },
+    "buildings": {
+        "url": "https://www.enchantedlearning.com/wordlist/buildings.shtml",
+        "selector": "div.wordlist-item"
+    },
+    "verbs": {
+        "url": "https://www.enchantedlearning.com/wordlist/verbs.shtml",
+        "selector": "div.wordlist-item"
+    },
+    "kitchen": {
+        "url": "https://www.enchantedlearning.com/wordlist/kitchen.shtml",
+        "selector": "div.wordlist-item"
+    },
+    "birds": {
+        "url": "https://www.enchantedlearning.com/wordlist/birds.shtml",
+        "selector": "div.wordlist-item"
+    },
+    "hobbies": {
+        "url": "https://www.enchantedlearning.com/wordlist/hobbies.shtml",
+        "selector": "div.wordlist-item"
+    },
+    "languages": {
+        "url": "https://www.enchantedlearning.com/wordlist/languages.shtml",
+        "selector": "div.wordlist-item"
+    },
+    "instruments": {
+        "url": "https://www.enchantedlearning.com/wordlist/musicalinstruments.shtml",
+        "selector": "div.wordlist-item"
+    },
+    "types of rooms": {
+        "url": "https://www.enchantedlearning.com/wordlist/rooms.shtml",
+        "selector": "div.wordlist-item"
+    },
+    "travel": {
+        "url": "https://www.enchantedlearning.com/wordlist/travel.shtml",
         "selector": "div.wordlist-item"
     }
 }
