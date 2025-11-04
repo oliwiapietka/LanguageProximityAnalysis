@@ -12,10 +12,6 @@ SOURCES = {
         "url": "https://www.enchantedlearning.com/wordlist/emotions.shtml",
         "selector": "div.wordlist-item"
     },
-    "vegetables": {
-        "url": "https://simple.wikipedia.org/wiki/List_of_vegetables",
-        "selector": "div.div-col ul li"
-    },
     "weather": {
         "url": "https://www.enchantedlearning.com/wordlist/weather.shtml",
         "selector": "div.wordlist-item"
