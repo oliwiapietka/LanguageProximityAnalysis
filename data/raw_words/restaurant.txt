@@ -1,0 +1,167 @@
+ambience
+appetizer
+apron
+bartender
+beef
+beverage
+bill
+bistro
+boiled
+bon apptit
+bowl
+braised
+bread
+breakfast
+brunch
+butter
+cafe
+cafeteria
+cake
+candle
+cashier
+centerpiece
+chair
+charge
+chef
+chicken
+coffee
+cola
+cold
+condiments
+cook
+cooked
+course
+cream
+credit card
+cutlery
+deli
+delicatessen
+delicious
+dessert
+dine
+diner
+dining
+dinner
+dish
+dishwasher
+doggie bag
+dressing
+eat
+eatery
+eggs
+entre
+espresso
+executive chef
+fish
+food
+fork
+french fries
+fries
+fruit
+glass
+gourmand
+gourmet
+grilled
+hamburger
+head waiter
+high tea
+hors doeuvre
+hostess
+hot
+ice
+ice cubes
+iced
+ingredients
+jacket potato
+jam
+juicer
+ketchup
+kiosk
+kitchen
+kitchenette
+knife
+la carte
+la mode
+line cook
+lounge
+lunch
+main course
+maitre d
+manager
+meal
+meat
+medium
+menu
+milk
+mug
+mustard
+napkin
+nonstick pan
+noodles
+nutritional info
+open kitchen
+order
+outdoor seating
+party
+pasta
+pepper
+plate
+platter
+pop
+queue
+quiche
+quickservice
+rare
+receipt
+reservation
+restaurant
+restaurateur
+roasted
+rotisserie
+salad
+salt
+sandwich
+sauce
+saucer
+seafood
+seared
+server
+side order
+silverware
+soda
+sommelier
+soup
+sous chef
+special
+spices
+spicy
+spill
+spoon
+starters
+steak
+sugar
+supper
+table
+tablecloth
+take away
+tasty
+tax
+tea
+tip
+to go
+toast
+tomato
+uniform
+utensils
+valet service
+vegan menu
+vegetables
+vegetarian menu
+vinaigrette
+waiter
+waitress
+water
+welldone
+wine
+yelp review
+zester
