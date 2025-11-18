@@ -135,7 +135,18 @@ def translate_all_words_deepl():
                     time.sleep(1) #Pause between chunks
 
                 if not language_failed:
-                    lang_map = {src: res.text.lower() for src, res in zip(words_to_translate, all_results_for_lang)}
+                    lang_map = {}
+                    for src, res in zip(words_to_translate, all_results_for_lang):
+                        translated_text = res.text
+        
+                        translated_text = translated_text.strip()
+                        translated_text = translated_text.rstrip('.')
+                        
+                        if not translated_text:
+                            translated_text = "" 
+                            
+                        lang_map[src] = translated_text.lower()
+
                     print(f"Successfully translated {len(lang_map)} words for {lang_code}.")
             
             except Exception as e:
