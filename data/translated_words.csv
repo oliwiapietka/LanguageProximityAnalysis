@@ -127,7 +127,7 @@ animals,carnivora,carnivora,carnivora,vleeseters,carnivora,carnivora,carnívora,
 animals,carpenter ant,carpenter ant,zimmermannsameise,timmermier,mravenec tesařík,formica carpentiere,hormiga carpintera,formiga carpinteira,furnică tâmplar,tømrermyre,fourmi charpentière,mrówka cieśla,ácshangya,μυρμήγκι ξυλουργού,snekkermaur
 animals,cassowary,cassowary,kasuar,kasuaris,kasuár,casuario,casuario,casuar,cassowary,kasuar,casoar,kazuar,kaszkvaári,κασοβάρι,kasuar
 animals,cat,cat,katze,kat,cat,gatto,cat,gato,pisică,kat,chat,kot,cat,cat,katt
-animals,catamount,catamount,.,catamount,catamount,catamount,catamount,catamonte,catamount,katamount,mont du chat,katamount,catamount,catamount,catamount
+animals,catamount,catamount,,catamount,catamount,catamount,catamount,catamonte,catamount,katamount,mont du chat,katamount,catamount,catamount,catamount
 animals,caterpillar,caterpillar,raupe,rups,housenka,bruco,oruga,lagarta,omidă,larve,chenille,gąsienica,hernyó,κάμπια,larve
 animals,cattle,cattle,vieh,vee,dobytek,bestiame,ganado,gado,vite,kvæg,bétail,bydło,szarvasmarha,βοοειδή,kveg
 animals,cavy,cavy,meerschweinchen,cavy,cavy,ondina,cavy,galinha,cavy,en kanin,caillebotis,cavy,cavy,cavy,bølingen
@@ -657,7 +657,7 @@ animals,skunk,skunk,stinktier,stinkdier,skunk,puzzola,mofeta,gambá,sconcs,stink
 animals,sloth,sloth,faultier,luiaard,lenochod,bradipo,perezoso,preguiça,lene,dovendyr,paresseux,lenistwo,lajhár,νωθρότητα,latskap
 animals,slow worm,slow worm,blindschleiche,langzame worm,pomalý červ,verme lento,gusano lento,verme lento,vierme lent,langsom orm,ver lent,powolny robak,lassú féreg,αργό σκουλήκι,langsom orm
 animals,slug,slug,schnecke,slak,slimák,lumaca,babosa,lesma,melc,snegl,limace,ślimak,csiga,γυμνοσάλιαγκας,snegl
-animals,smilodon,smilodon,.,smilodon,smilodon,smilodonte,smilodon,smilodon,smilodon,smilodon,smilodon,smilodon,smilodon,smilodon,smilodon
+animals,smilodon,smilodon,,smilodon,smilodon,smilodonte,smilodon,smilodon,smilodon,smilodon,smilodon,smilodon,smilodon,smilodon,smilodon
 animals,snail,snail,schnecke,slak,šnek,lumaca,caracol,caracol,melc,snegl,escargot,ślimak,csiga,σαλιγκάρι,snegl
 animals,snake,snake,schlange,slang,had,serpente,serpiente,serpente,șarpe,slange,serpent,wąż,kígyó,φίδι,slange
 animals,snapper,snapper,schnapper,snapper,snapper,dentice,pargo,pargo,snapper,snapper,vivaneau,lucjan,snapper,snapper,snapper
@@ -882,7 +882,7 @@ body,hip,hip,hip,heup,kyčelní kloub,anca,cadera,anca,șold,hofte,hanche,biodro
 body,humerus,humerus,humerus,humerus,humerus,omero,húmero,úmero,humerus,overarmsknoglen,humérus,kość ramienna,felkarcsont,βραχιόνιο,humerus
 body,immune system,immune system,immunsystem,immuunsysteem,imunitní systém,sistema immunitario,sistema inmunitario,sistema imunitário,sistemul imunitar,immunforsvaret,système immunitaire,układ odpornościowy,immunrendszer,ανοσοποιητικό σύστημα,immunforsvaret
 body,index finger,index finger,zeigefinger,wijsvinger,ukazováček,dito indice,dedo índice,dedo indicador,degetul arătător,pegefinger,l'index,palec wskazujący,mutatóujj,δείκτης,pekefinger
-body,instep,instep,rist,wreef,nárt,collo del piede,empeine,peito do pé,călcâi,vrist,cou-de-pied,podbicie,lábujjhegy,...,vrist
+body,instep,instep,rist,wreef,nárt,collo del piede,empeine,peito do pé,călcâi,vrist,cou-de-pied,podbicie,lábujjhegy,,vrist
 body,intestines,intestines,därme,darmen,střeva,intestino,intestinos,intestinos,intestine,tarmene,intestins,jelita,belek,έντερα,tarmer
 body,iris,iris,iris,iris,iris,iris,iris,íris,iris,iris,iris,tęczówka,írisz,ίριδα,iris
 body,jaw,jaw,kiefer,kaak,čelist,mascella,mandíbula,mandíbula,falcă,kæbe,mâchoire,szczęka,állkapocs,σιαγόνα,kjeve
@@ -978,7 +978,7 @@ business,accounting,accounting,buchhaltung,boekhouding,účetnictví,contabilit�
 business,accounts,accounts,konten,rekeningen,účty,conti,cuentas,contas,conturi,regnskaber,comptes,konta,számlák,λογαριασμοί,regnskap
 business,accruals,accruals,abgrenzungen,overlopende rekeningen,časové rozlišení,ratei,devengos,acréscimos,acumulări,periodiseringer,charges à payer,rozliczenia międzyokresowe,elhatárolások,δεδουλευμένα,periodiseringer
 business,ads,ads,anzeigen,advertenties,inzeráty,annunci,anuncios,anúncios,reclame,annoncer,publicités,reklamy,hirdetések,διαφημίσεις,annonser
-business,advertise,advertise,inserieren.,adverteren,inzerovat,pubblicizzare,anunciar,anunciar,publicitate,annoncere,annoncer,reklama,hirdesse,διαφημιστείτε,annonsere
+business,advertise,advertise,inserieren,adverteren,inzerovat,pubblicizzare,anunciar,anunciar,publicitate,annoncere,annoncer,reklama,hirdesse,διαφημιστείτε,annonsere
 business,affordable,affordable,erschwinglich,betaalbaar,cenově dostupné,accessibile,asequible,acessível,accesibile,overkommelig,abordable,przystępny,megfizethető,προσιτή,rimelig
 business,agenda,agenda,tagesordnung,agenda,agenda,ordine del giorno,agenda,agenda,ordinea de zi,dagsorden,l'ordre du jour,agenda,napirend,ατζέντα,agenda
 business,agreement,agreement,vereinbarung,overeenkomst,dohoda,accordo,acuerdo,acordo,acord,aftale,accord,umowa,megállapodás,συμφωνία,enighet
@@ -1015,7 +1015,7 @@ business,cold call,cold call,unangemeldeter besuch,cold call,studený hovor,chia
 business,collateral,collateral,sicherheiten,zekerheid,zajištění,collaterale,garantía,colaterais,colateral,sikkerhedsstillelse,garantie,zabezpieczenie,biztosíték,εξασφαλίσεις,sikkerhet
 business,commerce,commerce,handel,handel,obchod,commercio,comercio,comércio,comerț,handel,commerce,handel,kereskedelem,εμπόριο,handel
 business,commercial,commercial,kommerziell,commercieel,komerční,commerciale,comercial,comercial,comerciale,reklamefilm,commercial,komercyjny,kereskedelmi,εμπορικό,reklamefilm
-business,commission,commission,.,commissie,komise,commissione,comisión,comissão,comisie,kommission,commission,prowizja,jutalék,προμήθεια,provisjon
+business,commission,commission,,commissie,komise,commissione,comisión,comissão,comisie,kommission,commission,prowizja,jutalék,προμήθεια,provisjon
 business,commodity,commodity,ware,grondstof,komodita,merce,mercancía,produto de base,marfă,råvare,produit de base,towar,árucikk,εμπόρευμα,råvare
 business,company,company,unternehmen,bedrijf,společnost,azienda,empresa,empresa,companie,selskab,entreprise,firma,cég,εταιρεία,selskap
 business,competition,competition,wettbewerb,wedstrijd,soutěž,concorso,concurso,concorrência,concurență,konkurrence,concurrence,konkurencja,verseny,διαγωνισμός,konkurranse
@@ -1042,7 +1042,7 @@ business,demand,demand,nachfrage,vraag,poptávka,domanda,demanda,procura,cerere,
 business,department,department,abteilung,afdeling,oddělení,reparto,departamento,departamento,departament,afdeling,département,dział,osztály,τμήμα,avdeling
 business,director,director,direktor,directeur,ředitel,direttore,director,diretor,director,direktør,directeur,dyrektor,igazgató,διευθυντής,direktør
 business,discount,discount,rabatt,korting,sleva,sconto,descuento,desconto,reducere,rabat,réduction,rabat,kedvezmény,έκπτωση,rabatt
-business,dismiss,dismiss,entlassen,ontslag,propustit,licenziamento,desestimar,despedir,concediere,afvise,licencier,zwolnienie,utasítsa el a  címet.,απορρίψτε το,avskjedige
+business,dismiss,dismiss,entlassen,ontslag,propustit,licenziamento,desestimar,despedir,concediere,afvise,licencier,zwolnienie,utasítsa el a  címet,απορρίψτε το,avskjedige
 business,distribution,distribution,vertrieb,distributie,distribuce,distribuzione,distribución,distribuição,distribuție,distribution,distribution,dystrybucja,terjesztés,διανομή,distribusjon
 business,diversify,diversify,diversifizieren,diversifiëren,diverzifikovat,diversificare,diversificar,diversificar,diversificarea,diversificere,diversifier,dywersyfikacja,diverzifikálni,διαφοροποιήστε το,diversifisere
 business,dividend,dividend,dividende,dividend,dividendy,dividendo,dividendo,dividendo,dividend,udbytte,dividende,dywidenda,osztalék,μέρισμα,utbytte
@@ -1054,7 +1054,7 @@ business,economical,economical,wirtschaftlich,zuinig,úsporné,economico,económ
 business,economics,economics,wirtschaft,economie,ekonomie,economia,economía,economia,economie,økonomi,économie,ekonomia,közgazdaságtan,οικονομικά,økonomi
 business,economy of scale,economy of scale,größenvorteile,schaalvoordeel,úspory z rozsahu,economia di scala,economía de escala,economia de escala,economie de scară,stordriftsfordele,économie d'échelle,ekonomia skali,méretgazdaságosság,οικονομία κλίμακας,stordriftsfordeler
 business,efficiency,efficiency,effizienz,efficiëntie,účinnost,efficienza,eficacia,eficiência,eficiență,effektivitet,l'efficacité,efektywność,hatékonyság,αποτελεσματικότητα,effektivitet
-business,employ,employ,einsetzen.,gebruiken,zaměstnávat,impieghi,emplear,empregar,angaja,ansætte,employer,zatrudniać,alkalmazza a,απασχολούν,ansette
+business,employ,employ,einsetzen,gebruiken,zaměstnávat,impieghi,emplear,empregar,angaja,ansætte,employer,zatrudniać,alkalmazza a,απασχολούν,ansette
 business,employee,employee,mitarbeiter,werknemer,zaměstnanci,dipendente,empleado,empregado,angajat,medarbejder,employé,pracownik,munkavállaló,εργαζόμενος,ansatt
 business,employer,employer,arbeitgeber,werkgever,zaměstnavatel,datore di lavoro,empresario,empregador,angajator,arbejdsgiver,employeur,pracodawca,munkáltató,εργοδότης,arbeidsgiver
 business,employment,employment,beschäftigung,werkgelegenheid,zaměstnání,occupazione,empleo,emprego,ocuparea forței de muncă,beskæftigelse,l'emploi,zatrudnienie,foglalkoztatás,απασχόληση,ansettelse
@@ -1104,7 +1104,7 @@ business,laborer,laborer,arbeiter,arbeider,dělník,operaio,obrero,trabalhador,m
 business,laptop,laptop,laptop,laptop,notebook,portatile,ordenador portátil,portátil,laptop,laptop,ordinateur portable,laptop,laptop,φορητός υπολογιστής,bærbar pc
 business,lead,lead,blei,lood,olovo,piombo,plomo,chumbo,plumb,føre,plomb,ołów,ólom,μόλυβδος,bly
 business,lease,lease,leasing,lease,pronájem,locazione,arrendamiento,arrendamento,leasing,lejeaftale,bail,dzierżawa,bérleti szerződés,μίσθωση,leieavtale
-business,leave,leave,verlassen.,verlaten,opustit,congedo,dejar,sair,concediu,lad være,quitter,urlop,hagyja,αφήστε,permisjon
+business,leave,leave,verlassen,verlaten,opustit,congedo,dejar,sair,concediu,lad være,quitter,urlop,hagyja,αφήστε,permisjon
 business,letterhead,letterhead,briefkopf,briefhoofd,hlavičkový papír,carta intestata,membrete,papel timbrado,antet,brevpapir,papier à en-tête,papier firmowy,levélpapír,επιστολόχαρτο,brevhode
 business,liability,liability,haftung,aansprakelijkheid,odpovědnost,responsabilità,responsabilidad,responsabilidade,răspundere,ansvar,responsabilité,odpowiedzialność,felelősség,ευθύνη,ansvar
 business,loan,loan,darlehen,lening,půjčka,prestito,préstamo,empréstimo,împrumut,lån,prêt,pożyczka,kölcsön,δάνειο,lån
@@ -1114,7 +1114,7 @@ business,low,low,niedrig,laag,nízká,basso,bajo,baixo,scăzut,lav,faible,niski,
 business,lucrative,lucrative,lukrativ,lucratief,lukrativní,lucrativo,lucrativo,lucrativo,lucrativ,lukrativ,lucratif,lukratywny,jövedelmező,προσοδοφόρο,lukrativt
 business,mailbox,mailbox,mailbox,mailbox,poštovní schránka,cassetta della posta,buzón,caixa de correio,cutie poștală,postkasse,boîte aux lettres,skrzynka pocztowa,postaláda,γραμματοκιβώτιο,postkasse
 business,mainframe,mainframe,großrechner,mainframe,mainframe,mainframe,ordenador central,mainframe,mainframe,mainframe,ordinateur central,mainframe,mainframe,mainframe,stormaskin
-business,manage,manage,verwalten,beheren,spravovat,gestire,gestionar,gerir,gestiona,klare sig,gérer,zarządzać,kezelje a  címet.,διαχειριστείτε το,klare
+business,manage,manage,verwalten,beheren,spravovat,gestire,gestionar,gerir,gestiona,klare sig,gérer,zarządzać,kezelje a  címet,διαχειριστείτε το,klare
 business,management,management,management,beheer,řízení,gestione,gestión,gestão,management,ledelse,gestion,zarządzanie,menedzsment,διαχείριση,ledelse
 business,manager,manager,manager,manager,manažer,manager,director,gestor,manager,leder,gestionnaire,kierownik,menedzser,διευθυντής,leder
 business,market,market,markt,markt,trh,mercato,mercado,mercado,piață,marked,marché,rynek,piac,αγορά,marked
@@ -1127,7 +1127,7 @@ business,money,money,geld,geld,peníze,denaro,dinero,dinheiro,bani,penge,argent,
 business,monopoly,monopoly,monopol,monopolie,monopol,monopolio,monopolio,monopólio,monopol,monopol,monopole,monopol,monopólium,μονοπώλιο,monopol
 business,motherboard,motherboard,hauptplatine,moederbord,základní deska,scheda madre,placa base,placa-mãe,placă de bază,bundkort,carte mère,płyta główna,alaplap,μητρική πλακέτα,hovedkort
 business,mouse pad,mouse pad,mauspad,muismat,podložka pod myš,tappetino per mouse,alfombrilla de ratón,tapete de rato,mouse pad,musemåtte,tapis de souris,podkładka pod mysz,egérpad,μαξιλάρι ποντικιού,musematte
-business,negotiate,negotiate,verhandeln.,onderhandelen,vyjednávání,negoziare,negociar,negociar,negociați,forhandle,négocier,negocjować,tárgyalni,διαπραγματεύονται,forhandle
+business,negotiate,negotiate,verhandeln,onderhandelen,vyjednávání,negoziare,negociar,negociar,negociați,forhandle,négocier,negocjować,tárgyalni,διαπραγματεύονται,forhandle
 business,negotiation,negotiation,verhandlung,onderhandeling,vyjednávání,negoziazione,negociación,negociação,negociere,forhandling,négociation,negocjacje,tárgyalás,διαπραγμάτευση,forhandlinger
 business,net,net,netz,net,net,rete,red,líquido,net,netto,net,netto,net,net,nett
 business,net worth,net worth,nettowert,nettowaarde,čisté jmění,patrimonio netto,patrimonio neto,património líquido,valoare netă,nettoværdi,valeur nette,wartość netto,nettó érték,καθαρή αξία,nettoformue
@@ -1153,7 +1153,7 @@ business,packing list,packing list,packliste,paklijst,balicí seznam,elenco degl
 business,paperweight,paperweight,briefbeschwerer,presse-papier,těžítko,fermacarte,pisapapeles,pisa-papéis,prespapier,papirvægt,presse-papier,przycisk do papieru,papírnehezék,βαρίδι για χαρτί,papirvekt
 business,partner,partner,partner,partner,partner,partner,socio,parceiro,partener,partner,partenaire,partner,partner,συνεργάτης,partner
 business,password,password,passwort,wachtwoord,heslo,password,contraseña,palavra-passe,parolă,adgangskode,mot de passe,hasło,jelszó,κωδικός πρόσβασης,passord
-business,pay,pay,bezahlen.,betalen,platit,retribuzione,pagar,pagar,plată,betale,payer,płaca,fizetni,πληρώστε,betale
+business,pay,pay,bezahlen,betalen,platit,retribuzione,pagar,pagar,plată,betale,payer,płaca,fizetni,πληρώστε,betale
 business,payment,payment,zahlung,betaling,platba,pagamento,pago,pagamento,plată,betaling,paiement,płatność,fizetés,πληρωμή,betaling
 business,perk,perk,perk,perk,perk,perk,ventaja,vantagem,avantaj,fordel,avantage,atut,perk,perk,fordel
 business,personnel,personnel,personal,personeel,personál,personale,personal,pessoal,personal,personale,le personnel,personel,személyzet,προσωπικό,personell
@@ -1180,7 +1180,7 @@ business,quarter,quarter,quartal,kwartaal,čtvrtletí,trimestre,trimestre,trimes
 business,quit,quit,kündigen,stop,ukončit,abbandonare,abandone,desistir,renunță,stop,quitter,odejść,kilép,εγκαταλείψτε το,slutte
 business,rank,rank,rang,rang,hodnost,rango,rango,classificação,rang,rang,rang,ranga,rangsor,κατάταξη,rang
 business,receipt,receipt,beleg,ontvangst,účtenka,ricevuta,recibo,recibo,chitanță,kvittering,reçu,paragon,átvételi elismervény,απόδειξη,kvittering
-business,recruit,recruit,anwerben.,werven,nábor,reclutamento,contratar,recruta,recrut,rekruttere,recruter,rekrutacja,felvenni,προσλάβετε,rekruttere
+business,recruit,recruit,anwerben,werven,nábor,reclutamento,contratar,recruta,recrut,rekruttere,recruter,rekrutacja,felvenni,προσλάβετε,rekruttere
 business,recruiter,recruiter,anwerber,recruiter,náborář,reclutatore,reclutador,recrutador,recrutor,rekrutterer,recruteur,rekruter,toborzó,στρατολόγος,rekrutterer
 business,refund,refund,erstattung,terugbetaling,vrácení peněz,rimborso,reembolso,reembolso,restituire,tilbagebetaling,remboursement,refundacja,visszatérítés,επιστροφή,refusjon
 business,resign,resign,zurücktreten,ontslag nemen,rezignovat,dimettersi,dimita,demitir-se,demisia,træde tilbage,démissionner,zrezygnować,lemond,παραιτηθεί,gå av
@@ -1219,7 +1219,7 @@ business,supply,supply,angebot,leveren,zásobování,fornitura,suministro,fornec
 business,target,target,ziel,doel,cíl,obiettivo,objetivo,objetivo,țintă,mål,cible,cel,cél,στόχος,mål
 business,tariff,tariff,tarif,tarief,tarif,tariffa,tarifa,tarifa,tarif,tarif,tarif,taryfa,tarifa,τιμολόγιο,tariff
 business,tax,tax,steuer,belasting,daň,fiscale,fiscal,fiscal,fiscal,skat,taxe,podatek,adó,φόρος,skatt
-business,temp,temp,aushilfe,temp,temp,temp.,temp,temporário,temp,vikar,temp,temp,temp,temp,vikar
+business,temp,temp,aushilfe,temp,temp,temp,temp,temporário,temp,vikar,temp,temp,temp,temp,vikar
 business,terms,terms,bedingungen,voorwaarden,podmínky,termini,términos,termos,condiții,vilkår,termes,warunki,feltételek,όροι,vilkår
 business,trade,trade,handel,handel,obchod,commercio,comercio,comércio,comerț,handel,commerce,handel,kereskedelem,εμπόριο,handel
 business,tradeoff,tradeoff,kompromiss,afweging,kompromis,compromesso,compensación,compromisso,compromis,afvejning,compromis,kompromis,tradeoff,tradeoff,avveining
@@ -1489,7 +1489,7 @@ clothes,tie,tie,krawatte,das,kravata,cravatta,corbata,empate,cravată,slips,crav
 clothes,tie clip,tie clip,krawattenspange,dasspeld,spona na kravatu,fermacravatte,alfiler de corbata,clipe de gravata,clemă pentru cravată,slipseklemme,pince à cravate,spinka do krawata,nyakkendőcsipesz,κλιπ γραβάτας,slipsklemme
 clothes,tights,tights,strumpfhosen,panty,punčocháče,collant,medias,collants,colanți,strømpebukser,collants,rajstopy,harisnyanadrág,καλσόν,strømpebukser
 clothes,toga,toga,toga,toga,toga,toga,toga,toga,togă,toga,toge,toga,tóga,τόγκα,toga
-clothes,togs,togs,.,togs,oblečení,abiti da bagno,togs,calças de ganga,togi,tøj,vêtements de sport,togi,togs,togs,klær
+clothes,togs,togs,,togs,oblečení,abiti da bagno,togs,calças de ganga,togi,tøj,vêtements de sport,togi,togs,togs,klær
 clothes,top,top,top,top,top,top,top,topo,top,top,sommet,top,top,top,topp
 clothes,top coat,top coat,deckschicht,toplaag,vrchní vrstva,top coat,capa final,revestimento superior,strat de top,top coat,couche de finition,top coat,fedőlakk,τελική επίστρωση,toppstrøk
 clothes,top hat,top hat,zylinderhut,hoge hoed,vrchní klobouk,cappello a cilindro,sombrero de copa,cartola,pălărie de top,høj hat,chapeau haut de forme,cylinder,cilinder,καπέλο,flosshatt
@@ -1688,9 +1688,9 @@ computer,compile,compile,kompilieren,compileren,zkompilovat,compilare,compilar,c
 computer,compress,compress,komprimieren,comprimeren,komprese,comprimere,comprimir,comprimir,comprimare,komprimere,comprimer,kompres,tömörítés,συμπίεση,komprimere
 computer,computer,computer,computer,computer,počítač,computer,ordenador,computador,calculator,computer,ordinateur,komputer,számítógép,υπολογιστής,datamaskin
 computer,computer program,computer program,computerprogramm,computerprogramma,počítačový program,programma per computer,programa informático,programa informático,program de calculator,computerprogram,programme informatique,program komputerowy,számítógépes program,πρόγραμμα υπολογιστή,dataprogram
-computer,configure,configure,konfigurieren.,configureren,konfigurovat,configurare,configure,configurar,configurați,konfigurer,configurer,konfiguracja,configure,ρυθμίστε το,konfigurere
+computer,configure,configure,konfigurieren,configureren,konfigurovat,configurare,configure,configurar,configurați,konfigurer,configurer,konfiguracja,configure,ρυθμίστε το,konfigurere
 computer,cookie,cookie,cookie,cookie,cookie,biscotto,galleta,biscoito,cookie,småkage,biscuit,ciasteczko,cookie,cookie,informasjonskapsel
-computer,copy,copy,kopieren.,kopie,kopírovat,copia,copia,cópia,copie,kopiere,copie,kopia,másolat,αντίγραφο,kopi
+computer,copy,copy,kopieren,kopie,kopírovat,copia,copia,cópia,copie,kopiere,copie,kopia,másolat,αντίγραφο,kopi
 computer,cpu central processing unit,cpu central processing unit,cpu - zentrale recheneinheit,cpu centrale verwerkingseenheid,cpu centrální procesorová jednotka,cpu unità centrale di elaborazione,cpu unidad central de proceso,cpu unidade central de processamento,cpu unitate centrală de procesare,cpu central processing unit,unité centrale de traitement (cpu),jednostka centralna cpu,cpu központi feldolgozó egység,cpu κεντρική μονάδα επεξεργασίας,cpu sentral prosesseringsenhet
 computer,cybercrime,cybercrime,internetkriminalität,cybercriminaliteit,kyberkriminalita,criminalità informatica,ciberdelincuencia,cibercrime,criminalitate informatică,cyberkriminalitet,cybercriminalité,cyberprzestępczość,kiberbűnözés,έγκλημα στον κυβερνοχώρο,datakriminalitet
 computer,cyberspace,cyberspace,cyberspace,cyberspace,kyberprostor,cyberspazio,ciberespacio,ciberespaço,spațiul cibernetic,cyberspace,cyberespace,cyberprzestrzeń,kibertér,κυβερνοχώρος,cyberspace
@@ -1719,7 +1719,7 @@ computer,email,email,e-mail,e-mail,e-mail,e-mail,correo electrónico,correio ele
 computer,emoticon,emoticon,emoticon,emoticon,emotikon,emoticon,emoticono,emoticon,emoticon,humørikon,émoticône,emotikon,emoticon,emoticon,uttrykksikon
 computer,encrypt,encrypt,verschlüsseln,coderen,zašifrovat,crittografare,codificar,encriptar,criptare,kryptere,crypter,szyfrowanie,titkosítani,κρυπτογράφηση,kryptere
 computer,encryption,encryption,verschlüsselung,encryptie,šifrování,crittografia,encriptación,encriptação,criptare,kryptering,chiffrement,szyfrowanie,titkosítás,κρυπτογράφηση,kryptering
-computer,enter,enter,eingeben.,ga naar,zadejte,entrare,entre en,entrar,introduceți,indtast,entrer,wejść,írja be a  címet.,εισάγετε,gå inn
+computer,enter,enter,eingeben,ga naar,zadejte,entrare,entre en,entrar,introduceți,indtast,entrer,wejść,írja be a  címet,εισάγετε,gå inn
 computer,exabyte,exabyte,exabyte,exabyte,exabyte,exabyte,exabyte,exabyte,exabyte,exabyte,exaoctet,eksabajt,exabyte,exabyte,exabyte
 computer,faq frequently asked questions,faq frequently asked questions,faq häufig gestellte fragen,faq veelgestelde vragen,faq často kladené otázky,faq domande frequenti,faq preguntas frecuentes,faq perguntas frequentes,faq întrebări frecvente,faq ofte stillede spørgsmål,faq questions fréquemment posées,faq często zadawane pytania,gyakran ismételt kérdések,συχνές ερωτήσεις,faq ofte stilte spørsmål
 computer,file,file,datei,bestand,soubor,file,archivo,ficheiro,fișier,fil,fichier,plik,fájl,αρχείο,fil
@@ -1738,7 +1738,7 @@ computer,frame,frame,rahmen,frame,rám,telaio,marco,moldura,cadru,ramme,cadre,ra
 computer,freeware,freeware,freeware,freeware,freeware,freeware,freeware,freeware,freeware,freeware,logiciel gratuit,freeware,freeware,δωρεάν λογισμικό,freeware
 computer,gigabyte,gigabyte,gigabyte,gigabyte,gigabyte,gigabyte,gigabyte,gigabyte,gigabyte,gigabyte,gigaoctet,gigabajt,gigabyte,gigabyte,gigabyte
 computer,graphics,graphics,grafik,grafische,grafika,grafica,gráficos,gráficos,grafică,grafik,graphiques,grafika,grafika,γραφικά,grafikk
-computer,hack,hack,hacken.,hack,hack,hack,piratear,hack,hack,hack,piratage,hack,hack,hack,hack
+computer,hack,hack,hacken,hack,hack,hack,piratear,hack,hack,hack,piratage,hack,hack,hack,hack
 computer,hacker,hacker,hacker,hacker,hacker,hacker,hacker,pirata informático,hacker,hacker,pirate informatique,haker,hacker,hacker,hacker
 computer,hardware,hardware,hardware,hardware,hardware,hardware,hardware,hardware,hardware,hardware,matériel,sprzęt,hardver,υλικό,maskinvare
 computer,home page,home page,hauptseite,startpagina,domovská stránka,pagina iniziale,página de inicio,página inicial,pagina de pornire,hjemmeside,page d'accueil,strona główna,kezdőlap,αρχική σελίδα,startside
@@ -1821,12 +1821,12 @@ computer,root,root,wurzel,wortel,root,radice,raíz,raiz,rădăcină,rod,racine,k
 computer,router,router,router,router,směrovač,router,enrutador,router,router,router,routeur,router,router,δρομολογητής,ruter
 computer,runtime,runtime,laufzeit,runtime,runtime,tempo di esecuzione,tiempo de ejecución,tempo de execução,timp de execuție,løbetid,durée d'exécution,runtime,futási idő,χρόνος εκτέλεσης,kjøretid
 computer,save,save,speichern,sla,uložit,salvare,guardar,salvar,salvați,gemme,sauver,oszczędzać,mentse,save,spare
-computer,scan,scan,scannen.,scan,skenování,scansione,escanear,digitalização,scanare,scanning,scanner,skan,scan,σάρωση,skanning
+computer,scan,scan,scannen,scan,skenování,scansione,escanear,digitalização,scanare,scanning,scanner,skan,scan,σάρωση,skanning
 computer,scanner,scanner,scanner,scanner,skener,scanner,escáner,scanner,scaner,scanner,scanner,skaner,szkenner,σαρωτής,skanner
 computer,screen,screen,bildschirm,scherm,obrazovka,schermo,pantalla,ecrã,ecran,skærm,écran,ekran,képernyő,οθόνη,skjerm
 computer,screenshot,screenshot,bildschirmfoto,screenshot,snímek obrazovky,schermata,captura de pantalla,captura de ecrã,captură de ecran,skærmbillede,capture d'écran,zrzut ekranu,képernyőkép,στιγμιότυπο οθόνης,skjermdump
 computer,script,script,skript,script,skript,sceneggiatura,script,guião,scenariu,manuskript,scénario,scenariusz,forgatókönyv,σενάριο,manus
-computer,scroll,scroll,blättern sie,scroll,rolovat,rotolo,desplazarse,rolo,defilare,rulle,défilement,zwój,görgesse a  oldalt.,κύλιση,rulle
+computer,scroll,scroll,blättern sie,scroll,rolovat,rotolo,desplazarse,rolo,defilare,rulle,défilement,zwój,görgesse a  oldalt,κύλιση,rulle
 computer,scroll bar,scroll bar,bildlaufleiste,schuifbalk,posuvník,barra di scorrimento,barra de desplazamiento,barra de deslocação,bară de derulare,rullebjælke,barre de défilement,pasek przewijania,gördítősáv,γραμμή κύλισης,rullefelt
 computer,search engine,search engine,suchmaschine,zoekmachine,vyhledávač,motore di ricerca,buscador,motor de busca,motor de căutare,søgemaskine,moteur de recherche,wyszukiwarka,keresőmotor,μηχανή αναζήτησης,søkemotor
 computer,security,security,sicherheit,beveiliging,zabezpečení,sicurezza,seguridad,segurança,securitate,sikkerhed,sécurité,bezpieczeństwo,biztonság,ασφάλεια,sikkerhet
@@ -1915,7 +1915,7 @@ cooking,chill,chill,chillen,koel,chill,freddo,chill,frio,răceală,chill,refroid
 cooking,chop,chop,kotelett,hakken,chop,bacchetta,chop,cortar,cotlet,hugge,coupe,kotlet,chop,chop,hogge
 cooking,chunk,chunk,stückchen,brok,chunk,tronco,trozo,pedaço,bucată,klump,morceau,kawałek,chunk,chunk,del
 cooking,churn,churn,churn,karnton,churn,sfornare,churn,agitação,frământare,kværne,barattage,churn,churn,churn,kvern
-cooking,clarify,clarify,klären.,verduidelijken,objasnit,chiarire,aclare,esclarecer,clarifica,afklare,clarifier,wyjaśnienie,tisztázza,αποσαφηνίστε το,klargjøre
+cooking,clarify,clarify,klären,verduidelijken,objasnit,chiarire,aclare,esclarecer,clarifica,afklare,clarifier,wyjaśnienie,tisztázza,αποσαφηνίστε το,klargjøre
 cooking,coddle,coddle,verhätscheln,koesteren,rozmazlovat,coccolare,mimar,aconchegar-se,culcuș,skæmme,cabillaud,kodować,dédelgetni,χαϊδεύω,skjemme bort
 cooking,combine,combine,mähdrescher,combineren,kombinovat,combinare,combinar,combinar,combină,kombinere,combiner,połączenie,kombinálni,συνδυάστε,kombinere
 cooking,congeal,congeal,erstarren,stollen,srážet se,rapprendersi,congeal,congelar,se încheagă,størkne,se figer,zastygać,megdermedt,congeal,stivne
@@ -1964,8 +1964,8 @@ cooking,hash,hash,hash,hash,hash,hash,hash,haxixe,hașiș,hash,hachage,hash,hash
 cooking,heat,heat,wärme,warmte,teplo,calore,calor,calor,căldură,varme,chaleur,ciepło,hő,θερμότητα,varme
 cooking,hull,hull,rumpf,romp,trup,scafo,casco,casco,cocă,skrog,coque,kadłub,hajótest,κύτος,skrog
 cooking,ice,ice,eis,ijs,led,ghiaccio,hielo,gelo,gheață,is,glace,lód,jég,πάγος,is
-cooking,infuse,infuse,aufgießen.,infuseren,infuse,infondere,infundir,infundir,infuzați,indgyde,infuser,infuzja,infúzió,έγχυση,tilføre
-cooking,jell,jell,.,jell,žloutek,gelatina,jell,gelatina,jeleu,gelé,gelée,żel,kocsonya,ζελέ,gelé
+cooking,infuse,infuse,aufgießen,infuseren,infuse,infondere,infundir,infundir,infuzați,indgyde,infuser,infuzja,infúzió,έγχυση,tilføre
+cooking,jell,jell,,jell,žloutek,gelatina,jell,gelatina,jeleu,gelé,gelée,żel,kocsonya,ζελέ,gelé
 cooking,juice,juice,saft,sap,džus,succo di frutta,zumo,sumo,suc,juice,jus,sok,juice,χυμός,juice
 cooking,julienne,julienne,julienne,julienne,julienne,julienne,julienne,juliana,julienne,julienne,julienne,julienne,julienne,julienne,julienne
 cooking,knead,knead,kneten,kneden,hníst,impastare,amasar,amassar,frământați,ælte,pétrir,ugniatać,gyúrja,ζυμώνω,kna
@@ -2002,9 +2002,9 @@ cooking,pulp,pulp,zellstoff,pulp,buničina,polpa,pulpa,pasta,pulpă,papirmasse,p
 cooking,puree,puree,püree,puree,pyré,purea,puré,puré,piure,puré,purée,przecier,püré,πουρέ,puré
 cooking,quarter,quarter,quartal,kwartaal,čtvrtletí,trimestre,trimestre,trimestre,trimestru,kvartal,trimestre,kwartał,negyedév,τρίμηνο,kvartal
 cooking,raw,raw,roh,ruw,raw,grezzo,en bruto,bruto,brut,rå,brut,surowy,nyers,ακατέργαστο,rå
-cooking,reduce,reduce,reduzieren.,verminderen,snížit,ridurre,reducir,reduzir,reduce,reducere,réduire,zmniejszać się,csökkentse,μειώστε το,redusere
+cooking,reduce,reduce,reduzieren,verminderen,snížit,ridurre,reducir,reduzir,reduce,reducere,réduire,zmniejszać się,csökkentse,μειώστε το,redusere
 cooking,refrigerate,refrigerate,kühlen,koelen,chladit,refrigerare,refrigerar,refrigerar,refrigerați,afkøle,réfrigérer,chłodzić,hűtés,ψυγείο,kjøle ned
-cooking,render,render,machen.,weergeven,vykreslování,rendering,render,renderizar,redare,gøre,rendre,render,renderelni,render,gjengi
+cooking,render,render,machen,weergeven,vykreslování,rendering,render,renderizar,redare,gøre,rendre,render,renderelni,render,gjengi
 cooking,rise,rise,aufsteigen,stijging,rise,aumento,subir,subir,creștere,stige,hausse,wzrost,emelkedés,άνοδος,stige
 cooking,roast,roast,braten,gebraden,pečeně,arrosto,asado,assar,friptură,stege,rôti,pieczeń,sült,ψητό,steke
 cooking,roll,roll,rolle,rol,roll,rotolo,rollo,rolo,rola,rulle,rouleau,rolka,roll,ρολό,rulle
@@ -2016,7 +2016,7 @@ cooking,scallop,scallop,kammmuschel,sint-jacobsschelp,hřebenatky,capasanta,viei
 cooking,scoop,scoop,schaufel,schep,naběračka,scoop,cucharada,furo,scoop,scoop,scoop,miarka,lapát,σέσουλα,scoop
 cooking,score,score,ergebnis,score,skóre,punteggio,puntuación,pontuação,scor,score,score,wynik,pontszám,σκορ,poengsum
 cooking,scramble,scramble,scramble,scramble,scramble,rimescolare,revuelto,baralhar,amestecare,forcere,brouiller,zamieszanie,scramble,scramble,klatre
-cooking,sear,sear,anbraten.,schroeien,sear,ricerca,dorar,sarar,sear,brænde,chercher,wyszukiwanie,varrat,sear,brenne
+cooking,sear,sear,anbraten,schroeien,sear,ricerca,dorar,sarar,sear,brænde,chercher,wyszukiwanie,varrat,sear,brenne
 cooking,season,season,saison,seizoen,sezóna,stagione,temporada,estação,sezon,sæson,saison,sezon,szezon,σεζόν,sesong
 cooking,separate,separate,getrennt,aparte,samostatné stránky,separato,separar,separado,separat,separat,séparer,oddzielny,külön,ξεχωριστό,separat
 cooking,serve,serve,dienen,serveer,sloužit,servire,servir,servir,servire,servere,servir,służyć,szolgálja ki a,σερβίρετε,servere
@@ -2038,7 +2038,7 @@ cooking,snip,snip,schnipsel,knip,snip,snip,snip,recorte,snip,snip,snip,snip,snip
 cooking,soak,soak,einweichen,weken,namáčení,ammollo,remojar,mergulhar,înmuiere,blødgøre,tremper,nasiąkać,áztatás,μουλιάστε,suge
 cooking,soft boil,soft boil,weichkochen,zacht koken,měkký var,bollitura morbida,hervor suave,fervura suave,fierbere moale,blød kogning,ébullition douce,miękkie gotowanie,lágy forrás,μαλακός βρασμός,bløtkoking
 cooking,souse,souse,souse,souse,souse,casa,casa,casa,șoarece,souse,sous-bois,dom,házikó,σάλτσα,souse
-cooking,sprinkle,sprinkle,bestreuen.,bestrooi,posypat,spruzzare,espolvorear,polvilhar,presărați,drys,saupoudrer,posypka,szórja meg,πασπαλίζουμε,dryss
+cooking,sprinkle,sprinkle,bestreuen,bestrooi,posypat,spruzzare,espolvorear,polvilhar,presărați,drys,saupoudrer,posypka,szórja meg,πασπαλίζουμε,dryss
 cooking,steam,steam,dampf,stoom,pára,vapore,vapor,vapor,abur,damp,vapeur,para,gőz,ατμός,damp
 cooking,steep,steep,steil,steil,strmý,ripido,escarpado,íngreme,abrupt,stejl,raide,stromy,meredek,απότομο,bratt
 cooking,stew,stew,stew,stoof,guláš,stufato,estofado,guisado,tocană,gryderet,ragoût,gulasz,pörkölt,στιφάδο,lapskaus
@@ -2054,10 +2054,10 @@ cooking,thicken,thicken,eindicken,verdikken,zahustit,addensare,espesar,engrossar
 cooking,thin,thin,dünn,dun,tenké,sottile,fino,fino,subțire,tynd,mince,cienki,vékony,λεπτό,tynn
 cooking,toast,toast,toast,toast,toast,brindisi,tostadas,torrada,toast,toast,toast,toast,pirítós,τοστ,toast
 cooking,top,top,top,top,top,top,top,topo,top,top,sommet,top,top,top,topp
-cooking,toss,toss,zu werfen.,gooien,hodit,lancio,echa,atirar,aruncare,kaste,lancer,rzut,dobja,πετάξτε,kaste
+cooking,toss,toss,zu werfen,gooien,hodit,lancio,echa,atirar,aruncare,kaste,lancer,rzut,dobja,πετάξτε,kaste
 cooking,trim,trim,trimmen,trim,trim,assetto,recortar,guarnição,garnitură,trim,garniture,wykończenie,trim,trim,trim
 cooking,truss,truss,fachwerk,truss,příhradové konstrukce,capriata,braguero,treliça,trusă,bindingsværk,treillis,kratownica,fürttartó,ζευκτά,fagverk
-cooking,turn,turn,drehen.,draai,otočit,girare,gire a,volta,rândul său,vende,tourner,obrót,forduljon,γυρίστε,snu
+cooking,turn,turn,drehen,draai,otočit,girare,gire a,volta,rândul său,vende,tourner,obrót,forduljon,γυρίστε,snu
 cooking,uncured,uncured,unausgehärtet,niet-uitgehard,nevytvrzené,non polimerizzato,sin curar,não curado,nevindecat,uhærdet,non guéri,nieutwardzony,kikeményítetlen,μη σκληρυμένο,uherdet
 cooking,unmold,unmold,entformen,ontvormen,odformování,smodellare,desmoldar,desenformar,deformare,afformning,démouler,rozformowanie,oldja fel a,ξεδιπλώστε το,ustøpt
 cooking,warm,warm,warm,warm,teplé,caldo,caliente,quente,cald,varm,chaud,ciepły,meleg,ζεστό,varm
@@ -2233,7 +2233,7 @@ driving,chill,chill,chillen,koel,chill,freddo,chill,frio,răceală,chill,refroid
 driving,chop,chop,kotelett,hakken,chop,bacchetta,chop,cortar,cotlet,hugge,coupe,kotlet,chop,chop,hogge
 driving,chunk,chunk,stückchen,brok,chunk,tronco,trozo,pedaço,bucată,klump,morceau,kawałek,chunk,chunk,del
 driving,churn,churn,churn,karnton,churn,sfornare,churn,agitação,frământare,kværne,barattage,churn,churn,churn,kvern
-driving,clarify,clarify,klären.,verduidelijken,objasnit,chiarire,aclare,esclarecer,clarifica,afklare,clarifier,wyjaśnienie,tisztázza,αποσαφηνίστε το,klargjøre
+driving,clarify,clarify,klären,verduidelijken,objasnit,chiarire,aclare,esclarecer,clarifica,afklare,clarifier,wyjaśnienie,tisztázza,αποσαφηνίστε το,klargjøre
 driving,coddle,coddle,verhätscheln,koesteren,rozmazlovat,coccolare,mimar,aconchegar-se,culcuș,skæmme,cabillaud,kodować,dédelgetni,χαϊδεύω,skjemme bort
 driving,combine,combine,mähdrescher,combineren,kombinovat,combinare,combinar,combinar,combină,kombinere,combiner,połączenie,kombinálni,συνδυάστε,kombinere
 driving,congeal,congeal,erstarren,stollen,srážet se,rapprendersi,congeal,congelar,se încheagă,størkne,se figer,zastygać,megdermedt,congeal,stivne
@@ -2282,8 +2282,8 @@ driving,hash,hash,hash,hash,hash,hash,hash,haxixe,hașiș,hash,hachage,hash,hash
 driving,heat,heat,wärme,warmte,teplo,calore,calor,calor,căldură,varme,chaleur,ciepło,hő,θερμότητα,varme
 driving,hull,hull,rumpf,romp,trup,scafo,casco,casco,cocă,skrog,coque,kadłub,hajótest,κύτος,skrog
 driving,ice,ice,eis,ijs,led,ghiaccio,hielo,gelo,gheață,is,glace,lód,jég,πάγος,is
-driving,infuse,infuse,aufgießen.,infuseren,infuse,infondere,infundir,infundir,infuzați,indgyde,infuser,infuzja,infúzió,έγχυση,tilføre
-driving,jell,jell,.,jell,žloutek,gelatina,jell,gelatina,jeleu,gelé,gelée,żel,kocsonya,ζελέ,gelé
+driving,infuse,infuse,aufgießen,infuseren,infuse,infondere,infundir,infundir,infuzați,indgyde,infuser,infuzja,infúzió,έγχυση,tilføre
+driving,jell,jell,,jell,žloutek,gelatina,jell,gelatina,jeleu,gelé,gelée,żel,kocsonya,ζελέ,gelé
 driving,juice,juice,saft,sap,džus,succo di frutta,zumo,sumo,suc,juice,jus,sok,juice,χυμός,juice
 driving,julienne,julienne,julienne,julienne,julienne,julienne,julienne,juliana,julienne,julienne,julienne,julienne,julienne,julienne,julienne
 driving,knead,knead,kneten,kneden,hníst,impastare,amasar,amassar,frământați,ælte,pétrir,ugniatać,gyúrja,ζυμώνω,kna
@@ -2320,9 +2320,9 @@ driving,pulp,pulp,zellstoff,pulp,buničina,polpa,pulpa,pasta,pulpă,papirmasse,p
 driving,puree,puree,püree,puree,pyré,purea,puré,puré,piure,puré,purée,przecier,püré,πουρέ,puré
 driving,quarter,quarter,quartal,kwartaal,čtvrtletí,trimestre,trimestre,trimestre,trimestru,kvartal,trimestre,kwartał,negyedév,τρίμηνο,kvartal
 driving,raw,raw,roh,ruw,raw,grezzo,en bruto,bruto,brut,rå,brut,surowy,nyers,ακατέργαστο,rå
-driving,reduce,reduce,reduzieren.,verminderen,snížit,ridurre,reducir,reduzir,reduce,reducere,réduire,zmniejszać się,csökkentse,μειώστε το,redusere
+driving,reduce,reduce,reduzieren,verminderen,snížit,ridurre,reducir,reduzir,reduce,reducere,réduire,zmniejszać się,csökkentse,μειώστε το,redusere
 driving,refrigerate,refrigerate,kühlen,koelen,chladit,refrigerare,refrigerar,refrigerar,refrigerați,afkøle,réfrigérer,chłodzić,hűtés,ψυγείο,kjøle ned
-driving,render,render,machen.,weergeven,vykreslování,rendering,render,renderizar,redare,gøre,rendre,render,renderelni,render,gjengi
+driving,render,render,machen,weergeven,vykreslování,rendering,render,renderizar,redare,gøre,rendre,render,renderelni,render,gjengi
 driving,rise,rise,aufsteigen,stijging,rise,aumento,subir,subir,creștere,stige,hausse,wzrost,emelkedés,άνοδος,stige
 driving,roast,roast,braten,gebraden,pečeně,arrosto,asado,assar,friptură,stege,rôti,pieczeń,sült,ψητό,steke
 driving,roll,roll,rolle,rol,roll,rotolo,rollo,rolo,rola,rulle,rouleau,rolka,roll,ρολό,rulle
@@ -2334,7 +2334,7 @@ driving,scallop,scallop,kammmuschel,sint-jacobsschelp,hřebenatky,capasanta,viei
 driving,scoop,scoop,schaufel,schep,naběračka,scoop,cucharada,furo,scoop,scoop,scoop,miarka,lapát,σέσουλα,scoop
 driving,score,score,ergebnis,score,skóre,punteggio,puntuación,pontuação,scor,score,score,wynik,pontszám,σκορ,poengsum
 driving,scramble,scramble,scramble,scramble,scramble,rimescolare,revuelto,baralhar,amestecare,forcere,brouiller,zamieszanie,scramble,scramble,klatre
-driving,sear,sear,anbraten.,schroeien,sear,ricerca,dorar,sarar,sear,brænde,chercher,wyszukiwanie,varrat,sear,brenne
+driving,sear,sear,anbraten,schroeien,sear,ricerca,dorar,sarar,sear,brænde,chercher,wyszukiwanie,varrat,sear,brenne
 driving,season,season,saison,seizoen,sezóna,stagione,temporada,estação,sezon,sæson,saison,sezon,szezon,σεζόν,sesong
 driving,separate,separate,getrennt,aparte,samostatné stránky,separato,separar,separado,separat,separat,séparer,oddzielny,külön,ξεχωριστό,separat
 driving,serve,serve,dienen,serveer,sloužit,servire,servir,servir,servire,servere,servir,służyć,szolgálja ki a,σερβίρετε,servere
@@ -2356,7 +2356,7 @@ driving,snip,snip,schnipsel,knip,snip,snip,snip,recorte,snip,snip,snip,snip,snip
 driving,soak,soak,einweichen,weken,namáčení,ammollo,remojar,mergulhar,înmuiere,blødgøre,tremper,nasiąkać,áztatás,μουλιάστε,suge
 driving,soft boil,soft boil,weichkochen,zacht koken,měkký var,bollitura morbida,hervor suave,fervura suave,fierbere moale,blød kogning,ébullition douce,miękkie gotowanie,lágy forrás,μαλακός βρασμός,bløtkoking
 driving,souse,souse,souse,souse,souse,casa,casa,casa,șoarece,souse,sous-bois,dom,házikó,σάλτσα,souse
-driving,sprinkle,sprinkle,bestreuen.,bestrooi,posypat,spruzzare,espolvorear,polvilhar,presărați,drys,saupoudrer,posypka,szórja meg,πασπαλίζουμε,dryss
+driving,sprinkle,sprinkle,bestreuen,bestrooi,posypat,spruzzare,espolvorear,polvilhar,presărați,drys,saupoudrer,posypka,szórja meg,πασπαλίζουμε,dryss
 driving,steam,steam,dampf,stoom,pára,vapore,vapor,vapor,abur,damp,vapeur,para,gőz,ατμός,damp
 driving,steep,steep,steil,steil,strmý,ripido,escarpado,íngreme,abrupt,stejl,raide,stromy,meredek,απότομο,bratt
 driving,stew,stew,stew,stoof,guláš,stufato,estofado,guisado,tocană,gryderet,ragoût,gulasz,pörkölt,στιφάδο,lapskaus
@@ -2372,10 +2372,10 @@ driving,thicken,thicken,eindicken,verdikken,zahustit,addensare,espesar,engrossar
 driving,thin,thin,dünn,dun,tenké,sottile,fino,fino,subțire,tynd,mince,cienki,vékony,λεπτό,tynn
 driving,toast,toast,toast,toast,toast,brindisi,tostadas,torrada,toast,toast,toast,toast,pirítós,τοστ,toast
 driving,top,top,top,top,top,top,top,topo,top,top,sommet,top,top,top,topp
-driving,toss,toss,zu werfen.,gooien,hodit,lancio,echa,atirar,aruncare,kaste,lancer,rzut,dobja,πετάξτε,kaste
+driving,toss,toss,zu werfen,gooien,hodit,lancio,echa,atirar,aruncare,kaste,lancer,rzut,dobja,πετάξτε,kaste
 driving,trim,trim,trimmen,trim,trim,assetto,recortar,guarnição,garnitură,trim,garniture,wykończenie,trim,trim,trim
 driving,truss,truss,fachwerk,truss,příhradové konstrukce,capriata,braguero,treliça,trusă,bindingsværk,treillis,kratownica,fürttartó,ζευκτά,fagverk
-driving,turn,turn,drehen.,draai,otočit,girare,gire a,volta,rândul său,vende,tourner,obrót,forduljon,γυρίστε,snu
+driving,turn,turn,drehen,draai,otočit,girare,gire a,volta,rândul său,vende,tourner,obrót,forduljon,γυρίστε,snu
 driving,uncured,uncured,unausgehärtet,niet-uitgehard,nevytvrzené,non polimerizzato,sin curar,não curado,nevindecat,uhærdet,non guéri,nieutwardzony,kikeményítetlen,μη σκληρυμένο,uherdet
 driving,unmold,unmold,entformen,ontvormen,odformování,smodellare,desmoldar,desenformar,deformare,afformning,démouler,rozformowanie,oldja fel a,ξεδιπλώστε το,ustøpt
 driving,warm,warm,warm,warm,teplé,caldo,caliente,quente,cald,varm,chaud,ciepły,meleg,ζεστό,varm
@@ -2459,7 +2459,7 @@ emotions,dissatisfied,dissatisfied,unzufrieden,ontevreden,nespokojené,insoddisf
 emotions,distraction,distraction,ablenkung,afleiding,rozptýlení,distrazione,distracción,distração,distragere a atenției,distraktion,distraction,rozproszenie uwagi,figyelemelterelés,απόσπαση προσοχής,distraksjon
 emotions,distress,distress,notruf,nood,nouze,angoscia,socorro,angústia,primejdie,nød,détresse,niepokój,vészhelyzet,κίνδυνο,nød
 emotions,disturbed,disturbed,gestört,gestoord,narušený,disturbato,perturbado,perturbado,deranjat,forstyrret,perturbé,zakłócony,zavart,διαταραγμένο,forstyrret
-emotions,dread,dread,befürchten.,vrees,dread,paura,pavor,pavor,groază,frygt,redoute,zgroza,rettegés,φόβος,frykter
+emotions,dread,dread,befürchten,vrees,dread,paura,pavor,pavor,groază,frygt,redoute,zgroza,rettegés,φόβος,frykter
 emotions,eager,eager,eifrig,gretig,dychtivé,desideroso,ansioso,ansioso,dornic,ivrig,impatient,chętny,buzgó,πρόθυμος,ivrig
 emotions,earnest,earnest,seriös,serieus,earnest,sincero,serio,sincero,serioasă,alvorlig,sérieux,gorliwy,komoly,earnest,alvorlig
 emotions,easygoing,easygoing,lässig,easygoing,easygoing,disinvolto,fácil de llevar,descontraído,relaxat,afslappet,facile à vivre,swobodny,laza,χαλαρή,avslappet
@@ -2474,7 +2474,7 @@ emotions,enchanted,enchanted,verwunschen,betoverd,okouzlený,incantato,encantado
 emotions,enjoyment,enjoyment,vergnügen,plezier,požitek,divertimento,disfrute,prazer,plăcere,nydelse,plaisir,przyjemność,élvezet,απόλαυση,nytelse
 emotions,enraged,enraged,wütend,woedend,rozzuřený,infuriato,enfurecido,enfurecido,furios,rasende,furieux,rozwścieczony,dühös,εξοργισμένος,rasende
 emotions,enraptured,enraptured,entrückt,verrukt,uchvácený,estasiato,embelesado,extasiado,încântat,henrykt,enchanté,zachwycony,elragadtatott,ενθουσιασμένος,henrykt
-emotions,enthralled,enthralled,begeistert.,geboeid,nadšený,affascinato,cautivado,encantado,entuziasmat,begejstret,captivé,zachwycony,lenyűgözött,ενθουσιασμένος,begeistret
+emotions,enthralled,enthralled,begeistert,geboeid,nadšený,affascinato,cautivado,encantado,entuziasmat,begejstret,captivé,zachwycony,lenyűgözött,ενθουσιασμένος,begeistret
 emotions,enthusiasm,enthusiasm,begeisterung,enthousiasme,nadšení,entusiasmo,entusiasmo,entusiasmo,entuziasm,begejstring,l'enthousiasme,entuzjazm,lelkesedés,ενθουσιασμός,entusiasme
 emotions,envious,envious,neidisch,jaloers,závistivé,invidioso,envidioso,invejoso,invidios,misundelig,envieux,zazdrosny,irigylésre méltó,ζηλεύω,misunnelig
 emotions,envy,envy,neid,jaloers,závist,invidia,envidia,inveja,invidie,misundelse,envie,zazdrość,irigység,ζηλεύω,misunnelse
@@ -2526,7 +2526,7 @@ emotions,interested,interested,interessiert,geïnteresseerd,zájem,interessato,i
 emotions,introverted,introverted,introvertiert,introvert,introvertní,introverso,introvertido,introvertido,introvertit,indadvendt,introverti,introwertyk,introvertált,εσωστρεφής,innadvendt
 emotions,irritation,irritation,irritation,irritatie,podráždění,irritazione,irritación,irritação,iritare,irritation,irritation,podrażnienie,irritáció,ερεθισμός,irritasjon
 emotions,isolation,isolation,isolierung,isolatie,izolace,isolamento,aislamiento,isolamento,izolare,isolation,l'isolement,izolacja,izoláció,απομόνωση,isolasjon
-emotions,jaded,jaded,.,jaded,vyčerpaný,sbiadito,hastiado,cansado,obosit,udmattet,blasé,zmęczony,kimerült,jaded,utslitt
+emotions,jaded,jaded,,jaded,vyčerpaný,sbiadito,hastiado,cansado,obosit,udmattet,blasé,zmęczony,kimerült,jaded,utslitt
 emotions,jealous,jealous,neidisch,jaloerse,žárlivý,geloso,celoso,ciumento,geloasă,jaloux,jaloux,zazdrosny,féltékeny,ζηλιάρης,sjalu
 emotions,jittery,jittery,bibbernde,springerig,nervózní,nervoso,nervioso,nervoso,agitat,nervøs,agité,roztrzęsiony,jittery,νευρικότητα,nervøs
 emotions,jolliness,jolliness,fröhlichkeit,vrolijkheid,jolliness,allegria,alegría,alegria,veselie,munterhed,gaieté,wesołość,vidámság,ευθυμία,munterhet
@@ -2561,7 +2561,7 @@ emotions,nervous,nervous,nervös,nerveus,nervózní,nervoso,nervioso,nervoso,ner
 emotions,nirvana,nirvana,nirwana,nirvana,nirvana,nirvana,nirvana,nirvana,nirvana,nirvana,nirvana,nirwana,nirvána,νιρβάνα,nirvana
 emotions,open,open,öffnen,open,otevřít,aperto,abra,aberto,deschis,åben,ouvert,otwarty,nyitott,ανοιχτό,åpen
 emotions,optimism,optimism,optimismus,optimisme,optimismus,ottimismo,optimismo,otimismo,optimism,optimisme,optimisme,optymizm,optimizmus,αισιοδοξία,optimisme
-emotions,ornery,ornery,.,lelijke,ornery,irascibile,ornery,irritadiço,irascibil,gnaven,orgueilleux,ornery,ornery,πεισματάρης,gretten
+emotions,ornery,ornery,,lelijke,ornery,irascibile,ornery,irritadiço,irascibil,gnaven,orgueilleux,ornery,ornery,πεισματάρης,gretten
 emotions,outgoing,outgoing,ausgehend von,uitgaand,odchozí,in uscita,saliente,de saída,de ieșire,udadvendt,sortant,wychodzący,kimenő,εξερχόμενο,utadvendt
 emotions,outrage,outrage,empörung,verontwaardiging,rozhořčení,oltraggio,indignación,ultraje,scandal,forargelse,outrage,oburzenie,felháborodás,αγανάκτηση,skandale
 emotions,panic,panic,panik,paniek,panika,panico,pánico,pânico,panică,panik,panique,panika,pánik,πανικός,panikk
@@ -2768,7 +2768,7 @@ family,mommy,mommy,mutti,mama,maminka,mamma,mamá,mamã,mămică,mor,maman,mama,
 family,monogamy,monogamy,monogamie,monogamie,monogamie,monogamia,monogamia,monogamia,monogamie,monogami,monogamie,monogamia,monogámia,μονογαμία,monogami
 family,mother,mother,mutter,moeder,matka,madre,madre,mãe,mamă,mor,mère,matka,anya,μητέρα,mor
 family,motherinlaw,motherinlaw,schwiegermutter,schoonmoeder,tchyně,suocera,suegra,sogra,soacră,svigermor,mère-enfant,teściowa,anyós,motherinlaw,svigermor
-family,mrs,mrs,frau,mevrouw,paní,signora,sra.,senhora,doamnă,frue,mrs,pani,mrs.,κυρία,frue
+family,mrs,mrs,frau,mevrouw,paní,signora,sra,senhora,doamnă,frue,mrs,pani,mrs,κυρία,frue
 family,nana,nana,oma,nana,nana,nana,nana,nana,nana,nana,nana,nana,nana,nana,nana
 family,natal,natal,geburtsort,geboorteplaats,natální,natale,natal,natal,natal,fødsel,natal,urodzeniowy,születési,γενέθλιο,fødsel
 family,nephew,nephew,neffe,neef,synovec,nipote,sobrino,sobrinho,nepot,nevø,neveu,siostrzeniec,unokaöccse,ανιψιός,nevø
@@ -2833,7 +2833,7 @@ family,wed,wed,hochzeit,wed,wed,matrimonio,wed,casado,căsătorit,gift,mariage,�
 family,wedding,wedding,hochzeit,bruiloft,svatba,matrimonio,boda,casamento,nuntă,bryllup,mariage,ślub,esküvő,γάμος,bryllup
 family,wedlock,wedlock,eheschließung,huwelijk,manželství,matrimonio,matrimonio,matrimónio,căsătorie,ægteskab,mariage,ślub,házasság,wedlock,ekteskap
 family,wife,wife,frau,vrouw,manželka,moglie,esposa,esposa,soție,hustru,épouse,żona,feleség,σύζυγος,hustru
-family,youngster,youngster,.,jongere,youngster,giovane,joven,jovem,tânăr,unge,jeune,młodzik,fiatal,νέος,ungdom
+family,youngster,youngster,,jongere,youngster,giovane,joven,jovem,tânăr,unge,jeune,młodzik,fiatal,νέος,ungdom
 family,youth,youth,jugend,jeugd,mládež,giovani,jóvenes,juventude,tinerețe,ungdom,la jeunesse,młodzież,ifjúság,νεολαία,ungdom
 food,acorn squash,acorn squash,eichelkürbis,eikelpompoen,žaludová dýně,zucca a ghianda,calabaza bellota,abóbora de bolota,dovleac acorn,agern-squash,courge de gland,kabaczek żołędziowy,makk tök,κολοκύθα βελανίδι,eikenøttsquash
 food,alfalfa sprouts,alfalfa sprouts,alfalfasprossen,luzernescheuten,klíčky vojtěšky,germogli di erba medica,brotes de alfalfa,rebentos de luzerna,germeni de lucernă,lucernespirer,germes de luzerne,kiełki lucerny,lucernacsíra,φύτρα μηδικής,alfalfaspirer
@@ -3004,7 +3004,7 @@ food,feast,feast,festtag,feest,svátek,banchetto,fiesta,festa,sărbătoare,fest,
 food,fed,fed,gefüttert,gevoed,krmení,alimentato,alimentado,alimentado,hrănit,fodret,nourri,karmiony,fed,fed,matet
 food,feed,feed,futtermittel,voer,krmivo,alimentazione,alimentar,alimentação,hrană,foder,alimentation,pasza,etetni,τροφοδοσία,fôr
 food,fennel,fennel,fenchel,venkel,fenykl,finocchio,hinojo,funcho,fenicul,fennikel,fenouil,koper włoski,édeskömény,μάραθο,fennikel
-food,fig,fig,abbildung,afb,obr.,fico,fig,figo,smochin,figen,fig,fig,fig,εικ,fiken
+food,fig,fig,abbildung,afb,obr,fico,fig,figo,smochin,figen,fig,fig,fig,εικ,fiken
 food,fillet,fillet,filet,filet,filé,filetto,filete,filete,fileu,filet,filet,filet,filé,φιλέτο,filet
 food,fire,fire,feuer,brand,požár,incendio,fuego,incêndio,foc,brand,incendie,ogień,tűz,πυρκαγιά,brann
 food,fish,fish,fisch,vis,ryby,pesce,pescado,peixe,pește,fisk,poisson,ryba,hal,ψάρια,fisk
@@ -3070,7 +3070,7 @@ food,jam,jam,marmelade,jam,jam,marmellata,mermelada,compota,gem,syltetøj,confit
 food,jelly,jelly,gelee,gelei,želé,gelatina,gelatina,gelatina,jeleu,gelé,gelée,galaretka,zselé,ζελέ,gelé
 food,jellybeans,jellybeans,jellybeans,jellybeans,želé fazole,gelatine,gominolas,gomas,jeleuri,gelébønner,bonbons,żelki,jellybeans,ζελεδάκια,gelébønner
 food,jicama,jicama,jicama,jicama,jicama,jicama,jícama,jicama,jicama,jicama,jicama,jicama,jicama,jicama,jicama
-food,jimmies,jimmies,.,foefjes,jimmies,jimmies,jimmies,jimmies,jimmies,jimmies,jimmies,jimmies,jimmies,jimmies,jimmies
+food,jimmies,jimmies,,foefjes,jimmies,jimmies,jimmies,jimmies,jimmies,jimmies,jimmies,jimmies,jimmies,jimmies,jimmies
 food,jordan almonds,jordan almonds,jordanische mandeln,jordaanse amandelen,jordánské mandle,mandorle jordan,almendras jordan,amêndoas de jordão,migdale jordan,jordanske mandler,amandes jordaniennes,migdały jordan,jordán mandula,jordan αμύγδαλα,jordan mandler
 food,jug,jug,krug,kan,džbán,brocca,jarra,jarro,ulcior,kande,cruche,dzbanek,kancsó,κανάτα,kanne
 food,juice,juice,saft,sap,džus,succo di frutta,zumo,sumo,suc,juice,jus,sok,juice,χυμός,juice
@@ -3398,7 +3398,7 @@ fruits,date,date,datum,datum,datum,data,fecha,data,dată,dato,date,data,dátum,�
 fruits,dragon fruit,dragon fruit,drachenfrucht,drakenvrucht,dračí ovoce,frutto del drago,fruta del dragón,fruta do dragão,fructul dragonului,dragefrugt,fruit du dragon,smoczy owoc,sárkánygyümölcs,φρούτα δράκος,dragefrukt
 fruits,durian,durian,durian,durian,durian,durian,durian,durião,durian,durian,durian,durian,durian,durian,durian
 fruits,elderberry,elderberry,holunder,vlierbes,bezinky,sambuco,baya del saúco,sabugueiro,boabe de soc,hyldebær,sureau,czarny bez,bodza,elderberry,hyllebær
-fruits,fig,fig,abbildung,afb,obr.,fico,fig,figo,smochin,figen,fig,fig,fig,εικ,fiken
+fruits,fig,fig,abbildung,afb,obr,fico,fig,figo,smochin,figen,fig,fig,fig,εικ,fiken
 fruits,grape,grape,trauben,druif,hrozny,uva,uva,uva,struguri,drue,raisin,winogrono,szőlő,σταφύλι,drue
 fruits,grapefruit,grapefruit,grapefruit,grapefruit,grapefruit,pompelmo,pomelo,toranja,grapefruit,grapefrugt,pamplemousse,grejpfrut,grapefruit,γκρέιπφρουτ,grapefrukt
 fruits,guava,guava,guave,guave,guava,guava,guayaba,goiaba,guava,guava,goyave,guawa,guava,γκουάβα,guava
@@ -3738,7 +3738,7 @@ house,staircase,staircase,treppe,trap,schodiště,scala,escalera,escada,scara,tr
 house,stairs,stairs,treppe,trap,schody,scale,escaleras,escadas,scări,trapper,escaliers,schody,lépcsők,σκάλες,trapper
 house,stairway,stairway,treppe,trap,schodiště,scala,escalera,escada,scara,trappe,escalier,schody,lépcsőház,σκάλα,trappeoppgang
 house,steps,steps,schritte,stappen,kroky,passi,pasos,passos,trepte,trin,étapes,kroki,lépések,βήματα,trinn
-house,stoop,stoop,.,buk,stoupačka,china,inclinarse,inclinar-se,coborâre,bukke,s'arrêter,pochylenie,lépcső,σκαλί,bukke
+house,stoop,stoop,,buk,stoupačka,china,inclinarse,inclinar-se,coborâre,bukke,s'arrêter,pochylenie,lépcső,σκαλί,bukke
 house,storage shed,storage shed,lagerschuppen,opslagloods,skladovací přístřešek,capannone di stoccaggio,cobertizo,barracão de armazenamento,magazie de depozitare,skur til opbevaring,hangar de stockage,wiata magazynowa,tárolóház,υπόστεγο αποθήκευσης,lagringsbod
 house,storm door,storm door,sturmtür,stormdeur,bouřkové dveře,porta d'ingresso,contrapuerta,porta de tempestade,ușă de protecție,stormdør,contre-porte,drzwi sztormowe,viharajtó,πόρτα καταιγίδας,stormdør
 house,stove,stove,herd,kachel,kamna,stufa,estufa,fogão,sobă,komfur,poêle,piec,tűzhely,σόμπα,komfyr
@@ -3825,7 +3825,7 @@ medical terms,dental,dental,zahnärztliche,tandheelkundig,zubní,dentale,dental,
 medical terms,dentist,dentist,zahnarzt,tandarts,zubař,dentista,dentista,dentista,dentist,tandlæge,dentiste,dentysta,fogorvos,οδοντίατρος,tannlege
 medical terms,dentures,dentures,zahnersatz,kunstgebit,zubní náhrady,protesi dentarie,dentaduras,dentaduras,proteze dentare,tandproteser,prothèses dentaires,protezy,műfogsor,οδοντοστοιχίες,gebiss
 medical terms,diabetes,diabetes,diabetes,diabetes,diabetes,diabete,diabetes,diabetes,diabet,diabetes,le diabète,cukrzyca,cukorbetegség,διαβήτης,diabetes
-medical terms,diagnose,diagnose,diagnostizieren.,diagnose,diagnostika,diagnosticare,diagnosticar,diagnosticar,diagnosticați,diagnosticere,diagnostiquer,diagnoza,diagnosztizálja,διάγνωση,diagnostisere
+medical terms,diagnose,diagnose,diagnostizieren,diagnose,diagnostika,diagnosticare,diagnosticar,diagnosticar,diagnosticați,diagnosticere,diagnostiquer,diagnoza,diagnosztizálja,διάγνωση,diagnostisere
 medical terms,diagnosis,diagnosis,diagnose,diagnose,diagnóza,diagnosi,diagnóstico,diagnóstico,diagnostic,diagnose,diagnostic,diagnoza,diagnózis,διάγνωση,diagnose
 medical terms,diarrhea,diarrhea,diarrhöe,diarree,průjem,diarrea,diarrea,diarreia,diaree,diarré,diarrhée,biegunka,hasmenés,διάρροια,diaré
 medical terms,diet,diet,diät,dieet,dieta,dieta,dieta,dieta,dietă,kost,régime,dieta,diéta,δίαιτα,diett
@@ -3890,7 +3890,7 @@ medical terms,nerves,nerves,nerven,zenuwen,nervy,nervi,nervios,nervos,nervi,nerv
 medical terms,nurse,nurse,krankenschwester,verpleegkundige,zdravotní sestra,infermiera,enfermera,enfermeira,infirmieră,sygeplejerske,infirmière,pielęgniarka,nővér,νοσοκόμα,sykepleier
 medical terms,nutrition,nutrition,ernährung,voeding,výživa,alimentazione,nutrición,nutrição,nutriție,ernæring,l'alimentation,odżywianie,táplálkozás,διατροφή,ernæring
 medical terms,ointment,ointment,salbe,zalf,mast,unguento,pomada,pomada,unguent,salve,pommade,maść,kenőcs,αλοιφή,salve
-medical terms,operate,operate,betreiben.,bedienen,provozovat,operare,operar,operar,funcționează,betjene,opérer,działać,működtesse a  weboldalt.,λειτουργεί,operere
+medical terms,operate,operate,betreiben,bedienen,provozovat,operare,operar,operar,funcționează,betjene,opérer,działać,működtesse a  weboldalt,λειτουργεί,operere
 medical terms,operation,operation,betrieb,operatie,operace,operazione,operación,funcionamento,funcționare,drift,fonctionnement,działanie,művelet,λειτουργία,drift
 medical terms,ophthalmologist,ophthalmologist,ophthalmologe,oogarts,oftalmolog,oftalmologo,oftalmólogo,oftalmologista,oftalmolog,øjenlæge,ophtalmologue,okulista,szemész,οφθαλμίατρος,øyelege
 medical terms,optometrist,optometrist,optometrist,optometrist,optometrista,optometrista,optometrista,optometrista,optometrist,optometrist,optométriste,optometrysta,optometrista,οπτομέτρης,optometrist
@@ -3923,7 +3923,7 @@ medical terms,runny nose,runny nose,triefnase,loopneus,rýma,naso che cola,goteo
 medical terms,scab,scab,schorf,schurft,strup,crosta,costra,sarna,crustă,skorpe,gale,parch,scab,ψώρα,skorpe
 medical terms,scale,scale,skala,schaal,stupnice,scala,escala,escala,scară,skala,échelle,skala,skála,κλίμακα,skala
 medical terms,scalpel,scalpel,skalpell,scalpel,skalpel,bisturi,bisturí,bisturi,bisturiu,skalpel,scalpel,skalpel,szike,νυστέρι,skalpell
-medical terms,scan,scan,scannen.,scan,skenování,scansione,escanear,digitalização,scanare,scanning,scanner,skan,scan,σάρωση,skanning
+medical terms,scan,scan,scannen,scan,skenování,scansione,escanear,digitalização,scanare,scanning,scanner,skan,scan,σάρωση,skanning
 medical terms,second opinion,second opinion,zweitmeinung,second opinion,druhý názor,secondo parere,segunda opinión,segunda opinião,a doua opinie,second opinion,deuxième avis,druga opinia,második vélemény,δεύτερη γνώμη,second opinion
 medical terms,seizure,seizure,beschlagnahme,beslag,záchvat,crisi epilettica,ataque,convulsão,sechestru,anfald,crise,napad,lefoglalás,κατάσχεση,anfall
 medical terms,shock,shock,schock,schok,šok,shock,choque,choque,șoc,chok,choc,szok,sokk,σοκ,sjokk
@@ -3985,7 +3985,7 @@ music,allegretto,allegretto,allegretto,allegretto,allegretto,allegretto,allegret
 music,allegro,allegro,allegro,allegro,allegro,allegro,allegro,alegro,allegro,allegro,allegro,allegro,allegro,allegro,allegro
 music,andante,andante,andante,andante,andante,andante,andante,andante,andante,andante,andante,andante,andante,andante,andante
 music,andantino,andantino,andantino,andantino,andantino,andantino,andantino,andantino,andantino,andantino,andantino,andantino,andantino,andantino,andantino
-music,animato,animato,.,animato,animato,animato,animato,animato,animato,animato,animato,animato,animato,animato,animato
+music,animato,animato,,animato,animato,animato,animato,animato,animato,animato,animato,animato,animato,animato,animato
 music,arioso,arioso,arioso,arioso,arioso,arioso,arioso,arioso,arioso,arioso,arioso,arioso,arioso,arioso,arioso
 music,arpeggio,arpeggio,arpeggio,arpeggio,arpeggio,arpeggio,arpegio,arpejo,arpegiu,arpeggio,arpège,arpeggio,arpeggio,arpeggio,arpeggio
 music,bar,bar,bar,bar,bar,bar,bar,bar,bar,bar,bar,pasek,bár,μπαρ,bar
@@ -4206,7 +4206,7 @@ occupations,clerk,clerk,sachbearbeiter,klerk,úředník,impiegato,oficinista,esc
 occupations,coach,coach,coach,coach,trenér,allenatore,entrenador,treinador,antrenor,træner,entraîneur,trener,edző,προπονητής,trener
 occupations,cobbler,cobbler,cobbler,schoenmaker,cobbler,ciabattino,zapatero,sapateiro,cobbler,skomager,cordonnier,szewc,cobbler,cobbler,skomaker
 occupations,composer,composer,komponist,componist,skladatel,compositore,compositor,compositor,compozitor,komponist,compositeur,kompozytor,zeneszerző,συνθέτης,komponist
-occupations,concierge,concierge,.,conciërge,concierge,concierge,conserje,concierge,concierge,concierge,concierge,konsjerż,concierge,θυρωρός,concierge
+occupations,concierge,concierge,,conciërge,concierge,concierge,conserje,concierge,concierge,concierge,concierge,konsjerż,concierge,θυρωρός,concierge
 occupations,consul,consul,konsul,consul,konzul,console,cónsul,cônsul,consul,konsul,consul,konsul,konzul,πρόξενος,konsul
 occupations,contractor,contractor,auftragnehmer,aannemer,dodavatel,appaltatore,contratista,contratante,antreprenor,entreprenør,entrepreneur,wykonawca,vállalkozó,εργολάβος,entreprenør
 occupations,cook,cook,kochen,kok,vařit,cuoco,cocinero,cozinheiro,bucătar,lave mad,cuisiner,kucharz,szakács,μάγειρας,kokk
@@ -4575,7 +4575,7 @@ personal qualities,energetic,energetic,energisch,energiek,energický,energetico,
 personal qualities,enterprising,enterprising,unternehmerisch,ondernemend,podnikavé,intraprendente,emprendedor,empreendedor,întreprinzător,initiativrig,entreprenant,przedsiębiorczy,vállalkozó szellemű,επιχειρηματική,initiativrik
 personal qualities,enthusiastic,enthusiastic,begeistert,enthousiast,nadšený,entusiasta,entusiasta,entusiasta,entuziast,entusiastisk,enthousiaste,entuzjastyczny,lelkes,ενθουσιώδης,entusiastisk
 personal qualities,evasive,evasive,ausweichend,ontwijkend,vyhýbavý,evasivo,evasiva,evasivo,evaziv,undvigende,évasif,wymijający,kitérő,αποφυγή,unnvikende
-personal qualities,eventempered,eventempered,.,eventemperd,eventempered,evento-permesso,eventempered,temperado,eventempered,tempereret,eventempered,eventempered,eventempered,eventempered,jevntemperert
+personal qualities,eventempered,eventempered,,eventemperd,eventempered,evento-permesso,eventempered,temperado,eventempered,tempereret,eventempered,eventempered,eventempered,eventempered,jevntemperert
 personal qualities,exacting,exacting,anspruchsvoll,veeleisend,náročné,esigente,exigente,exigente,exigent,krævende,exigeant,wymagający,igényes,απαιτητικό,krevende
 personal qualities,excellent,excellent,ausgezeichnet,uitstekend,vynikající,eccellente,excelente,excelente,excelent,fremragende,excellent,doskonały,kiváló,εξαιρετικό,utmerket
 personal qualities,excitable,excitable,erregbar,prikkelbaar,vzrušující,eccitabile,excitable,excitável,agitată,ophidset,excitable,pobudliwy,izgatott,ευερέθιστο,opphisselig
@@ -4657,7 +4657,7 @@ personal qualities,levelheaded,levelheaded,nüchtern,nuchter,vyrovnaný,testa al
 personal qualities,listless,listless,lustlos,lusteloos,apatický,svogliato,desganado,indiferente,apatic,sløv,apathique,apatyczny,kedvetlen,άτονη,apatisk
 personal qualities,lithe,lithe,geschmeidig,lenig,lithe,luminoso,ágil,ágil,ușor,smidig,éclairé,lekki,hajlékony,λυγερή,smidig
 personal qualities,lively,lively,lebendig,levendig,živé,vivace,animado,animado,vioi,livlig,vif,żywy,élénk,ζωντανή,livlig
-personal qualities,local,local,.,lokale,místní,locale,local,local,locale,lokal,local,lokalny,helyi,τοπικό,lokale
+personal qualities,local,local,,lokale,místní,locale,local,local,locale,lokal,local,lokalny,helyi,τοπικό,lokale
 personal qualities,logical,logical,logisch,logisch,logické,logico,lógico,lógico,logic,logisk,logique,logiczny,logikai,λογικό,logisk
 personal qualities,longwinded,longwinded,langatmig,langdradig,dlouhatánský,prolisso,largo y tendido,prolixo,îndelungat,langhåret,longuet,rozwlekły,hosszadalmas,μακρόσυρτο,langtekkelig
 personal qualities,lovable,lovable,liebenswert,lieve,roztomilý,amabile,adorable,adorável,drăguț,elskelig,adorable,uroczy,szerethető,αξιαγάπητο,elskelig
@@ -4667,9 +4667,9 @@ personal qualities,maternal,maternal,mütterlicherseits,maternaal,mateřský,mat
 personal qualities,mature,mature,reife,volwassen,zralé,maturo,madura,maduro,matur,moden,mature,dojrzały,érett,ώριμο,moden
 personal qualities,mean,mean,mittlere,gemiddelde,průměr,media,media,média,înseamnă,betyder,moyen,średni,átlagos,μέσος όρος,mener
 personal qualities,meddlesome,meddlesome,aufdringlich,bemoeizieke,všetečný,impiccione,entrometido,intrometido,nepăsător,påtrængende,maladroit,uciążliwy,tolakodó,ενοχλητικό,påtrengende
-personal qualities,mercurial,mercurial,.,kwikhoudend,mercurial,mercuriale,mercurial,mercurial,mercurial,mercurial,mercuriale,rtęć,mercurial,mercurial,mercurial
+personal qualities,mercurial,mercurial,,kwikhoudend,mercurial,mercuriale,mercurial,mercurial,mercurial,mercurial,mercuriale,rtęć,mercurial,mercurial,mercurial
 personal qualities,methodical,methodical,methodisch,methodisch,metodické,metodico,metódico,metódico,metodic,metodisk,méthodique,metodyczny,módszeres,μεθοδικότητα,metodisk
-personal qualities,meticulous,meticulous,.,nauwgezet,pečlivost,meticoloso,meticuloso,meticuloso,meticulos,omhyggelig,méticuleux,skrupulatny,aprólékos,σχολαστική,omhyggelig
+personal qualities,meticulous,meticulous,,nauwgezet,pečlivost,meticoloso,meticuloso,meticuloso,meticulos,omhyggelig,méticuleux,skrupulatny,aprólékos,σχολαστική,omhyggelig
 personal qualities,mild,mild,mild,mild,mírné,mite,suave,suave,ușoară,mild,doux,łagodny,enyhe,ήπια,mild
 personal qualities,miserable,miserable,miserabel,ellendig,mizerný,miserabile,miserable,miserável,mizerabil,elendig,misérable,nieszczęśliwy,nyomorult,άθλια,elendig
 personal qualities,modest,modest,bescheiden,bescheiden,skromné,modesto,modesto,modesto,modest,beskeden,modeste,skromny,szerény,μετριοπαθής,beskjeden
@@ -4799,7 +4799,7 @@ personal qualities,sweet,sweet,süß,zoete,sladké,dolce,dulce,doce,dulce,sød,d
 personal qualities,tactful,tactful,taktvoll,tactvol,taktní,tattile,con tacto,diplomático,cu tact,taktfuld,avec tact,taktowny,tapintatos,διακριτικό,taktfull
 personal qualities,tactless,tactless,taktlos,tactloos,netaktní,senza tatto,sin tacto,sem tato,lipsit de tact,taktløs,sans tact,nietaktowny,tapintatlan,άκομψο,taktløs
 personal qualities,talented,talented,talentiert,getalenteerd,talentovaný,di talento,talento,talentoso,talentat,talentfuld,talentueux,utalentowany,tehetséges,ταλαντούχος,talentfull
-personal qualities,testy,testy,.,prikkelbaar,testy,stizzoso,testy,irritadiço,încordat,irritabel,timide,testy,ingerült,testy,irritabel
+personal qualities,testy,testy,,prikkelbaar,testy,stizzoso,testy,irritadiço,încordat,irritabel,timide,testy,ingerült,testy,irritabel
 personal qualities,thinking,thinking,denken,denkend,myšlení,pensiero,pensando,pensamento,gândire,tænker,réflexion,myślenie,gondolkodás,σκέψη,tenkning
 personal qualities,thoughtful,thoughtful,nachdenklich,attent,promyšlené,riflessivo,atento,atencioso,grijuliu,tankevækkende,réfléchi,przemyślany,átgondolt,στοχαστικό,gjennomtenkt
 personal qualities,thoughtless,thoughtless,gedankenlos,gedachteloos,bezmyšlenkovité,sconsiderato,irreflexivo,irrefletido,nepăsătoare,tankeløs,irréfléchi,bezmyślny,meggondolatlan,απερίσκεπτη,tankeløs
@@ -5496,7 +5496,7 @@ shopping,cashier,cashier,kassierer,kassier,pokladní,cassiere,cajero,caixa,casie
 shopping,checkout,checkout,zur kasse,kassa,pokladna,cassa,checkout,checkout,checkout,kasse,caisse,kasa,pénztár,checkout,kassa
 shopping,clearance,clearance,freigabe,opruiming,odbavení,autorizzazione,liquidación,apuramento,eliberare,fri bane,dégagement,luz,clearance,εκκαθάριση,klarering
 shopping,color,color,farbe,kleur,barva,colore,color,cor,culoare,farve,couleur,kolor,szín,χρώμα,farge
-shopping,commission,commission,.,commissie,komise,commissione,comisión,comissão,comisie,kommission,commission,prowizja,jutalék,προμήθεια,provisjon
+shopping,commission,commission,,commissie,komise,commissione,comisión,comissão,comisie,kommission,commission,prowizja,jutalék,προμήθεια,provisjon
 shopping,comparison,comparison,vergleich,vergelijking,porovnání,confronto,comparación,comparação,comparație,sammenligning,comparaison,porównanie,összehasonlítás,σύγκριση,sammenligning
 shopping,coupon,coupon,coupon,coupon,kupón,cedola,cupón,cupão,cupon,kupon,coupon,kupon,kupon,κουπόνι,kupong
 shopping,credit,credit,kredit,krediet,úvěr,credito,crédito,crédito,credit,kredit,crédit,kredyt,hitel,πίστωση,kreditt
@@ -5566,7 +5566,7 @@ shopping,refund,refund,erstattung,terugbetaling,vrácení peněz,rimborso,reembo
 shopping,refurbished,refurbished,überholt,gereviseerd,repasované,rinnovato,reacondicionado,renovado,renovat,renoveret,remis à neuf,odnowiony,felújított,ανακαινισμένο,pusset opp
 shopping,retail therapy,retail therapy,einkaufstherapie,retailtherapie,maloobchodní terapie,terapia al dettaglio,terapia de compras,terapia de retalho,terapie cu amănuntul,detailterapi,thérapie par le détail,terapia detaliczna,kiskereskedelmi terápia,λιανική θεραπεία,detaljhandelsterapi
 shopping,return policy,return policy,rückgabepolitik,retourbeleid,pravidla pro vracení zboží,politica di restituzione,política de devoluciones,política de devolução,politica de returnare,returpolitik,politique de retour,polityka zwrotów,visszatérítési politika,πολιτική επιστροφών,retningslinjer for retur
-shopping,returns,returns,gibt  zurück.,geeft  terug.,vrací,ritorni,devuelve,devoluções,returnări,afkast,retours,zwroty,visszatér,επιστρέφει,avkastning
+shopping,returns,returns,gibt  zurück,geeft  terug,vrací,ritorni,devuelve,devoluções,returnări,afkast,retours,zwroty,visszatér,επιστρέφει,avkastning
 shopping,sale,sale,verkauf,verkoop,prodej,vendita,venta,venda,vânzare,salg,vente,sprzedaż,eladás,πώληση,salg
 shopping,sales,sales,verkauf,verkoop,prodej,vendite,ventas,vendas,vânzări,salg,ventes,sprzedaż,értékesítés,πωλήσεις,salg
 shopping,sample,sample,muster,voorbeeld,vzorek,campione,muestra,amostra,eșantion,prøve,échantillon,próbka,minta,δείγμα,prøve
@@ -5714,14 +5714,14 @@ sports,heptathlon,heptathlon,siebenkampf,zevenkamp,sedmiboj,eptathlon,heptathlon
 sports,high jump,high jump,hochsprung,hoge sprong,skok do výšky,salto in alto,salto de altura,salto em altura,săritura în înălțime,højdespring,saut en hauteur,skok wzwyż,magasugrás,άλμα σε ύψος,høydehopp
 sports,hitter,hitter,hitter,slagvrouw,hitter,battitore,bateador,batedor,hitter,slagmand,frappeur,hitter,hitter,hitter,slagmann
 sports,hockey,hockey,eishockey,hockey,hokej,hockey,hockey,hóquei,hochei,hockey,hockey,hokej,hoki,χόκεϊ,hockey
-sports,holeinone,holeinone,.,holeinone,holeinone,bucchione,holeinone,um buraco,holeinone,hullet,holeinone,holeinone,holeinone,holeinone,holeinone
+sports,holeinone,holeinone,,holeinone,holeinone,bucchione,holeinone,um buraco,holeinone,hullet,holeinone,holeinone,holeinone,holeinone,holeinone
 sports,home,home,startseite,home,home,casa,inicio,casa,acasă,hjem,domicile,dom,home,σπίτι,hjem
 sports,home plate,home plate,schlagmal,thuisplaat,domovská deska,casa base,home plate,prato principal,placa de start,hjemmebane,plaque d'immatriculation,płyta główna,hazai pálya,αρχική πλάκα,hjemmeplaten
 sports,home run,home run,homerun,homerun,home run,fuoricampo,jonrón,home run,home run,homerun,course à domicile,home run,hazafutás,home run,homerun
 sports,home team,home team,heimteam,thuisploeg,domácí tým,squadra di casa,equipo local,equipa da casa,echipa gazdă,hjemmeholdet,équipe locale,drużyna gospodarzy,hazai csapat,γηπεδούχος ομάδα,hjemmelag
 sports,hoop,hoop,reif,hoepel,obruč,cerchio,aro,aro,cerc,bøjle,cerceau,obręcz,karika,στεφάνι,ring
 sports,horseshoes,horseshoes,hufeisen,hoefijzers,podkovy,ferri di cavallo,herraduras,ferraduras,potcoave,hestesko,fers à cheval,podkowy,patkók,πέταλα,hestesko
-sports,huddle,huddle,.,huddle,huddle,calca,huddle,juntar-se,adunătură,samles,caucus,huddle,bujdosás,huddle,klynge
+sports,huddle,huddle,,huddle,huddle,calca,huddle,juntar-se,adunătură,samles,caucus,huddle,bujdosás,huddle,klynge
 sports,hurdle,hurdle,hürde,hindernis,překážka,ostacolo,valla,obstáculo,obstacol,forhindring,obstacle,przeszkoda,akadály,εμπόδιο,hindring
 sports,ice hockey,ice hockey,eishockey,ĳshockey,lední hokej,hockey su ghiaccio,hockey sobre hielo,hóquei no gelo,hochei pe gheață,ishockey,hockey sur glace,hokej na lodzie,jégkorong,χόκεϊ επί πάγου,ishockey
 sports,ice rink,ice rink,eislaufbahn,ijsbaan,ledová plocha,pista di ghiaccio,pista de hielo,pista de gelo,patinoar,skøjtebane,patinoire,lodowisko,jégpálya,παγοδρόμιο,skøytebane
@@ -5790,7 +5790,7 @@ sports,pitch,pitch,stellplatz,standplaats,rozteč,passo,paso,passo,pitch,tonehø
 sports,pitcher,pitcher,krug,werper,džbán,lanciatore,lanzador,cântaro,ulcior,kande,lanceur,miotacz,dobó,στάμνα,mugge
 sports,play,play,spielen,spelen,přehrát,gioco,jugar,jogar,joc,spille,jouer,grać,játsszon,παίξτε,spille
 sports,player,player,spieler,speler,hráč,giocatore,jugador,jogador,jucător,spiller,joueur,gracz,játékos,παίκτης,spiller
-sports,playing,playing,spielen,spelen,hraní,giocare,jugando a,jogar,joc,spiller,jouer,gra,a  oldalon játszva.,παίζοντας,spiller
+sports,playing,playing,spielen,spelen,hraní,giocare,jugando a,jogar,joc,spiller,jouer,gra,a  oldalon játszva,παίζοντας,spiller
 sports,playoffs,playoffs,playoffs,play-offs,play-off,playoff,playoffs,playoffs,playoff-uri,slutspil,éliminatoires,playoffy,rájátszás,playoffs,sluttspill
 sports,pogo stick,pogo stick,springstab,pogo stick,pogo tyč,trampolo,palo de pogo,pogo stick,băț pogo,pogo stick,bâton de pogo,drążek pogo,pogó bot,ραβδί πόγκο,pogo stick
 sports,pole,pole,stange,paal,pól,palo,poste,pólo,pol,stang,pôle,słup,pólus,πόλος,stolpe
@@ -5820,7 +5820,7 @@ sports,row,row,zeile,rij,řádek,fila,fila,fila,rând,række,rangée,rząd,sor,�
 sports,rower,rower,ruderer,roeier,veslař,vogatore,remo,remador,vâslaș,roer,rameur,wioślarz,evező,κωπηλάτης,roer
 sports,rowing,rowing,rudern,roeien,veslování,canottaggio,remo,remo,canotaj,roning,aviron,wioślarstwo,evezés,κωπηλασία,roing
 sports,rugby,rugby,rugby,rugby,rugby,rugby,rugby,râguebi,rugby,rugby,rugby,rugby,rögbi,ράγκμπι,rugby
-sports,run,run,laufen.,uitvoeren,spustit,corsa,ejecute,correr,rulare,løbe,courir,bieg,fuss,τρέχει,løpe
+sports,run,run,laufen,uitvoeren,spustit,corsa,ejecute,correr,rulare,løbe,courir,bieg,fuss,τρέχει,løpe
 sports,runner,runner,läufer,hardloper,běžec,corridore,corredor,corredor,alergător,løber,coureur,biegacz,futó,δρομέας,løper
 sports,running,running,läuft,hardlopen,běh,corsa,corriendo,em funcionamento,funcționare,løb,en cours d'exécution,bieganie,futó,τρέχει,løpende
 sports,sailing,sailing,segeln,zeilen,plachtění,vela,navegar,navegação,navigație,sejlads,voile,żeglarstwo,vitorlázás,ιστιοπλοΐα,seiling
@@ -5952,7 +5952,7 @@ transportations,bus,bus,bus,bus,autobus,autobus,autobús,autocarro,autobuz,bus,b
 transportations,cab,cab,taxi,cabine,kabina,cabina,cabina,táxi,cabină,taxi,cabine,kabina,fülke,καμπίνα,drosje
 transportations,cabin cruiser,cabin cruiser,kabinenkreuzer,motorkruiser,kajutový křižník,cabinato,crucero en camarote,cabina de cruzeiro,cabină de croazieră,kabinecruiser,bateau de croisière à cabine,krążownik kabinowy,kabinos cirkáló,κρουαζιερόπλοιο με καμπίνα,cabincruiser
 transportations,cable car,cable car,seilbahn,kabelbaan,lanovka,funivia,teleférico,teleférico,telecabină,svævebane,téléphérique,kolejka linowa,drótkötélpálya,τελεφερίκ,taubane
-transportations,caboose,caboose,.,kombuis,kabina,vagone,furgón de cola,vagão,vagoane,kupeen,wagon de queue,kabina,fülke,caboose,caboose
+transportations,caboose,caboose,,kombuis,kabina,vagone,furgón de cola,vagão,vagoane,kupeen,wagon de queue,kabina,fülke,caboose,caboose
 transportations,camper,camper,camper,camper,karavan,camper,caravana,campista,rulota,autocamper,campeur,kamper,lakókocsi,τροχόσπιτο,bobil
 transportations,canoe,canoe,kanu,kano,kanoe,canoa,canoa,canoa,canoe,kano,canoë,kajak,kenu,κανό,kano
 transportations,car,car,auto,auto,auto,auto,coche,automóvel,mașină,bil,voiture,samochód,autó,αυτοκίνητο,bil
@@ -5967,7 +5967,7 @@ transportations,chairlift,chairlift,sessellift,stoeltjeslift,lanovka,seggiovia,t
 transportations,chariot,chariot,streitwagen,wagen,vozatajství,carro,carro,carruagem,car,vogn,char,rydwan,szekér,άρμα,stridsvogn
 transportations,chopper,chopper,chopper,helikopter,vrtulník,elicottero,picador,helicóptero,chopper,helikopter,hacheur,chopper,chopper,chopper,helikopter
 transportations,clipper ship,clipper ship,klipperschiff,klipper,kliprová loď,nave clipper,clíper,navio clipper,navă clipper,klipperskib,navire clipper,kliper,klipper hajó,καράβι κλιπ,klipperskip
-transportations,clunker,clunker,.,clunker,clunker,clunker,clunker,clunker,rablă,klodsmajor,benne à ordures,clunker,roncs,clunker,klunker
+transportations,clunker,clunker,,clunker,clunker,clunker,clunker,clunker,rablă,klodsmajor,benne à ordures,clunker,roncs,clunker,klunker
 transportations,coach,coach,coach,coach,trenér,allenatore,entrenador,treinador,antrenor,træner,entraîneur,trener,edző,προπονητής,trener
 transportations,combine,combine,mähdrescher,combineren,kombinovat,combinare,combinar,combinar,combină,kombinere,combiner,połączenie,kombinálni,συνδυάστε,kombinere
 transportations,compact car,compact car,kleinwagen,compacte auto,kompaktní vůz,auto compatta,coche compacto,carro compacto,mașină compactă,kompakt bil,voiture compacte,samochód kompaktowy,kompakt autó,συμπαγές αυτοκίνητο,kompaktbil
@@ -6051,7 +6051,7 @@ transportations,hydrofoil,hydrofoil,tragflächenboot,draagvleugelboot,hydrofoil,
 transportations,hydroplane,hydroplane,wasserflugzeug,watervliegtuig,hydroplán,idrovolante,hidroavión,hidroavião,hidroplan,vandflyver,hydravion,hydroplan,hidroplán,υδροπλάνο,vannfly
 transportations,ice boat,ice boat,eisboot,ijsboot,ledová loď,barca a ghiaccio,barco de hielo,barco de gelo,barcă de gheață,isbåd,bateau de glace,łódź lodowa,jéghajó,σκάφος με πάγο,isbåt
 transportations,ice breaker,ice breaker,eisbrecher,ijsbreker,prolomení ledů,rompighiaccio,rompehielos,quebra-gelo,spărgător de gheață,isbryder,brise-glace,lodołamacz,jégtörő,παγοθραυστικό,isbryter
-transportations,jalopy,jalopy,.,jalopy,jalopy,tettuccio,cacharro,calhambeque,jalopy,jalapen,baladeur,jalopy,jalopy,jalopy,jalopy
+transportations,jalopy,jalopy,,jalopy,jalopy,tettuccio,cacharro,calhambeque,jalopy,jalapen,baladeur,jalopy,jalopy,jalopy,jalopy
 transportations,jeep,jeep,jeep,jeep,jeep,jeep,jeep,jipe,jeep,jeep,jeep,jeep,dzsip,τζιπ,jeep
 transportations,jet,jet,jet,jet,jet,getto,jet,jato,jet,jet,jet,strumień,jet,jet,jet
 transportations,jet boat,jet boat,jetboot,straalboot,tryskový člun,moto d'acqua,lancha motora,barco a jato,barcă cu reacție,jetbåd,bateau à réaction,łódź odrzutowa,sugárhajtású hajó,τζετ μποτ,jetbåt
@@ -6420,7 +6420,7 @@ weather,snowflake,snowflake,schneeflocke,sneeuwvlok,sněhová vločka,fiocco di 
 weather,snowsquall,snowsquall,schneesicher,sneeuwbal,snowsquall,nevequalcosa,snowsquall,nevado,snowsquall,snowsquall,boule de neige,snowsquall,snowsquall,snowsquall,snøkall
 weather,snowstorm,snowstorm,schneesturm,sneeuwstorm,sněhová bouře,tempesta di neve,tormenta de nieve,tempestade de neve,furtună de zăpadă,snestorm,tempête de neige,burza śnieżna,hóvihar,χιονοθύελλα,snøstorm
 weather,spring,spring,feder,voorjaar,jaro,primavera,primavera,primavera,primăvară,forår,printemps,wiosna,tavasz,άνοιξη,vår
-weather,squall,squall,.,bui,squall,squallore,borrasca,tempestade,vijelie,bølge,bourrasque,szkwał,squall,squall,vindkast
+weather,squall,squall,,bui,squall,squallore,borrasca,tempestade,vijelie,bølge,bourrasque,szkwał,squall,squall,vindkast
 weather,squall line,squall line,böenlinie,buienlijn,bouřková linie,linea di squall,línea de borrasca,linha de tempestade,linie de vijelie,squall-linje,ligne de grains,linia szkwału,viharos szél,γραμμή καταιγίδας,bygelinje
 weather,st elmos fire,st elmos fire,brand von st. elmos,st elmos brand,požár v st elmos,incendio di st elmos,incendio de san elmo,incêndio em st elmos,incendiu st elmos,st elmos brand,incendie de st elmos,pożar w st elmos,st elmos tűz,φωτιά στο st elmos,st elmos brann
 weather,stationary front,stationary front,stationäre front,vast front,stacionární přední část,fronte fisso,frontal fijo,frente fixa,față staționară,stationær front,front stationnaire,stacjonarny przód,álló front,σταθερό μέτωπο,stasjonær front
