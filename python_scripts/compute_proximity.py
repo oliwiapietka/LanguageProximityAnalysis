@@ -1,5 +1,8 @@
 import Levenshtein
 import os
+import pandas as pd
+from itertools import combinations
+
 
 INPUT_FILE = "../data/translated_words.csv"
 OUTPUT_DIR = "../data/"
@@ -20,3 +23,36 @@ def normalized_levenshtein_similarity(s1, s2):
         return 1.0
     distance = Levenshtein.distance(s1, s2)
     return 1.0 - (distance / max_len)
+
+def calculate_global_proximity(df):
+    """Calculates the global, averaged similarity between languages."""
+    print("--- Starting calculation of global language proximity ---")
+    languages = [col for col in df.columns if col not in ['topic', 'source_word']]
+    
+    results = []
+    for lang1, lang2 in combinations(languages, 2):
+        similarities = df.apply(
+            lambda row: normalized_levenshtein_similarity(row[lang1], row[lang2]),
+            axis=1
+        )
+        avg_similarity = similarities.mean()
+        
+        results.append({
+            "Language1": lang1,
+            "Language2": lang2,
+            "Similarity": avg_similarity
+        })
+        
+    result_df = pd.DataFrame(results)
+    result_df.to_csv(OUTPUT_GLOBAL, index=False)
+    print(f"Saved global proximity to file: {OUTPUT_GLOBAL}\n")
+    return result_df
+
+
+if __name__ == "__main__":
+    if not os.path.exists(INPUT_FILE):
+        print(f"ERROR: Input file '{INPUT_FILE}' was not found.")
+    else:
+        main_df = pd.read_csv(INPUT_FILE)
+        
+        global_results_df = calculate_global_proximity(main_df)
