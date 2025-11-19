@@ -127,7 +127,7 @@ animals,carnivora,carnivora,carnivora,vleeseters,carnivora,carnivora,carnívora,
 animals,carpenter ant,carpenter ant,zimmermannsameise,timmermier,mravenec tesařík,formica carpentiere,hormiga carpintera,formiga carpinteira,furnică tâmplar,tømrermyre,fourmi charpentière,mrówka cieśla,ácshangya,μυρμήγκι ξυλουργού,snekkermaur
 animals,cassowary,cassowary,kasuar,kasuaris,kasuár,casuario,casuario,casuar,cassowary,kasuar,casoar,kazuar,kaszkvaári,κασοβάρι,kasuar
 animals,cat,cat,katze,kat,cat,gatto,cat,gato,pisică,kat,chat,kot,cat,cat,katt
-animals,catamount,catamount,,catamount,catamount,catamount,catamount,catamonte,catamount,katamount,mont du chat,katamount,catamount,catamount,catamount
+animals,catamount,catamount,kataberg,catamount,catamount,catamount,catamount,catamonte,catamount,katamount,mont du chat,katamount,catamount,catamount,catamount
 animals,caterpillar,caterpillar,raupe,rups,housenka,bruco,oruga,lagarta,omidă,larve,chenille,gąsienica,hernyó,κάμπια,larve
 animals,cattle,cattle,vieh,vee,dobytek,bestiame,ganado,gado,vite,kvæg,bétail,bydło,szarvasmarha,βοοειδή,kveg
 animals,cavy,cavy,meerschweinchen,cavy,cavy,ondina,cavy,galinha,cavy,en kanin,caillebotis,cavy,cavy,cavy,bølingen
@@ -657,7 +657,7 @@ animals,skunk,skunk,stinktier,stinkdier,skunk,puzzola,mofeta,gambá,sconcs,stink
 animals,sloth,sloth,faultier,luiaard,lenochod,bradipo,perezoso,preguiça,lene,dovendyr,paresseux,lenistwo,lajhár,νωθρότητα,latskap
 animals,slow worm,slow worm,blindschleiche,langzame worm,pomalý červ,verme lento,gusano lento,verme lento,vierme lent,langsom orm,ver lent,powolny robak,lassú féreg,αργό σκουλήκι,langsom orm
 animals,slug,slug,schnecke,slak,slimák,lumaca,babosa,lesma,melc,snegl,limace,ślimak,csiga,γυμνοσάλιαγκας,snegl
-animals,smilodon,smilodon,,smilodon,smilodon,smilodonte,smilodon,smilodon,smilodon,smilodon,smilodon,smilodon,smilodon,smilodon,smilodon
+animals,smilodon,smilodon,smilodon,smilodon,smilodon,smilodonte,smilodon,smilodon,smilodon,smilodon,smilodon,smilodon,smilodon,smilodon,smilodon
 animals,snail,snail,schnecke,slak,šnek,lumaca,caracol,caracol,melc,snegl,escargot,ślimak,csiga,σαλιγκάρι,snegl
 animals,snake,snake,schlange,slang,had,serpente,serpiente,serpente,șarpe,slange,serpent,wąż,kígyó,φίδι,slange
 animals,snapper,snapper,schnapper,snapper,snapper,dentice,pargo,pargo,snapper,snapper,vivaneau,lucjan,snapper,snapper,snapper
@@ -882,7 +882,7 @@ body,hip,hip,hip,heup,kyčelní kloub,anca,cadera,anca,șold,hofte,hanche,biodro
 body,humerus,humerus,humerus,humerus,humerus,omero,húmero,úmero,humerus,overarmsknoglen,humérus,kość ramienna,felkarcsont,βραχιόνιο,humerus
 body,immune system,immune system,immunsystem,immuunsysteem,imunitní systém,sistema immunitario,sistema inmunitario,sistema imunitário,sistemul imunitar,immunforsvaret,système immunitaire,układ odpornościowy,immunrendszer,ανοσοποιητικό σύστημα,immunforsvaret
 body,index finger,index finger,zeigefinger,wijsvinger,ukazováček,dito indice,dedo índice,dedo indicador,degetul arătător,pegefinger,l'index,palec wskazujący,mutatóujj,δείκτης,pekefinger
-body,instep,instep,rist,wreef,nárt,collo del piede,empeine,peito do pé,călcâi,vrist,cou-de-pied,podbicie,lábujjhegy,,vrist
+body,instep,instep,rist,wreef,nárt,collo del piede,empeine,peito do pé,călcâi,vrist,cou-de-pied,podbicie,lábujjhegy,φόδρα,vrist
 body,intestines,intestines,därme,darmen,střeva,intestino,intestinos,intestinos,intestine,tarmene,intestins,jelita,belek,έντερα,tarmer
 body,iris,iris,iris,iris,iris,iris,iris,íris,iris,iris,iris,tęczówka,írisz,ίριδα,iris
 body,jaw,jaw,kiefer,kaak,čelist,mascella,mandíbula,mandíbula,falcă,kæbe,mâchoire,szczęka,állkapocs,σιαγόνα,kjeve
@@ -1015,7 +1015,7 @@ business,cold call,cold call,unangemeldeter besuch,cold call,studený hovor,chia
 business,collateral,collateral,sicherheiten,zekerheid,zajištění,collaterale,garantía,colaterais,colateral,sikkerhedsstillelse,garantie,zabezpieczenie,biztosíték,εξασφαλίσεις,sikkerhet
 business,commerce,commerce,handel,handel,obchod,commercio,comercio,comércio,comerț,handel,commerce,handel,kereskedelem,εμπόριο,handel
 business,commercial,commercial,kommerziell,commercieel,komerční,commerciale,comercial,comercial,comerciale,reklamefilm,commercial,komercyjny,kereskedelmi,εμπορικό,reklamefilm
-business,commission,commission,,commissie,komise,commissione,comisión,comissão,comisie,kommission,commission,prowizja,jutalék,προμήθεια,provisjon
+business,commission,commission,kommission,commissie,komise,commissione,comisión,comissão,comisie,kommission,commission,prowizja,jutalék,προμήθεια,provisjon
 business,commodity,commodity,ware,grondstof,komodita,merce,mercancía,produto de base,marfă,råvare,produit de base,towar,árucikk,εμπόρευμα,råvare
 business,company,company,unternehmen,bedrijf,společnost,azienda,empresa,empresa,companie,selskab,entreprise,firma,cég,εταιρεία,selskap
 business,competition,competition,wettbewerb,wedstrijd,soutěž,concorso,concurso,concorrência,concurență,konkurrence,concurrence,konkurencja,verseny,διαγωνισμός,konkurranse
@@ -1489,7 +1489,7 @@ clothes,tie,tie,krawatte,das,kravata,cravatta,corbata,empate,cravată,slips,crav
 clothes,tie clip,tie clip,krawattenspange,dasspeld,spona na kravatu,fermacravatte,alfiler de corbata,clipe de gravata,clemă pentru cravată,slipseklemme,pince à cravate,spinka do krawata,nyakkendőcsipesz,κλιπ γραβάτας,slipsklemme
 clothes,tights,tights,strumpfhosen,panty,punčocháče,collant,medias,collants,colanți,strømpebukser,collants,rajstopy,harisnyanadrág,καλσόν,strømpebukser
 clothes,toga,toga,toga,toga,toga,toga,toga,toga,togă,toga,toge,toga,tóga,τόγκα,toga
-clothes,togs,togs,,togs,oblečení,abiti da bagno,togs,calças de ganga,togi,tøj,vêtements de sport,togi,togs,togs,klær
+clothes,togs,togs,badehose,togs,oblečení,abiti da bagno,togs,calças de ganga,togi,tøj,vêtements de sport,togi,togs,togs,klær
 clothes,top,top,top,top,top,top,top,topo,top,top,sommet,top,top,top,topp
 clothes,top coat,top coat,deckschicht,toplaag,vrchní vrstva,top coat,capa final,revestimento superior,strat de top,top coat,couche de finition,top coat,fedőlakk,τελική επίστρωση,toppstrøk
 clothes,top hat,top hat,zylinderhut,hoge hoed,vrchní klobouk,cappello a cilindro,sombrero de copa,cartola,pălărie de top,høj hat,chapeau haut de forme,cylinder,cilinder,καπέλο,flosshatt
@@ -1532,7 +1532,7 @@ clothes,woolens,woolens,wolle,wollen,vlny,lane,lanas,lãs,lână,uldtøj,lainage
 clothes,wrap,wrap,wickeln,wikkel,zabalit,involucro,envolver,invólucro,ambalaj,indpakning,envelopper,owijka,wrap,wrap,innpakning
 clothes,xback dress,xback dress,xback kleid,xback jurk,xback šaty,abito xback,vestido xback,vestido xback,rochie xback,xback-kjole,robe xback,sukienka xback,xback ruha,xback φόρεμα,xback kjole
 clothes,yoga pants,yoga pants,yogahose,yogabroek,kalhoty na jógu,pantaloni da yoga,pantalones de yoga,calças de ioga,pantaloni yoga,yogabukser,pantalon de yoga,spodnie do jogi,jóganadrág,παντελόνι γιόγκα,yogabukser
-clothes,yoke,yoke,joch,juk,jařmo,giogo,yugo,jugo,jug,åg,joug,jarzmo,,ζυγός,åk
+clothes,yoke,yoke,joch,juk,jařmo,giogo,yugo,jugo,jug,åg,joug,jarzmo,iga,ζυγός,åk
 clothes,zipper,zipper,reißverschluss,rits,zip,cerniera,cremallera,fecho de correr,fermoar,lynlås,fermeture éclair,zamek błyskawiczny,cipzár,φερμουάρ,glidelås
 clothes,zipup hoodie,zipup hoodie,kapuzenpullover mit reißverschluss,zip-up hoodie,mikina s kapucí na zip,felpa con cappuccio con zip,sudadera con cremallera,casaco com capuz com fecho de correr,hanorac cu fermoar,hættetrøje med lynlås,sweat à capuche zippé,bluza z kapturem,zipup kapucnis pulóver,κουκούλα με φερμουάρ,hettegenser med glidelås
 clothes,zoot suit,zoot suit,zoot-suit,zoötpak,oblek zoot suit,zoot suit,traje zoot,fato de treino,costum zoot,zoot suit,costume de zoot,kombinezon zoot,zoot suit,κουστούμι με παντελόνι,zoot dress
@@ -1965,7 +1965,7 @@ cooking,heat,heat,wärme,warmte,teplo,calore,calor,calor,căldură,varme,chaleur
 cooking,hull,hull,rumpf,romp,trup,scafo,casco,casco,cocă,skrog,coque,kadłub,hajótest,κύτος,skrog
 cooking,ice,ice,eis,ijs,led,ghiaccio,hielo,gelo,gheață,is,glace,lód,jég,πάγος,is
 cooking,infuse,infuse,aufgießen,infuseren,infuse,infondere,infundir,infundir,infuzați,indgyde,infuser,infuzja,infúzió,έγχυση,tilføre
-cooking,jell,jell,,jell,žloutek,gelatina,jell,gelatina,jeleu,gelé,gelée,żel,kocsonya,ζελέ,gelé
+cooking,jell,jell,gelee,jell,žloutek,gelatina,jell,gelatina,jeleu,gelé,gelée,żel,kocsonya,ζελέ,gelé
 cooking,juice,juice,saft,sap,džus,succo di frutta,zumo,sumo,suc,juice,jus,sok,juice,χυμός,juice
 cooking,julienne,julienne,julienne,julienne,julienne,julienne,julienne,juliana,julienne,julienne,julienne,julienne,julienne,julienne,julienne
 cooking,knead,knead,kneten,kneden,hníst,impastare,amasar,amassar,frământați,ælte,pétrir,ugniatać,gyúrja,ζυμώνω,kna
@@ -2283,7 +2283,7 @@ driving,heat,heat,wärme,warmte,teplo,calore,calor,calor,căldură,varme,chaleur
 driving,hull,hull,rumpf,romp,trup,scafo,casco,casco,cocă,skrog,coque,kadłub,hajótest,κύτος,skrog
 driving,ice,ice,eis,ijs,led,ghiaccio,hielo,gelo,gheață,is,glace,lód,jég,πάγος,is
 driving,infuse,infuse,aufgießen,infuseren,infuse,infondere,infundir,infundir,infuzați,indgyde,infuser,infuzja,infúzió,έγχυση,tilføre
-driving,jell,jell,,jell,žloutek,gelatina,jell,gelatina,jeleu,gelé,gelée,żel,kocsonya,ζελέ,gelé
+driving,jell,jell,gelee,jell,žloutek,gelatina,jell,gelatina,jeleu,gelé,gelée,żel,kocsonya,ζελέ,gelé
 driving,juice,juice,saft,sap,džus,succo di frutta,zumo,sumo,suc,juice,jus,sok,juice,χυμός,juice
 driving,julienne,julienne,julienne,julienne,julienne,julienne,julienne,juliana,julienne,julienne,julienne,julienne,julienne,julienne,julienne
 driving,knead,knead,kneten,kneden,hníst,impastare,amasar,amassar,frământați,ælte,pétrir,ugniatać,gyúrja,ζυμώνω,kna
@@ -2561,7 +2561,7 @@ emotions,nervous,nervous,nervös,nerveus,nervózní,nervoso,nervioso,nervoso,ner
 emotions,nirvana,nirvana,nirwana,nirvana,nirvana,nirvana,nirvana,nirvana,nirvana,nirvana,nirvana,nirwana,nirvána,νιρβάνα,nirvana
 emotions,open,open,öffnen,open,otevřít,aperto,abra,aberto,deschis,åben,ouvert,otwarty,nyitott,ανοιχτό,åpen
 emotions,optimism,optimism,optimismus,optimisme,optimismus,ottimismo,optimismo,otimismo,optimism,optimisme,optimisme,optymizm,optimizmus,αισιοδοξία,optimisme
-emotions,ornery,ornery,,lelijke,ornery,irascibile,ornery,irritadiço,irascibil,gnaven,orgueilleux,ornery,ornery,πεισματάρης,gretten
+emotions,ornery,ornery,mürrisch,lelijke,ornery,irascibile,ornery,irritadiço,irascibil,gnaven,orgueilleux,ornery,ornery,πεισματάρης,gretten
 emotions,outgoing,outgoing,ausgehend von,uitgaand,odchozí,in uscita,saliente,de saída,de ieșire,udadvendt,sortant,wychodzący,kimenő,εξερχόμενο,utadvendt
 emotions,outrage,outrage,empörung,verontwaardiging,rozhořčení,oltraggio,indignación,ultraje,scandal,forargelse,outrage,oburzenie,felháborodás,αγανάκτηση,skandale
 emotions,panic,panic,panik,paniek,panika,panico,pánico,pânico,panică,panik,panique,panika,pánik,πανικός,panikk
@@ -2833,7 +2833,7 @@ family,wed,wed,hochzeit,wed,wed,matrimonio,wed,casado,căsătorit,gift,mariage,�
 family,wedding,wedding,hochzeit,bruiloft,svatba,matrimonio,boda,casamento,nuntă,bryllup,mariage,ślub,esküvő,γάμος,bryllup
 family,wedlock,wedlock,eheschließung,huwelijk,manželství,matrimonio,matrimonio,matrimónio,căsătorie,ægteskab,mariage,ślub,házasság,wedlock,ekteskap
 family,wife,wife,frau,vrouw,manželka,moglie,esposa,esposa,soție,hustru,épouse,żona,feleség,σύζυγος,hustru
-family,youngster,youngster,,jongere,youngster,giovane,joven,jovem,tânăr,unge,jeune,młodzik,fiatal,νέος,ungdom
+family,youngster,youngster,jugendlicher,jongere,youngster,giovane,joven,jovem,tânăr,unge,jeune,młodzik,fiatal,νέος,ungdom
 family,youth,youth,jugend,jeugd,mládež,giovani,jóvenes,juventude,tinerețe,ungdom,la jeunesse,młodzież,ifjúság,νεολαία,ungdom
 food,acorn squash,acorn squash,eichelkürbis,eikelpompoen,žaludová dýně,zucca a ghianda,calabaza bellota,abóbora de bolota,dovleac acorn,agern-squash,courge de gland,kabaczek żołędziowy,makk tök,κολοκύθα βελανίδι,eikenøttsquash
 food,alfalfa sprouts,alfalfa sprouts,alfalfasprossen,luzernescheuten,klíčky vojtěšky,germogli di erba medica,brotes de alfalfa,rebentos de luzerna,germeni de lucernă,lucernespirer,germes de luzerne,kiełki lucerny,lucernacsíra,φύτρα μηδικής,alfalfaspirer
@@ -3070,7 +3070,7 @@ food,jam,jam,marmelade,jam,jam,marmellata,mermelada,compota,gem,syltetøj,confit
 food,jelly,jelly,gelee,gelei,želé,gelatina,gelatina,gelatina,jeleu,gelé,gelée,galaretka,zselé,ζελέ,gelé
 food,jellybeans,jellybeans,jellybeans,jellybeans,želé fazole,gelatine,gominolas,gomas,jeleuri,gelébønner,bonbons,żelki,jellybeans,ζελεδάκια,gelébønner
 food,jicama,jicama,jicama,jicama,jicama,jicama,jícama,jicama,jicama,jicama,jicama,jicama,jicama,jicama,jicama
-food,jimmies,jimmies,,foefjes,jimmies,jimmies,jimmies,jimmies,jimmies,jimmies,jimmies,jimmies,jimmies,jimmies,jimmies
+food,jimmies,jimmies,jimmies,foefjes,jimmies,jimmies,jimmies,jimmies,jimmies,jimmies,jimmies,jimmies,jimmies,jimmies,jimmies
 food,jordan almonds,jordan almonds,jordanische mandeln,jordaanse amandelen,jordánské mandle,mandorle jordan,almendras jordan,amêndoas de jordão,migdale jordan,jordanske mandler,amandes jordaniennes,migdały jordan,jordán mandula,jordan αμύγδαλα,jordan mandler
 food,jug,jug,krug,kan,džbán,brocca,jarra,jarro,ulcior,kande,cruche,dzbanek,kancsó,κανάτα,kanne
 food,juice,juice,saft,sap,džus,succo di frutta,zumo,sumo,suc,juice,jus,sok,juice,χυμός,juice
@@ -3738,7 +3738,7 @@ house,staircase,staircase,treppe,trap,schodiště,scala,escalera,escada,scara,tr
 house,stairs,stairs,treppe,trap,schody,scale,escaleras,escadas,scări,trapper,escaliers,schody,lépcsők,σκάλες,trapper
 house,stairway,stairway,treppe,trap,schodiště,scala,escalera,escada,scara,trappe,escalier,schody,lépcsőház,σκάλα,trappeoppgang
 house,steps,steps,schritte,stappen,kroky,passi,pasos,passos,trepte,trin,étapes,kroki,lépések,βήματα,trinn
-house,stoop,stoop,,buk,stoupačka,china,inclinarse,inclinar-se,coborâre,bukke,s'arrêter,pochylenie,lépcső,σκαλί,bukke
+house,stoop,stoop,bücken,buk,stoupačka,china,inclinarse,inclinar-se,coborâre,bukke,s'arrêter,pochylenie,lépcső,σκαλί,bukke
 house,storage shed,storage shed,lagerschuppen,opslagloods,skladovací přístřešek,capannone di stoccaggio,cobertizo,barracão de armazenamento,magazie de depozitare,skur til opbevaring,hangar de stockage,wiata magazynowa,tárolóház,υπόστεγο αποθήκευσης,lagringsbod
 house,storm door,storm door,sturmtür,stormdeur,bouřkové dveře,porta d'ingresso,contrapuerta,porta de tempestade,ușă de protecție,stormdør,contre-porte,drzwi sztormowe,viharajtó,πόρτα καταιγίδας,stormdør
 house,stove,stove,herd,kachel,kamna,stufa,estufa,fogão,sobă,komfur,poêle,piec,tűzhely,σόμπα,komfyr
@@ -3985,7 +3985,7 @@ music,allegretto,allegretto,allegretto,allegretto,allegretto,allegretto,allegret
 music,allegro,allegro,allegro,allegro,allegro,allegro,allegro,alegro,allegro,allegro,allegro,allegro,allegro,allegro,allegro
 music,andante,andante,andante,andante,andante,andante,andante,andante,andante,andante,andante,andante,andante,andante,andante
 music,andantino,andantino,andantino,andantino,andantino,andantino,andantino,andantino,andantino,andantino,andantino,andantino,andantino,andantino,andantino
-music,animato,animato,,animato,animato,animato,animato,animato,animato,animato,animato,animato,animato,animato,animato
+music,animato,animato,animato,animato,animato,animato,animato,animato,animato,animato,animato,animato,animato,animato,animato
 music,arioso,arioso,arioso,arioso,arioso,arioso,arioso,arioso,arioso,arioso,arioso,arioso,arioso,arioso,arioso
 music,arpeggio,arpeggio,arpeggio,arpeggio,arpeggio,arpeggio,arpegio,arpejo,arpegiu,arpeggio,arpège,arpeggio,arpeggio,arpeggio,arpeggio
 music,bar,bar,bar,bar,bar,bar,bar,bar,bar,bar,bar,pasek,bár,μπαρ,bar
@@ -4206,7 +4206,7 @@ occupations,clerk,clerk,sachbearbeiter,klerk,úředník,impiegato,oficinista,esc
 occupations,coach,coach,coach,coach,trenér,allenatore,entrenador,treinador,antrenor,træner,entraîneur,trener,edző,προπονητής,trener
 occupations,cobbler,cobbler,cobbler,schoenmaker,cobbler,ciabattino,zapatero,sapateiro,cobbler,skomager,cordonnier,szewc,cobbler,cobbler,skomaker
 occupations,composer,composer,komponist,componist,skladatel,compositore,compositor,compositor,compozitor,komponist,compositeur,kompozytor,zeneszerző,συνθέτης,komponist
-occupations,concierge,concierge,,conciërge,concierge,concierge,conserje,concierge,concierge,concierge,concierge,konsjerż,concierge,θυρωρός,concierge
+occupations,concierge,concierge,concierge,conciërge,concierge,concierge,conserje,concierge,concierge,concierge,concierge,konsjerż,concierge,θυρωρός,concierge
 occupations,consul,consul,konsul,consul,konzul,console,cónsul,cônsul,consul,konsul,consul,konsul,konzul,πρόξενος,konsul
 occupations,contractor,contractor,auftragnehmer,aannemer,dodavatel,appaltatore,contratista,contratante,antreprenor,entreprenør,entrepreneur,wykonawca,vállalkozó,εργολάβος,entreprenør
 occupations,cook,cook,kochen,kok,vařit,cuoco,cocinero,cozinheiro,bucătar,lave mad,cuisiner,kucharz,szakács,μάγειρας,kokk
@@ -4575,7 +4575,7 @@ personal qualities,energetic,energetic,energisch,energiek,energický,energetico,
 personal qualities,enterprising,enterprising,unternehmerisch,ondernemend,podnikavé,intraprendente,emprendedor,empreendedor,întreprinzător,initiativrig,entreprenant,przedsiębiorczy,vállalkozó szellemű,επιχειρηματική,initiativrik
 personal qualities,enthusiastic,enthusiastic,begeistert,enthousiast,nadšený,entusiasta,entusiasta,entusiasta,entuziast,entusiastisk,enthousiaste,entuzjastyczny,lelkes,ενθουσιώδης,entusiastisk
 personal qualities,evasive,evasive,ausweichend,ontwijkend,vyhýbavý,evasivo,evasiva,evasivo,evaziv,undvigende,évasif,wymijający,kitérő,αποφυγή,unnvikende
-personal qualities,eventempered,eventempered,,eventemperd,eventempered,evento-permesso,eventempered,temperado,eventempered,tempereret,eventempered,eventempered,eventempered,eventempered,jevntemperert
+personal qualities,eventempered,eventempered,ausgeglichen,eventemperd,eventempered,evento-permesso,eventempered,temperado,eventempered,tempereret,eventempered,eventempered,eventempered,eventempered,jevntemperert
 personal qualities,exacting,exacting,anspruchsvoll,veeleisend,náročné,esigente,exigente,exigente,exigent,krævende,exigeant,wymagający,igényes,απαιτητικό,krevende
 personal qualities,excellent,excellent,ausgezeichnet,uitstekend,vynikající,eccellente,excelente,excelente,excelent,fremragende,excellent,doskonały,kiváló,εξαιρετικό,utmerket
 personal qualities,excitable,excitable,erregbar,prikkelbaar,vzrušující,eccitabile,excitable,excitável,agitată,ophidset,excitable,pobudliwy,izgatott,ευερέθιστο,opphisselig
@@ -4657,7 +4657,7 @@ personal qualities,levelheaded,levelheaded,nüchtern,nuchter,vyrovnaný,testa al
 personal qualities,listless,listless,lustlos,lusteloos,apatický,svogliato,desganado,indiferente,apatic,sløv,apathique,apatyczny,kedvetlen,άτονη,apatisk
 personal qualities,lithe,lithe,geschmeidig,lenig,lithe,luminoso,ágil,ágil,ușor,smidig,éclairé,lekki,hajlékony,λυγερή,smidig
 personal qualities,lively,lively,lebendig,levendig,živé,vivace,animado,animado,vioi,livlig,vif,żywy,élénk,ζωντανή,livlig
-personal qualities,local,local,,lokale,místní,locale,local,local,locale,lokal,local,lokalny,helyi,τοπικό,lokale
+personal qualities,local,local,lokal,lokale,místní,locale,local,local,locale,lokal,local,lokalny,helyi,τοπικό,lokale
 personal qualities,logical,logical,logisch,logisch,logické,logico,lógico,lógico,logic,logisk,logique,logiczny,logikai,λογικό,logisk
 personal qualities,longwinded,longwinded,langatmig,langdradig,dlouhatánský,prolisso,largo y tendido,prolixo,îndelungat,langhåret,longuet,rozwlekły,hosszadalmas,μακρόσυρτο,langtekkelig
 personal qualities,lovable,lovable,liebenswert,lieve,roztomilý,amabile,adorable,adorável,drăguț,elskelig,adorable,uroczy,szerethető,αξιαγάπητο,elskelig
@@ -4667,9 +4667,9 @@ personal qualities,maternal,maternal,mütterlicherseits,maternaal,mateřský,mat
 personal qualities,mature,mature,reife,volwassen,zralé,maturo,madura,maduro,matur,moden,mature,dojrzały,érett,ώριμο,moden
 personal qualities,mean,mean,mittlere,gemiddelde,průměr,media,media,média,înseamnă,betyder,moyen,średni,átlagos,μέσος όρος,mener
 personal qualities,meddlesome,meddlesome,aufdringlich,bemoeizieke,všetečný,impiccione,entrometido,intrometido,nepăsător,påtrængende,maladroit,uciążliwy,tolakodó,ενοχλητικό,påtrengende
-personal qualities,mercurial,mercurial,,kwikhoudend,mercurial,mercuriale,mercurial,mercurial,mercurial,mercurial,mercuriale,rtęć,mercurial,mercurial,mercurial
+personal qualities,mercurial,mercurial,quecksilber,kwikhoudend,mercurial,mercuriale,mercurial,mercurial,mercurial,mercurial,mercuriale,rtęć,mercurial,mercurial,mercurial
 personal qualities,methodical,methodical,methodisch,methodisch,metodické,metodico,metódico,metódico,metodic,metodisk,méthodique,metodyczny,módszeres,μεθοδικότητα,metodisk
-personal qualities,meticulous,meticulous,,nauwgezet,pečlivost,meticoloso,meticuloso,meticuloso,meticulos,omhyggelig,méticuleux,skrupulatny,aprólékos,σχολαστική,omhyggelig
+personal qualities,meticulous,meticulous,sorgfältig,nauwgezet,pečlivost,meticoloso,meticuloso,meticuloso,meticulos,omhyggelig,méticuleux,skrupulatny,aprólékos,σχολαστική,omhyggelig
 personal qualities,mild,mild,mild,mild,mírné,mite,suave,suave,ușoară,mild,doux,łagodny,enyhe,ήπια,mild
 personal qualities,miserable,miserable,miserabel,ellendig,mizerný,miserabile,miserable,miserável,mizerabil,elendig,misérable,nieszczęśliwy,nyomorult,άθλια,elendig
 personal qualities,modest,modest,bescheiden,bescheiden,skromné,modesto,modesto,modesto,modest,beskeden,modeste,skromny,szerény,μετριοπαθής,beskjeden
@@ -4799,7 +4799,7 @@ personal qualities,sweet,sweet,süß,zoete,sladké,dolce,dulce,doce,dulce,sød,d
 personal qualities,tactful,tactful,taktvoll,tactvol,taktní,tattile,con tacto,diplomático,cu tact,taktfuld,avec tact,taktowny,tapintatos,διακριτικό,taktfull
 personal qualities,tactless,tactless,taktlos,tactloos,netaktní,senza tatto,sin tacto,sem tato,lipsit de tact,taktløs,sans tact,nietaktowny,tapintatlan,άκομψο,taktløs
 personal qualities,talented,talented,talentiert,getalenteerd,talentovaný,di talento,talento,talentoso,talentat,talentfuld,talentueux,utalentowany,tehetséges,ταλαντούχος,talentfull
-personal qualities,testy,testy,,prikkelbaar,testy,stizzoso,testy,irritadiço,încordat,irritabel,timide,testy,ingerült,testy,irritabel
+personal qualities,testy,testy,gereizt,prikkelbaar,testy,stizzoso,testy,irritadiço,încordat,irritabel,timide,testy,ingerült,testy,irritabel
 personal qualities,thinking,thinking,denken,denkend,myšlení,pensiero,pensando,pensamento,gândire,tænker,réflexion,myślenie,gondolkodás,σκέψη,tenkning
 personal qualities,thoughtful,thoughtful,nachdenklich,attent,promyšlené,riflessivo,atento,atencioso,grijuliu,tankevækkende,réfléchi,przemyślany,átgondolt,στοχαστικό,gjennomtenkt
 personal qualities,thoughtless,thoughtless,gedankenlos,gedachteloos,bezmyšlenkovité,sconsiderato,irreflexivo,irrefletido,nepăsătoare,tankeløs,irréfléchi,bezmyślny,meggondolatlan,απερίσκεπτη,tankeløs
@@ -5496,7 +5496,7 @@ shopping,cashier,cashier,kassierer,kassier,pokladní,cassiere,cajero,caixa,casie
 shopping,checkout,checkout,zur kasse,kassa,pokladna,cassa,checkout,checkout,checkout,kasse,caisse,kasa,pénztár,checkout,kassa
 shopping,clearance,clearance,freigabe,opruiming,odbavení,autorizzazione,liquidación,apuramento,eliberare,fri bane,dégagement,luz,clearance,εκκαθάριση,klarering
 shopping,color,color,farbe,kleur,barva,colore,color,cor,culoare,farve,couleur,kolor,szín,χρώμα,farge
-shopping,commission,commission,,commissie,komise,commissione,comisión,comissão,comisie,kommission,commission,prowizja,jutalék,προμήθεια,provisjon
+shopping,commission,commission,kommission,commissie,komise,commissione,comisión,comissão,comisie,kommission,commission,prowizja,jutalék,προμήθεια,provisjon
 shopping,comparison,comparison,vergleich,vergelijking,porovnání,confronto,comparación,comparação,comparație,sammenligning,comparaison,porównanie,összehasonlítás,σύγκριση,sammenligning
 shopping,coupon,coupon,coupon,coupon,kupón,cedola,cupón,cupão,cupon,kupon,coupon,kupon,kupon,κουπόνι,kupong
 shopping,credit,credit,kredit,krediet,úvěr,credito,crédito,crédito,credit,kredit,crédit,kredyt,hitel,πίστωση,kreditt
@@ -5714,14 +5714,14 @@ sports,heptathlon,heptathlon,siebenkampf,zevenkamp,sedmiboj,eptathlon,heptathlon
 sports,high jump,high jump,hochsprung,hoge sprong,skok do výšky,salto in alto,salto de altura,salto em altura,săritura în înălțime,højdespring,saut en hauteur,skok wzwyż,magasugrás,άλμα σε ύψος,høydehopp
 sports,hitter,hitter,hitter,slagvrouw,hitter,battitore,bateador,batedor,hitter,slagmand,frappeur,hitter,hitter,hitter,slagmann
 sports,hockey,hockey,eishockey,hockey,hokej,hockey,hockey,hóquei,hochei,hockey,hockey,hokej,hoki,χόκεϊ,hockey
-sports,holeinone,holeinone,,holeinone,holeinone,bucchione,holeinone,um buraco,holeinone,hullet,holeinone,holeinone,holeinone,holeinone,holeinone
+sports,holeinone,holeinone,holeinone,holeinone,holeinone,bucchione,holeinone,um buraco,holeinone,hullet,holeinone,holeinone,holeinone,holeinone,holeinone
 sports,home,home,startseite,home,home,casa,inicio,casa,acasă,hjem,domicile,dom,home,σπίτι,hjem
 sports,home plate,home plate,schlagmal,thuisplaat,domovská deska,casa base,home plate,prato principal,placa de start,hjemmebane,plaque d'immatriculation,płyta główna,hazai pálya,αρχική πλάκα,hjemmeplaten
 sports,home run,home run,homerun,homerun,home run,fuoricampo,jonrón,home run,home run,homerun,course à domicile,home run,hazafutás,home run,homerun
 sports,home team,home team,heimteam,thuisploeg,domácí tým,squadra di casa,equipo local,equipa da casa,echipa gazdă,hjemmeholdet,équipe locale,drużyna gospodarzy,hazai csapat,γηπεδούχος ομάδα,hjemmelag
 sports,hoop,hoop,reif,hoepel,obruč,cerchio,aro,aro,cerc,bøjle,cerceau,obręcz,karika,στεφάνι,ring
 sports,horseshoes,horseshoes,hufeisen,hoefijzers,podkovy,ferri di cavallo,herraduras,ferraduras,potcoave,hestesko,fers à cheval,podkowy,patkók,πέταλα,hestesko
-sports,huddle,huddle,,huddle,huddle,calca,huddle,juntar-se,adunătură,samles,caucus,huddle,bujdosás,huddle,klynge
+sports,huddle,huddle,haufen,huddle,huddle,calca,huddle,juntar-se,adunătură,samles,caucus,huddle,bujdosás,huddle,klynge
 sports,hurdle,hurdle,hürde,hindernis,překážka,ostacolo,valla,obstáculo,obstacol,forhindring,obstacle,przeszkoda,akadály,εμπόδιο,hindring
 sports,ice hockey,ice hockey,eishockey,ĳshockey,lední hokej,hockey su ghiaccio,hockey sobre hielo,hóquei no gelo,hochei pe gheață,ishockey,hockey sur glace,hokej na lodzie,jégkorong,χόκεϊ επί πάγου,ishockey
 sports,ice rink,ice rink,eislaufbahn,ijsbaan,ledová plocha,pista di ghiaccio,pista de hielo,pista de gelo,patinoar,skøjtebane,patinoire,lodowisko,jégpálya,παγοδρόμιο,skøytebane
@@ -5952,7 +5952,7 @@ transportations,bus,bus,bus,bus,autobus,autobus,autobús,autocarro,autobuz,bus,b
 transportations,cab,cab,taxi,cabine,kabina,cabina,cabina,táxi,cabină,taxi,cabine,kabina,fülke,καμπίνα,drosje
 transportations,cabin cruiser,cabin cruiser,kabinenkreuzer,motorkruiser,kajutový křižník,cabinato,crucero en camarote,cabina de cruzeiro,cabină de croazieră,kabinecruiser,bateau de croisière à cabine,krążownik kabinowy,kabinos cirkáló,κρουαζιερόπλοιο με καμπίνα,cabincruiser
 transportations,cable car,cable car,seilbahn,kabelbaan,lanovka,funivia,teleférico,teleférico,telecabină,svævebane,téléphérique,kolejka linowa,drótkötélpálya,τελεφερίκ,taubane
-transportations,caboose,caboose,,kombuis,kabina,vagone,furgón de cola,vagão,vagoane,kupeen,wagon de queue,kabina,fülke,caboose,caboose
+transportations,caboose,caboose,kombüse,kombuis,kabina,vagone,furgón de cola,vagão,vagoane,kupeen,wagon de queue,kabina,fülke,caboose,caboose
 transportations,camper,camper,camper,camper,karavan,camper,caravana,campista,rulota,autocamper,campeur,kamper,lakókocsi,τροχόσπιτο,bobil
 transportations,canoe,canoe,kanu,kano,kanoe,canoa,canoa,canoa,canoe,kano,canoë,kajak,kenu,κανό,kano
 transportations,car,car,auto,auto,auto,auto,coche,automóvel,mașină,bil,voiture,samochód,autó,αυτοκίνητο,bil
@@ -5967,7 +5967,7 @@ transportations,chairlift,chairlift,sessellift,stoeltjeslift,lanovka,seggiovia,t
 transportations,chariot,chariot,streitwagen,wagen,vozatajství,carro,carro,carruagem,car,vogn,char,rydwan,szekér,άρμα,stridsvogn
 transportations,chopper,chopper,chopper,helikopter,vrtulník,elicottero,picador,helicóptero,chopper,helikopter,hacheur,chopper,chopper,chopper,helikopter
 transportations,clipper ship,clipper ship,klipperschiff,klipper,kliprová loď,nave clipper,clíper,navio clipper,navă clipper,klipperskib,navire clipper,kliper,klipper hajó,καράβι κλιπ,klipperskip
-transportations,clunker,clunker,,clunker,clunker,clunker,clunker,clunker,rablă,klodsmajor,benne à ordures,clunker,roncs,clunker,klunker
+transportations,clunker,clunker,schrotthaufen,clunker,clunker,clunker,clunker,clunker,rablă,klodsmajor,benne à ordures,clunker,roncs,clunker,klunker
 transportations,coach,coach,coach,coach,trenér,allenatore,entrenador,treinador,antrenor,træner,entraîneur,trener,edző,προπονητής,trener
 transportations,combine,combine,mähdrescher,combineren,kombinovat,combinare,combinar,combinar,combină,kombinere,combiner,połączenie,kombinálni,συνδυάστε,kombinere
 transportations,compact car,compact car,kleinwagen,compacte auto,kompaktní vůz,auto compatta,coche compacto,carro compacto,mașină compactă,kompakt bil,voiture compacte,samochód kompaktowy,kompakt autó,συμπαγές αυτοκίνητο,kompaktbil
@@ -6051,7 +6051,7 @@ transportations,hydrofoil,hydrofoil,tragflächenboot,draagvleugelboot,hydrofoil,
 transportations,hydroplane,hydroplane,wasserflugzeug,watervliegtuig,hydroplán,idrovolante,hidroavión,hidroavião,hidroplan,vandflyver,hydravion,hydroplan,hidroplán,υδροπλάνο,vannfly
 transportations,ice boat,ice boat,eisboot,ijsboot,ledová loď,barca a ghiaccio,barco de hielo,barco de gelo,barcă de gheață,isbåd,bateau de glace,łódź lodowa,jéghajó,σκάφος με πάγο,isbåt
 transportations,ice breaker,ice breaker,eisbrecher,ijsbreker,prolomení ledů,rompighiaccio,rompehielos,quebra-gelo,spărgător de gheață,isbryder,brise-glace,lodołamacz,jégtörő,παγοθραυστικό,isbryter
-transportations,jalopy,jalopy,,jalopy,jalopy,tettuccio,cacharro,calhambeque,jalopy,jalapen,baladeur,jalopy,jalopy,jalopy,jalopy
+transportations,jalopy,jalopy,kiste,jalopy,jalopy,tettuccio,cacharro,calhambeque,jalopy,jalapen,baladeur,jalopy,jalopy,jalopy,jalopy
 transportations,jeep,jeep,jeep,jeep,jeep,jeep,jeep,jipe,jeep,jeep,jeep,jeep,dzsip,τζιπ,jeep
 transportations,jet,jet,jet,jet,jet,getto,jet,jato,jet,jet,jet,strumień,jet,jet,jet
 transportations,jet boat,jet boat,jetboot,straalboot,tryskový člun,moto d'acqua,lancha motora,barco a jato,barcă cu reacție,jetbåd,bateau à réaction,łódź odrzutowa,sugárhajtású hajó,τζετ μποτ,jetbåt
@@ -6420,7 +6420,7 @@ weather,snowflake,snowflake,schneeflocke,sneeuwvlok,sněhová vločka,fiocco di 
 weather,snowsquall,snowsquall,schneesicher,sneeuwbal,snowsquall,nevequalcosa,snowsquall,nevado,snowsquall,snowsquall,boule de neige,snowsquall,snowsquall,snowsquall,snøkall
 weather,snowstorm,snowstorm,schneesturm,sneeuwstorm,sněhová bouře,tempesta di neve,tormenta de nieve,tempestade de neve,furtună de zăpadă,snestorm,tempête de neige,burza śnieżna,hóvihar,χιονοθύελλα,snøstorm
 weather,spring,spring,feder,voorjaar,jaro,primavera,primavera,primavera,primăvară,forår,printemps,wiosna,tavasz,άνοιξη,vår
-weather,squall,squall,,bui,squall,squallore,borrasca,tempestade,vijelie,bølge,bourrasque,szkwał,squall,squall,vindkast
+weather,squall,squall,bö,bui,squall,squallore,borrasca,tempestade,vijelie,bølge,bourrasque,szkwał,squall,squall,vindkast
 weather,squall line,squall line,böenlinie,buienlijn,bouřková linie,linea di squall,línea de borrasca,linha de tempestade,linie de vijelie,squall-linje,ligne de grains,linia szkwału,viharos szél,γραμμή καταιγίδας,bygelinje
 weather,st elmos fire,st elmos fire,brand von st. elmos,st elmos brand,požár v st elmos,incendio di st elmos,incendio de san elmo,incêndio em st elmos,incendiu st elmos,st elmos brand,incendie de st elmos,pożar w st elmos,st elmos tűz,φωτιά στο st elmos,st elmos brann
 weather,stationary front,stationary front,stationäre front,vast front,stacionární přední část,fronte fisso,frontal fijo,frente fixa,față staționară,stationær front,front stationnaire,stacjonarny przód,álló front,σταθερό μέτωπο,stasjonær front
