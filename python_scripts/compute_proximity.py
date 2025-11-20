@@ -48,6 +48,33 @@ def calculate_global_proximity(df):
     print(f"Saved global proximity to file: {OUTPUT_GLOBAL}\n")
     return result_df
 
+def calculate_proximity_by_topic(df):
+    """Calculates language similarity for each topic separately."""
+    print("--- Starting calculation of proximity by topic ---")
+    languages = [col for col in df.columns if col not in ['topic', 'source_word']]
+
+    all_topic_results = []
+
+    for topic, group in df.groupby('topic'):
+        print(f"   -> Analyzing topic: {topic}")
+        for lang1, lang2 in combinations(languages, 2):
+            similarities = group.apply(
+                lambda row: normalized_levenshtein_similarity(row[lang1], row[lang2]),
+                axis=1
+            )
+            avg_similarity = similarities.mean()
+
+            all_topic_results.append({
+                "Topic": topic,
+                "Language1": lang1,
+                "Language2": lang2,
+                "Similarity": avg_similarity
+            })
+
+    result_df = pd.DataFrame(all_topic_results)
+    result_df.to_csv(OUTPUT_BY_TOPIC, index=False)
+    print(f"Saved proximity by topic to file: {OUTPUT_BY_TOPIC}\n")
+    return result_df
 
 if __name__ == "__main__":
     if not os.path.exists(INPUT_FILE):
@@ -56,3 +83,5 @@ if __name__ == "__main__":
         main_df = pd.read_csv(INPUT_FILE)
         
         global_results_df = calculate_global_proximity(main_df)
+        
+        topic_results_df = calculate_proximity_by_topic(main_df)
