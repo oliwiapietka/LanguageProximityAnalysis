@@ -2,6 +2,8 @@ import Levenshtein
 import os
 import pandas as pd
 from itertools import combinations
+import community as community_louvain
+import networkx as nx
 
 
 INPUT_FILE = "../data/translated_words.csv"
@@ -136,6 +138,39 @@ def find_outliers(df, global_proximity_df):
 
     return outlier_df
 
+def calculate_language_communities(global_df, topic_df):
+    """Calculates *language* communities for the global view and each topic."""
+    print("--- Starting detection of language communities (Louvain) ---")
+    
+    community_results = []
+    
+    print("   -> Analyzing communities: Global")
+    G_global = nx.Graph()
+    for _, row in global_df.iterrows():
+        G_global.add_edge(row['Language1'], row['Language2'], weight=row['Similarity'])
+    
+    partition_global = community_louvain.best_partition(G_global, weight='weight')
+    for lang, comm_id in partition_global.items():
+        community_results.append({"Scope": "Global", "Language": lang, "CommunityID": comm_id})
+
+    for topic in topic_df['Topic'].unique():
+        print(f"   -> Analyzing communities: {topic}")
+        G_topic = nx.Graph()
+        topic_data = topic_df[topic_df['Topic'] == topic]
+        
+        for _, row in topic_data.iterrows():
+            G_topic.add_edge(row['Language1'], row['Language2'], weight=row['Similarity'])
+            
+        if G_topic.number_of_edges() > 0:
+            partition_topic = community_louvain.best_partition(G_topic, weight='weight')
+            for lang, comm_id in partition_topic.items():
+                community_results.append({"Scope": topic, "Language": lang, "CommunityID": comm_id})
+        
+    community_df = pd.DataFrame(community_results)
+    community_df.to_csv(OUTPUT_LANG_COMMUNITIES, index=False)
+    print(f"Saved language communities to file: {OUTPUT_LANG_COMMUNITIES}\n")
+
+
 if __name__ == "__main__":
     if not os.path.exists(INPUT_FILE):
         print(f"ERROR: Input file '{INPUT_FILE}' was not found.")
@@ -147,4 +182,6 @@ if __name__ == "__main__":
         topic_results_df = calculate_proximity_by_topic(main_df)
 
         outliers_df = find_outliers(main_df, global_results_df)
+
+        calculate_language_communities(global_results_df, topic_results_df)
         
