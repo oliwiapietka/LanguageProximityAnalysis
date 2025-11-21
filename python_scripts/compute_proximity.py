@@ -76,6 +76,66 @@ def calculate_proximity_by_topic(df):
     print(f"Saved proximity by topic to file: {OUTPUT_BY_TOPIC}\n")
     return result_df
 
+def find_outliers(df, global_proximity_df):
+    """Finds word outliers (positive and negative) and returns a DataFrame."""
+    print("--- Starting search for word outliers ---")
+
+    global_sim_map = {}
+    for _, row in global_proximity_df.iterrows():
+        key = tuple(sorted((row['Language1'], row['Language2'])))
+        global_sim_map[key] = row['Similarity']
+
+    POSITIVE_THRESHOLD = 0.5
+    NEGATIVE_THRESHOLD = 0.5
+
+    outlier_results = []
+
+    languages = [col for col in df.columns if col not in ['topic', 'source_word']]
+
+    for index, row in df.iterrows():
+        for lang1, lang2 in combinations(languages, 2):
+            key = tuple(sorted((lang1, lang2)))
+            global_sim = global_sim_map.get(key, 0)
+
+            word1, word2 = row[lang1], row[lang2]
+            word_sim = normalized_levenshtein_similarity(word1, word2)
+
+            if word_sim > global_sim + POSITIVE_THRESHOLD:
+                outlier_results.append({
+                    "Topic": row['topic'],
+                    "OutlierType": "Positive",
+                    "SourceWord": row['source_word'],
+                    "Lang1": lang1,
+                    "Word1": word1,
+                    "Lang2": lang2,
+                    "Word2": word2,
+                    "WordSimilarity": word_sim,
+                    "AvgSimilarity": global_sim,
+                    "Difference": word_sim - global_sim
+                })
+            elif word_sim < global_sim - NEGATIVE_THRESHOLD:
+                outlier_results.append({
+                    "Topic": row['topic'],
+                    "OutlierType": "Negative",
+                    "SourceWord": row['source_word'],
+                    "Lang1": lang1,
+                    "Word1": word1,
+                    "Lang2": lang2,
+                    "Word2": word2,
+                    "WordSimilarity": word_sim,
+                    "AvgSimilarity": global_sim,
+                    "Difference": word_sim - global_sim
+                })
+
+    outlier_df = pd.DataFrame(outlier_results)
+
+    outlier_df.sort_values(by="Difference", ascending=False, inplace=True, key=lambda col: col.abs())
+
+    outlier_df.to_csv(OUTPUT_OUTLIERS_CSV, index=False, float_format='%.3f')
+    print(f"Saved outliers to file: {OUTPUT_OUTLIERS_CSV}\n")
+
+    return outlier_df
+
 if __name__ == "__main__":
     if not os.path.exists(INPUT_FILE):
         print(f"ERROR: Input file '{INPUT_FILE}' was not found.")
@@ -85,3 +145,6 @@ if __name__ == "__main__":
         global_results_df = calculate_global_proximity(main_df)
         
         topic_results_df = calculate_proximity_by_topic(main_df)
+
+        outliers_df = find_outliers(main_df, global_results_df)
+        
