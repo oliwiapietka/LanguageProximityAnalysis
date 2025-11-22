@@ -1,4 +1,4 @@
-Topic,Language1,Language2,Similarity
+Topic,Language1,Language2,TopicSimilarity
 animals,en,de,0.5438440394934381
 animals,en,nl,0.5575449630575974
 animals,en,cs,0.49365728922945207
