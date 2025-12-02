@@ -246,6 +246,27 @@ def calculate_topic_communities(topic_df):
     print(f"Saved topic communities to file: {OUTPUT_TOPIC_COMMUNITIES}\n")
 
 
+def identify_word_communities(outlier_df):
+    """Identifies groups of words that are outliers in the same way."""
+    print("--- Identifying word community groups ---")
+    
+    if outlier_df.empty:
+        print("No word outliers found, skipping word communities.")
+        return
+
+    outlier_df['LangPair'] = outlier_df.apply(
+        lambda r: tuple(sorted((r['Lang1'], r['Lang2']))), 
+        axis=1
+    )
+    
+    word_groups = outlier_df.groupby(
+        ['OutlierType', 'LangPair']
+    )['SourceWord'].apply(list).reset_index()
+    
+    word_groups.to_csv(OUTPUT_WORD_COMMUNITIES, index=False)
+    print(f"Saved word community groups to file: {OUTPUT_WORD_COMMUNITIES}\n")
+
+
 if __name__ == "__main__":
     if not os.path.exists(INPUT_FILE):
         print(f"ERROR: Input file '{INPUT_FILE}' was not found.")
@@ -263,3 +284,7 @@ if __name__ == "__main__":
         calculate_language_communities(global_results_df, topic_results_df)
         
         calculate_topic_communities(topic_results_df.copy())
+
+        identify_word_communities(word_outliers_df.copy())
+        
+        print("All analyses have been completed.")
