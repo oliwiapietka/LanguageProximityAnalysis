@@ -4,6 +4,7 @@ import pandas as pd
 from itertools import combinations
 import community as community_louvain
 import networkx as nx
+from sklearn.metrics.pairwise import cosine_similarity
 
 INPUT_FILE = "../data/translated_words.csv"
 OUTPUT_DIR = "../data/"
@@ -207,6 +208,65 @@ def calculate_language_communities(global_df, topic_df):
     community_df.to_csv(OUTPUT_LANG_COMMUNITIES, index=False)
     print(f"Saved language communities to file: {OUTPUT_LANG_COMMUNITIES}\n")
 
+
+def calculate_topic_communities(topic_df):
+    """Finds communities of topics based on their similarity profiles."""
+    print("--- Detecting topic communities (Graph) ---")
+    
+    topic_df['LangPair'] = topic_df.apply(
+        lambda r: tuple(sorted((r['Language1'], r['Language2']))), 
+        axis=1
+    )
+    
+    pivot = topic_df.pivot_table(
+        index='Topic', 
+        columns='LangPair', 
+        values='TopicSimilarity'
+    ).fillna(0)
+    
+    sim_matrix = cosine_similarity(pivot)
+    topics = list(pivot.index)    
+    
+    G_topic_comm = nx.Graph()
+    G_topic_comm.add_nodes_from(topics)
+    
+    for i in range(len(topics)):
+        for j in range(i + 1, len(topics)):
+            similarity = sim_matrix[i, j]
+            if similarity > 0.995: 
+                G_topic_comm.add_edge(topics[i], topics[j], weight=similarity)
+
+    if G_topic_comm.number_of_edges() > 0:
+        partition = community_louvain.best_partition(G_topic_comm, weight='weight')
+        results_df = pd.DataFrame(partition.items(), columns=['Topic', 'CommunityID'])
+    else:
+        results_df = pd.DataFrame(columns=['Topic', 'CommunityID'])
+
+    results_df.to_csv(OUTPUT_TOPIC_COMMUNITIES, index=False)
+    print(f"Saved topic communities to file: {OUTPUT_TOPIC_COMMUNITIES}\n")
+
+
+def identify_word_communities(outlier_df):
+    """Identifies groups of words that are outliers in the same way."""
+    print("--- Identifying word community groups ---")
+    
+    if outlier_df.empty:
+        print("No word outliers found, skipping word communities.")
+        return
+
+    outlier_df['LangPair'] = outlier_df.apply(
+        lambda r: tuple(sorted((r['Lang1'], r['Lang2']))), 
+        axis=1
+    )
+    
+    word_groups = outlier_df.groupby(
+        ['OutlierType', 'LangPair']
+    )['SourceWord'].apply(list).reset_index()
+    
+    word_groups.to_csv(OUTPUT_WORD_COMMUNITIES, index=False)
+    print(f"Saved word community groups to file: {OUTPUT_WORD_COMMUNITIES}\n")
+
+
 if __name__ == "__main__":
     if not os.path.exists(INPUT_FILE):
         print(f"ERROR: Input file '{INPUT_FILE}' was not found.")
@@ -223,3 +283,8 @@ if __name__ == "__main__":
 
         calculate_language_communities(global_results_df, topic_results_df)
         
+        calculate_topic_communities(topic_results_df.copy())
+
+        identify_word_communities(word_outliers_df.copy())
+        
+        print("All analyses have been completed.")
