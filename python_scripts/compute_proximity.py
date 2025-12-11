@@ -1,290 +1,323 @@
-import Levenshtein
 import os
 import pandas as pd
+import Levenshtein
 from itertools import combinations
-import community as community_louvain
 import networkx as nx
 from sklearn.metrics.pairwise import cosine_similarity
+import re
+import igraph as ig
+import leidenalg
 
-INPUT_FILE = "../data/translated_words.csv"
+INPUT_LEXICAL = "../data/translated_words.csv"
+INPUT_PHONETIC = "../data/translated_words_ipa.csv"
 OUTPUT_DIR = "../data/"
 
-OUTPUT_GLOBAL = os.path.join(OUTPUT_DIR, "language_proximity_global.csv")
-OUTPUT_BY_TOPIC = os.path.join(OUTPUT_DIR, "language_proximity_by_topic.csv")
-OUTPUT_TOPIC_OUTLIERS = os.path.join(OUTPUT_DIR, "outliers_topics.csv")
-OUTPUT_WORD_OUTLIERS = os.path.join(OUTPUT_DIR, "outliers_words.csv")
-OUTPUT_LANG_COMMUNITIES = os.path.join(OUTPUT_DIR, "language_communities.csv")
-OUTPUT_TOPIC_COMMUNITIES = os.path.join(OUTPUT_DIR, "topic_communities.csv")
-OUTPUT_WORD_COMMUNITIES = os.path.join(OUTPUT_DIR, "word_community_groups.csv")
+TOPIC_DIFF_THRESHOLD = 0.2 # diff between topic and global to be an outlier
+WORD_DIFF_THRESHOLD = 0.4 # diff between word and topic to be an outlier
 
-TOPIC_DIFF_THRESHOLD = 0.2  # diff between topic and global to be an outlier
-WORD_DIFF_THRESHOLD = 0.4   # diff between word and topic to be an outlier
+def clean_ipa(text):
+    """
+    Normalizes IPA strings (removes diacritics, groups vowels).
+    """
 
-def normalized_levenshtein_similarity(s1, s2):
-    """Calculates the normalized Levenshtein similarity between two strings (0-1)."""
-    if not isinstance(s1, str) or not isinstance(s2, str):
-        return 0.0
+    text = text.lower().strip()
+    
+    # Remove modifiers
+    text = re.sub(r"[ʲʰʷ̃ːˑ.ˈˌ͡'’̩]", "", text)
+    
+    # Unify vowels
+    text = re.sub(r"[ɑɒæɐ]", "a", text)
+    text = re.sub(r"[ɛɜəɘ]", "e", text)
+    text = re.sub(r"[ɪyɨʏ]", "i", text)
+    text = re.sub(r"[ɔøœ]", "o", text)
+    text = re.sub(r"[ʊʉ]", "u", text)
+    
+    # Unify consonants
+    text = re.sub(r"[ɹɻʁɾɽ]", "r", text)
+    text = text.replace('ɡ', 'g')
+    
+    return text
+
+def nx_to_leiden(nx_graph, weight_attr='weight'):
+    """
+    Helper function to run the Leiden algorithm on a NetworkX graph.
+    """
+    if nx_graph.number_of_nodes() == 0:
+        return {}
+    
+    ig_graph = ig.Graph.from_networkx(nx_graph)
+    
+    if ig_graph.ecount() > 0:
+        weights = ig_graph.es[weight_attr] if weight_attr in ig_graph.es.attributes() else None
+        
+        partition = leidenalg.find_partition(
+            ig_graph, 
+            leidenalg.ModularityVertexPartition, 
+            weights=weights
+        )
+    else:
+        return {node: i for i, node in enumerate(nx_graph.nodes())}
+    
+    result_dict = {}
+    for cluster_id, nodes_indices in enumerate(partition):
+        for node_idx in nodes_indices:
+            node_name = ig_graph.vs[node_idx]['_nx_name']
+            result_dict[node_name] = cluster_id
+            
+    return result_dict
+
+
+def metric_levenshtein_lexical(s1, s2):
+    """
+    Standard Normalized Levenshtein distance for spelling (lexical).
+    Returns similarity 0.0 (different) to 1.0 (identical).
+    """
     max_len = max(len(s1), len(s2))
-    if max_len == 0:
-        return 1.0
+    if max_len == 0: return 1.0
     distance = Levenshtein.distance(s1, s2)
     return 1.0 - (distance / max_len)
 
-def calculate_global_proximity(df):
-    """Calculates the global, averaged similarity between languages."""
-    print("--- Starting calculation of global language proximity ---")
-    languages = [col for col in df.columns if col not in ['topic', 'source_word']]
+def metric_levenshtein_phonetic(s1, s2):
+    """
+    Levenshtein distance calculated on cleaned IPA strings.
+    This simulates a phonetic feature comparison by grouping similar sounds.
+    """
+    s1 = clean_ipa(s1)
+    s2 = clean_ipa(s2)
     
-    results = []
-    for lang1, lang2 in combinations(languages, 2):
-        similarities = df.apply(
-            lambda row: normalized_levenshtein_similarity(row[lang1], row[lang2]),
-            axis=1
-        )
-        avg_similarity = similarities.mean()
+    if not s1 or not s2: return 0.0
+    max_len = max(len(s1), len(s2))
+    if max_len == 0: return 1.0
+    
+    distance = Levenshtein.distance(s1, s2)
+    return 1.0 - (distance / max_len)
+
+class AnalysisPipeline:
+    def __init__(self, input_file, mode_suffix, metric_function):
+        """
+        Initializes the pipeline.
+        :param input_file: Path to the CSV file (Lexical or IPA).
+        :param mode_suffix: Suffix for output files (e.g., '_lexical').
+        :param metric_function: Function to calculate similarity between two strings.
+        """
+        self.input_file = input_file
+        self.suffix = mode_suffix
+        self.metric_func = metric_function
+        self.df = None
         
-        results.append({
-            "Language1": lang1,
-            "Language2": lang2,
-            "GlobalSimilarity": avg_similarity
-        })
+        if not os.path.exists(OUTPUT_DIR):
+            os.makedirs(OUTPUT_DIR)
         
-    result_df = pd.DataFrame(results)
-    result_df.to_csv(OUTPUT_GLOBAL, index=False)
-    print(f"Saved global proximity to file: {OUTPUT_GLOBAL}\n")
-    return result_df
+        self.files = {
+            "global": os.path.join(OUTPUT_DIR, f"language_proximity_global{self.suffix}.csv"),
+            "topic": os.path.join(OUTPUT_DIR, f"language_proximity_by_topic{self.suffix}.csv"),
+            "out_topic": os.path.join(OUTPUT_DIR, f"outliers_topics{self.suffix}.csv"),
+            "out_word": os.path.join(OUTPUT_DIR, f"outliers_words{self.suffix}.csv"),
+            "comm_lang": os.path.join(OUTPUT_DIR, f"language_communities{self.suffix}.csv"),
+            "comm_topic": os.path.join(OUTPUT_DIR, f"topic_communities{self.suffix}.csv"),
+            "comm_word": os.path.join(OUTPUT_DIR, f"word_community_groups{self.suffix}.csv"),
+        }
 
-def calculate_proximity_by_topic(df):
-    """Calculates language similarity for each topic separately."""
-    print("--- Starting calculation of proximity by topic ---")
-    languages = [col for col in df.columns if col not in ['topic', 'source_word']]
+    def load_data(self):
+        """Loads the dataset and handles missing values."""
+        if not os.path.exists(self.input_file):
+            print(f"ERROR: File {self.input_file} not found.")
+            return False
+        print(f"--- Loading data for mode: {self.suffix.upper().strip('_')} ---")
+        self.df = pd.read_csv(self.input_file).fillna("")
+        return True
 
-    all_topic_results = []
+    def run(self):
+        """Executes the full analysis workflow."""
+        if not self.load_data(): return
 
-    for topic, group in df.groupby('topic'):
-        print(f"   -> Analyzing topic: {topic}")
-        for lang1, lang2 in combinations(languages, 2):
-            similarities = group.apply(
-                lambda row: normalized_levenshtein_similarity(row[lang1], row[lang2]),
-                axis=1
-            )
-            avg_similarity = similarities.mean()
+        # Calculate Similarities
+        global_res = self.calculate_global_proximity()
+        topic_res = self.calculate_proximity_by_topic()
 
-            all_topic_results.append({
-                "Topic": topic,
-                "Language1": lang1,
-                "Language2": lang2,
-                "TopicSimilarity": avg_similarity
+        # Find Outliers (deviations from norms)
+        self.find_topic_outliers(topic_res, global_res)
+        word_outliers = self.find_word_outliers(topic_res)
+
+        # Detect Communities (Clustering) using Leiden
+        self.calculate_language_communities(global_res, topic_res)
+        self.calculate_topic_communities(topic_res.copy())
+        self.identify_word_communities(word_outliers.copy())
+        
+        print(f"--- Analysis for {self.suffix} completed! ---\n")
+
+    def calculate_global_proximity(self):
+        """Calculates the average similarity between every pair of languages across all words."""
+        print("- Calculating global proximity...")
+        languages = [col for col in self.df.columns if col not in ['topic', 'source_word']]
+        results = []
+        pairs = list(combinations(languages, 2))
+        
+        for lang1, lang2 in pairs:
+            similarities = self.df.apply(lambda row: self.metric_func(row[lang1], row[lang2]), axis=1)
+            results.append({
+                "Language1": lang1, "Language2": lang2, 
+                "GlobalSimilarity": similarities.mean()
             })
+            
+        res_df = pd.DataFrame(results)
+        res_df.to_csv(self.files['global'], index=False)
+        return res_df
 
-    result_df = pd.DataFrame(all_topic_results)
-    result_df.to_csv(OUTPUT_BY_TOPIC, index=False)
-    print(f"Saved proximity by topic to file: {OUTPUT_BY_TOPIC}\n")
-    return result_df
-
-def find_topic_outliers(topic_df, global_df):
-    """
-    Finds topics that deviate significantly from the global average.
-    """
-    print("--- Finding TOPIC outliers (Topic vs Global) ---")
-    
-    merged = pd.merge(
-        topic_df, 
-        global_df, 
-        on=["Language1", "Language2"]
-    )
-    
-    merged['Difference'] = merged['TopicSimilarity'] - merged['GlobalSimilarity']
-    
-    outliers = merged[merged['Difference'].abs() > TOPIC_DIFF_THRESHOLD].copy()
-    
-    outliers['OutlierType'] = outliers['Difference'].apply(
-        lambda x: 'Positive' if x > 0 else 'Negative'
-    )
-    
-    outliers.sort_values(by='Difference', ascending=False, key=abs, inplace=True)
-    
-    outliers.to_csv(OUTPUT_TOPIC_OUTLIERS, index=False, float_format='%.3f')
-    print(f"Saved topic outliers to file: {OUTPUT_TOPIC_OUTLIERS}\n")
-    return outliers
-
-def find_word_outliers_per_topic(df, topic_proximity_df):
-    """
-    Finds word outliers relative to their TOPIC average.
-    """
-    print("--- Finding WORD outliers (Word vs Topic) ---")
-    
-    topic_sim_map = {}
-    for _, row in topic_proximity_df.iterrows():
-        key = (row['Topic'], tuple(sorted((row['Language1'], row['Language2']))))
-        topic_sim_map[key] = row['TopicSimilarity']
+    def calculate_proximity_by_topic(self):
+        """Calculates similarity between languages separated by topic."""
+        print("- Calculating proximity by topic...")
+        languages = [col for col in self.df.columns if col not in ['topic', 'source_word']]
+        results = []
         
-    outlier_results = []
-    languages = [col for col in df.columns if col not in ['topic', 'source_word']]
-
-    for index, row in df.iterrows():
-        current_topic = row['topic']
-        
-        for lang1, lang2 in combinations(languages, 2):
-            lang_pair_key = tuple(sorted((lang1, lang2)))
-            
-            map_key = (current_topic, lang_pair_key)
-            topic_avg = topic_sim_map.get(map_key)
-            
-            if topic_avg is None:
-                continue
-            
-            word1, word2 = row[lang1], row[lang2]
-            word_sim = normalized_levenshtein_similarity(word1, word2)
-            
-            diff = word_sim - topic_avg
-            
-            if diff > WORD_DIFF_THRESHOLD:
-                outlier_results.append({
-                    "Topic": current_topic,
-                    "OutlierType": "Positive",
-                    "SourceWord": row['source_word'],
-                    "Lang1": lang1,
-                    "Lang2": lang2,
-                    "Word1": word1,
-                    "Word2": word2,
-                    "WordSimilarity": word_sim,
-                    "TopicAvgSimilarity": topic_avg,
-                    "Difference": diff
+        for topic, group in self.df.groupby('topic'):
+            for lang1, lang2 in combinations(languages, 2):
+                similarities = group.apply(lambda row: self.metric_func(row[lang1], row[lang2]), axis=1)
+                results.append({
+                    "Topic": topic, "Language1": lang1, "Language2": lang2,
+                    "TopicSimilarity": similarities.mean()
                 })
-            elif diff < -WORD_DIFF_THRESHOLD:
-                outlier_results.append({
-                    "Topic": current_topic,
-                    "OutlierType": "Negative",
-                    "SourceWord": row['source_word'],
-                    "Lang1": lang1,
-                    "Lang2": lang2,
-                    "Word1": word1,
-                    "Word2": word2,
-                    "WordSimilarity": word_sim,
-                    "TopicAvgSimilarity": topic_avg,
-                    "Difference": diff
-                })
-
-    outlier_df = pd.DataFrame(outlier_results)
-    
-    if not outlier_df.empty:
-        outlier_df.sort_values(by="Difference", ascending=False, inplace=True, key=lambda col: col.abs())
-    
-    outlier_df.to_csv(OUTPUT_WORD_OUTLIERS, index=False, float_format='%.3f')
-    print(f"Saved word outliers to file: {OUTPUT_WORD_OUTLIERS}\n")
-    
-    return outlier_df
-
-def calculate_language_communities(global_df, topic_df):
-    """Calculates *language* communities for the global view and each topic."""
-    print("--- Starting detection of language communities (Louvain) ---")
-    
-    community_results = []
-    
-    print("   -> Analyzing communities: Global")
-    G_global = nx.Graph()
-    for _, row in global_df.iterrows():
-        G_global.add_edge(row['Language1'], row['Language2'], weight=row['GlobalSimilarity'])
-    
-    partition_global = community_louvain.best_partition(G_global, weight='weight')
-    for lang, comm_id in partition_global.items():
-        community_results.append({"Scope": "Global", "Language": lang, "CommunityID": comm_id})
-
-    for topic in topic_df['Topic'].unique():
-        print(f"   -> Analyzing communities: {topic}")
-        G_topic = nx.Graph()
-        topic_data = topic_df[topic_df['Topic'] == topic]
         
-        for _, row in topic_data.iterrows():
-            G_topic.add_edge(row['Language1'], row['Language2'], weight=row['TopicSimilarity'])
+        res_df = pd.DataFrame(results)
+        res_df.to_csv(self.files['topic'], index=False)
+        return res_df
+
+    def find_topic_outliers(self, topic_df, global_df):
+        """Identifies topics where language similarity is significantly different from the global average."""
+        print("- Finding topic outliers...")
+        merged = pd.merge(topic_df, global_df, on=["Language1", "Language2"])
+        merged['Difference'] = merged['TopicSimilarity'] - merged['GlobalSimilarity']
+        
+        outliers = merged[merged['Difference'].abs() > TOPIC_DIFF_THRESHOLD].copy()
+        outliers['OutlierType'] = outliers['Difference'].apply(lambda x: 'Positive' if x > 0 else 'Negative')
+        
+        outliers.sort_values(by='Difference', ascending=False, key=abs, inplace=True)
+        outliers.to_csv(self.files['out_topic'], index=False, float_format='%.3f')
+
+    def find_word_outliers(self, topic_proximity_df):
+        """
+        Identifies specific words that are outliers compared to their topic average.
+        (e.g. a word that is very different in two languages that are usually similar).
+        """
+        print("- Finding word outliers...")
+        topic_sim_map = {}
+        for _, row in topic_proximity_df.iterrows():
+            key = (row['Topic'], tuple(sorted((row['Language1'], row['Language2']))))
+            topic_sim_map[key] = row['TopicSimilarity']
+        
+        outlier_results = []
+        languages = [col for col in self.df.columns if col not in ['topic', 'source_word']]
+
+        for _, row in self.df.iterrows():
+            current_topic = row['topic']
+            for lang1, lang2 in combinations(languages, 2):
+                key = (current_topic, tuple(sorted((lang1, lang2))))
+                topic_avg = topic_sim_map.get(key)
+                if topic_avg is None: continue
+                
+                word1, word2 = row[lang1], row[lang2]
+                word_sim = self.metric_func(word1, word2)
+                diff = word_sim - topic_avg
+                
+                if abs(diff) > WORD_DIFF_THRESHOLD:
+                    outlier_results.append({
+                        "Topic": current_topic,
+                        "OutlierType": "Positive" if diff > 0 else "Negative",
+                        "SourceWord": row['source_word'],
+                        "Lang1": lang1, "Lang2": lang2,
+                        "Word1": word1, "Word2": word2,
+                        "WordSimilarity": word_sim,
+                        "TopicAvgSimilarity": topic_avg,
+                        "Difference": diff
+                    })
+        
+        out_df = pd.DataFrame(outlier_results)
+        if not out_df.empty:
+            out_df.sort_values(by="Difference", ascending=False, inplace=True, key=abs)
+        out_df.to_csv(self.files['out_word'], index=False, float_format='%.3f')
+        return out_df
+
+    def calculate_language_communities(self, global_df, topic_df):
+        """
+        Detects language families/communities using the Leiden algorithm.
+        Constructs a graph where nodes are languages and edges are similarities.
+        """
+        print("- Detecting language communities...")
+        results = []
+        
+        # Global Community Detection
+        G_global = nx.Graph()
+        for _, row in global_df.iterrows():
+            G_global.add_edge(row['Language1'], row['Language2'], weight=row['GlobalSimilarity'])
+        
+        partition_global = nx_to_leiden(G_global, weight_attr='weight')
+        for lang, cid in partition_global.items():
+            results.append({"Scope": "Global", "Language": lang, "CommunityID": cid})
+        
+        for topic in topic_df['Topic'].unique():
+            G_topic = nx.Graph()
+            t_data = topic_df[topic_df['Topic'] == topic]
+            for _, r in t_data.iterrows():
+                G_topic.add_edge(r['Language1'], r['Language2'], weight=r['TopicSimilarity'])
             
-        if G_topic.number_of_edges() > 0:
-            partition_topic = community_louvain.best_partition(G_topic, weight='weight')
-            for lang, comm_id in partition_topic.items():
-                community_results.append({"Scope": topic, "Language": lang, "CommunityID": comm_id})
+            partition_topic = nx_to_leiden(G_topic, weight_attr='weight')
+            for lang, cid in partition_topic.items():
+                results.append({"Scope": topic, "Language": lang, "CommunityID": cid})
+                    
+        pd.DataFrame(results).to_csv(self.files['comm_lang'], index=False)
+
+    def calculate_topic_communities(self, topic_df):
+        """
+        Groups topics into communities based on how similar language relationships are within them.
+        Uses Cosine Similarity between topic vectors + Leiden Algorithm.
+        """
+        print("- Detecting topic communities...")
+        topic_df['LangPair'] = topic_df.apply(lambda r: tuple(sorted((r['Language1'], r['Language2']))), axis=1)
+        pivot = topic_df.pivot_table(index='Topic', columns='LangPair', values='TopicSimilarity').fillna(0)
         
-    community_df = pd.DataFrame(community_results)
-    community_df.to_csv(OUTPUT_LANG_COMMUNITIES, index=False)
-    print(f"Saved language communities to file: {OUTPUT_LANG_COMMUNITIES}\n")
+        if pivot.empty: return
+        
+        sim_matrix = cosine_similarity(pivot)
+        topics = list(pivot.index)
+        G = nx.Graph()
+        G.add_nodes_from(topics)
+        
+        # Build graph: connect topics if they have very similar language patterns
+        for i in range(len(topics)):
+            for j in range(i+1, len(topics)):
+                if sim_matrix[i, j] > 0.995:
+                    G.add_edge(topics[i], topics[j], weight=sim_matrix[i, j])
+        
+        partition = nx_to_leiden(G, weight_attr='weight')
+        pd.DataFrame(partition.items(), columns=['Topic', 'CommunityID']).to_csv(self.files['comm_topic'], index=False)
 
-
-def calculate_topic_communities(topic_df):
-    """Finds communities of topics based on their similarity profiles."""
-    print("--- Detecting topic communities (Graph) ---")
-    
-    topic_df['LangPair'] = topic_df.apply(
-        lambda r: tuple(sorted((r['Language1'], r['Language2']))), 
-        axis=1
-    )
-    
-    pivot = topic_df.pivot_table(
-        index='Topic', 
-        columns='LangPair', 
-        values='TopicSimilarity'
-    ).fillna(0)
-    
-    sim_matrix = cosine_similarity(pivot)
-    topics = list(pivot.index)    
-    
-    G_topic_comm = nx.Graph()
-    G_topic_comm.add_nodes_from(topics)
-    
-    for i in range(len(topics)):
-        for j in range(i + 1, len(topics)):
-            similarity = sim_matrix[i, j]
-            if similarity > 0.995: 
-                G_topic_comm.add_edge(topics[i], topics[j], weight=similarity)
-
-    if G_topic_comm.number_of_edges() > 0:
-        partition = community_louvain.best_partition(G_topic_comm, weight='weight')
-        results_df = pd.DataFrame(partition.items(), columns=['Topic', 'CommunityID'])
-    else:
-        results_df = pd.DataFrame(columns=['Topic', 'CommunityID'])
-
-    results_df.to_csv(OUTPUT_TOPIC_COMMUNITIES, index=False)
-    print(f"Saved topic communities to file: {OUTPUT_TOPIC_COMMUNITIES}\n")
-
-
-def identify_word_communities(outlier_df):
-    """Identifies groups of words that are outliers in the same way."""
-    print("--- Identifying word community groups ---")
-    
-    if outlier_df.empty:
-        print("No word outliers found, skipping word communities.")
-        return
-
-    outlier_df['LangPair'] = outlier_df.apply(
-        lambda r: tuple(sorted((r['Lang1'], r['Lang2']))), 
-        axis=1
-    )
-    
-    word_groups = outlier_df.groupby(
-        ['OutlierType', 'LangPair']
-    )['SourceWord'].apply(list).reset_index()
-    
-    word_groups.to_csv(OUTPUT_WORD_COMMUNITIES, index=False)
-    print(f"Saved word community groups to file: {OUTPUT_WORD_COMMUNITIES}\n")
+    def identify_word_communities(self, outlier_df):
+        """Groups word outliers by type and language pair."""
+        print("- Identifying word groups...")
+        if outlier_df is None or outlier_df.empty: return
+        
+        outlier_df['LangPair'] = outlier_df.apply(lambda r: tuple(sorted((r['Lang1'], r['Lang2']))), axis=1)
+        
+        # Group outliers to see which words behave similarly
+        res = outlier_df.groupby(['OutlierType', 'LangPair'])['SourceWord'].apply(list).reset_index()
+        res.to_csv(self.files['comm_word'], index=False)
 
 
 if __name__ == "__main__":
-    if not os.path.exists(INPUT_FILE):
-        print(f"ERROR: Input file '{INPUT_FILE}' was not found.")
-    else:
-        main_df = pd.read_csv(INPUT_FILE)
-        
-        global_results_df = calculate_global_proximity(main_df)
-        
-        topic_results_df = calculate_proximity_by_topic(main_df)
+    # Lexical Analysis
+    lexical_pipeline = AnalysisPipeline(
+        input_file=INPUT_LEXICAL,
+        mode_suffix="_lexical", 
+        metric_function=metric_levenshtein_lexical
+    )
+    lexical_pipeline.run()
 
-        find_topic_outliers(topic_results_df, global_results_df)
-        
-        word_outliers_df = find_word_outliers_per_topic(main_df, topic_results_df)
-
-        calculate_language_communities(global_results_df, topic_results_df)
-        
-        calculate_topic_communities(topic_results_df.copy())
-
-        identify_word_communities(word_outliers_df.copy())
-        
-        print("All analyses have been completed.")
+    # Phonetic Analysis
+    phonetic_pipeline = AnalysisPipeline(
+        input_file=INPUT_PHONETIC,
+        mode_suffix="_phonetic", 
+        metric_function=metric_levenshtein_phonetic
+    )
+    phonetic_pipeline.run()
+    
+    print("=== ALL ANALYSES COMPLETED SUCCESSFULLY ===")
