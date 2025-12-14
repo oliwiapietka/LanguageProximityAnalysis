@@ -12,8 +12,7 @@ INPUT_LEXICAL = "../data/translated_words.csv"
 INPUT_PHONETIC = "../data/translated_words_ipa.csv"
 OUTPUT_DIR = "../data/"
 
-TOPIC_DIFF_THRESHOLD = 0.2 # diff between topic and global to be an outlier
-WORD_DIFF_THRESHOLD = 0.4 # diff between word and topic to be an outlier
+STD_THRESHOLD = 2.0
 
 def clean_ipa(text):
     """
@@ -146,6 +145,22 @@ class AnalysisPipeline:
         
         print(f"--- Analysis for {self.suffix} completed! ---\n")
 
+    def find_stat_outliers(self, df, value_col, group_cols, threshold=STD_THRESHOLD):
+        """
+        Identifies statistical outliers using Z-score (Standard Score).
+        """
+        stats = df.groupby(group_cols)[value_col].agg(['mean', 'std']).reset_index()
+        
+        merged = pd.merge(df, stats, on=group_cols)
+        
+        # Calculate Z-score: (Value - Mean) / Standard Deviation
+        # We add a small epsilon (1e-9) to std to avoid DivisionByZero errors in identical groups
+        merged['z_score'] = (merged[value_col] - merged['mean']) / (merged['std'] + 1e-9)
+        
+        outliers = merged[merged['z_score'].abs() > threshold].copy()
+        
+        return outliers
+
     def calculate_global_proximity(self):
         """Calculates the average similarity between every pair of languages across all words."""
         print("- Calculating global proximity...")
@@ -188,10 +203,14 @@ class AnalysisPipeline:
         merged = pd.merge(topic_df, global_df, on=["Language1", "Language2"])
         merged['Difference'] = merged['TopicSimilarity'] - merged['GlobalSimilarity']
         
-        outliers = merged[merged['Difference'].abs() > TOPIC_DIFF_THRESHOLD].copy()
-        outliers['OutlierType'] = outliers['Difference'].apply(lambda x: 'Positive' if x > 0 else 'Negative')
+        outliers = self.find_stat_outliers(
+            merged, 
+            value_col='Difference', 
+            group_cols=['Language1', 'Language2']
+        )
         
-        outliers.sort_values(by='Difference', ascending=False, key=abs, inplace=True)
+        outliers['OutlierType'] = outliers['z_score'].apply(lambda x: 'Positive' if x > 0 else 'Negative')
+        outliers.sort_values(by='z_score', ascending=False, key=abs, inplace=True)
         outliers.to_csv(self.files['out_topic'], index=False, float_format='%.3f')
 
     def find_word_outliers(self, topic_proximity_df):
@@ -200,42 +219,33 @@ class AnalysisPipeline:
         (e.g. a word that is very different in two languages that are usually similar).
         """
         print("- Finding word outliers...")
-        topic_sim_map = {}
-        for _, row in topic_proximity_df.iterrows():
-            key = (row['Topic'], tuple(sorted((row['Language1'], row['Language2']))))
-            topic_sim_map[key] = row['TopicSimilarity']
-        
-        outlier_results = []
         languages = [col for col in self.df.columns if col not in ['topic', 'source_word']]
+        all_word_data = []
 
         for _, row in self.df.iterrows():
-            current_topic = row['topic']
             for lang1, lang2 in combinations(languages, 2):
-                key = (current_topic, tuple(sorted((lang1, lang2))))
-                topic_avg = topic_sim_map.get(key)
-                if topic_avg is None: continue
-                
                 word1, word2 = row[lang1], row[lang2]
-                word_sim = self.metric_func(word1, word2)
-                diff = word_sim - topic_avg
-                
-                if abs(diff) > WORD_DIFF_THRESHOLD:
-                    outlier_results.append({
-                        "Topic": current_topic,
-                        "OutlierType": "Positive" if diff > 0 else "Negative",
-                        "SourceWord": row['source_word'],
-                        "Lang1": lang1, "Lang2": lang2,
-                        "Word1": word1, "Word2": word2,
-                        "WordSimilarity": word_sim,
-                        "TopicAvgSimilarity": topic_avg,
-                        "Difference": diff
-                    })
+                sim = self.metric_func(word1, word2)
+                all_word_data.append({
+                    "Topic": row['topic'],
+                    "SourceWord": row['source_word'],
+                    "Lang1": lang1, "Lang2": lang2,
+                    "Word1": word1, "Word2": word2,
+                    "WordSimilarity": sim
+                })
         
-        out_df = pd.DataFrame(outlier_results)
-        if not out_df.empty:
-            out_df.sort_values(by="Difference", ascending=False, inplace=True, key=abs)
-        out_df.to_csv(self.files['out_word'], index=False, float_format='%.3f')
-        return out_df
+        full_df = pd.DataFrame(all_word_data)
+        
+        outliers = self.find_stat_outliers(
+            full_df, 
+            value_col='WordSimilarity', 
+            group_cols=['Topic', 'Lang1', 'Lang2']
+        )
+        
+        outliers['OutlierType'] = outliers['z_score'].apply(lambda x: 'Positive' if x > 0 else 'Negative')
+        outliers.sort_values(by="z_score", ascending=False, inplace=True, key=abs)
+        outliers.to_csv(self.files['out_word'], index=False, float_format='%.3f')
+        return outliers
 
     def calculate_language_communities(self, global_df, topic_df):
         """
