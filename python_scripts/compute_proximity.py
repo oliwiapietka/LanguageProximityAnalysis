@@ -8,32 +8,101 @@ import re
 import igraph as ig
 import leidenalg
 
-INPUT_LEXICAL = "../data/translated_words.csv"
-INPUT_PHONETIC = "../data/translated_words_ipa.csv"
-OUTPUT_DIR = "../data/"
+# Dynamic paths relative to the script location
+_SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+INPUT_LEXICAL = os.path.join(_SCRIPT_DIR, "..", "data", "translated_words.csv")
+INPUT_PHONETIC = os.path.join(_SCRIPT_DIR, "..", "data", "translated_words_ipa.csv")
+OUTPUT_DIR = os.path.join(_SCRIPT_DIR, "..", "data")
 
 STD_THRESHOLD = 2.0
 
 def clean_ipa(text):
     """
-    Normalizes IPA strings (removes diacritics, groups vowels).
+    Normalizes IPA strings for phonetic similarity comparison.
+    
+    This function performs extensive normalization:
+    - Removes diacritics, stress markers, length markers
+    - Groups similar vowel sounds to base vowels
+    - Groups similar consonant sounds to representative consonants
+    - Handles Greek-specific sounds (θ, ð, ç, ɣ)
+    - Handles affricates, nasals, laterals
     """
-
+    if not text:
+        return text
+    
     text = text.lower().strip()
     
-    # Remove modifiers
-    text = re.sub(r"[ʲʰʷ̃ːˑ.ˈˌ͡'’̩]", "", text)
+    # Remove parenthetical language markers like (en), (el), (fr), (de), (pt-pt)
+    text = re.sub(r"\([a-z]{2}(?:-[a-z]{2})?\)", "", text)
     
-    # Unify vowels
-    text = re.sub(r"[ɑɒæɐ]", "a", text)
-    text = re.sub(r"[ɛɜəɘ]", "e", text)
-    text = re.sub(r"[ɪyɨʏ]", "i", text)
-    text = re.sub(r"[ɔøœ]", "o", text)
-    text = re.sub(r"[ʊʉ]", "u", text)
+    # Remove modifiers, stress marks, length markers, ties, and diacritics
+    text = re.sub(r"[ʲʰʷ̃ːˑ.ˈˌ͡''̩ʔ̯̆̈̽ʼ˞ʱ˺˃ʴ̥̬̤̰̺̻̼̝̞̟̠̘̙̚˳̦̪̫̹̜̌̏̑]", "", text)
     
-    # Unify consonants
-    text = re.sub(r"[ɹɻʁɾɽ]", "r", text)
-    text = text.replace('ɡ', 'g')
+    # ====== VOWELS ======
+    # Open/near-open vowels -> a
+    text = re.sub(r"[ɑɒæɐaʌ]", "a", text)
+    # Mid-front/central vowels -> e
+    text = re.sub(r"[ɛɜəɘeɤ]", "e", text)
+    # High-front vowels -> i
+    text = re.sub(r"[ɪyɨʏiɯ]", "i", text)
+    # Mid-back/rounded vowels -> o
+    text = re.sub(r"[ɔøœoɵ]", "o", text)
+    # High back vowels -> u
+    text = re.sub(r"[ʊʉuɶ]", "u", text)
+    
+    # ====== CONSONANTS ======
+    
+    # Dental/interdental fricatives (important for Greek: θ, ð)
+    # θ -> t (voiceless dental fricative, similar manner to t)
+    text = text.replace('θ', 't')
+    # ð -> d (voiced dental fricative, similar manner to d)
+    text = text.replace('ð', 'd')
+    
+    # Palatal fricative (Greek ç, German ich-laut) -> h/x equivalent
+    text = text.replace('ç', 'x')
+    
+    # Velar/uvular fricatives (Greek ɣ, x, χ)
+    text = re.sub(r"[ɣxχ]", "g", text)
+    
+    # Pharyngeal/glottal sounds -> h
+    text = re.sub(r"[ʕħʔʜʡɦh]", "h", text)
+    
+    # Rhotics (r-sounds) - group all r-like sounds
+    text = re.sub(r"[ɹɻʁɾɽrɺʀɭɳ]", "r", text)
+    
+    # Nasals - group allophones
+    text = re.sub(r"[ɱɲŋɴɳ]", "n", text)
+    
+    # Lateral approximants
+    text = re.sub(r"[ɫɬɮʎɭʟ]", "l", text)
+    
+    # Palatal glides
+    text = re.sub(r"[ɥʝj]", "j", text)
+    
+    # Labio-velar approximant
+    text = re.sub(r"[ʍw]", "w", text)
+    
+    # Velar/uvular plosives - unify g variants
+    text = text.replace('ɡ', 'g')  # IPA g vs ASCII g
+    text = text.replace('ɢ', 'g')  # Uvular stop
+    text = text.replace('ɣ', 'g')  # Voiced velar fricative
+    text = text.replace('q', 'k')  # Uvular stop -> k
+    
+    # Bilabial/labiodental fricatives
+    text = re.sub(r"[ɸβ]", "v", text)  # Bilabial fricatives -> v/f family
+    text = text.replace('ʋ', 'v')  # Labiodental approximant
+    
+    # Sibilants
+    text = re.sub(r"[ʃʂʒʐ]", "s", text)  # Post-alveolar/retroflex -> s
+    text = re.sub(r"[ɕʑ]", "s", text)  # Alveolo-palatal -> s
+    
+    # Polish/Slavic specific
+    text = text.replace('ʑ', 's')
+    text = text.replace('ɕ', 's')
+    text = text.replace('ɲ', 'n')
+    
+    # Clicks (rare but present in some African languages) -> k
+    text = re.sub(r"[ʘǀǃǂǁ]", "k", text)
     
     return text
 

@@ -1,29 +1,29 @@
 Topic,CommunityID
-clothes,0
-colors,0
-desserts,0
-food,0
-fruits,0
-shoes,0
-business,1
-furniture,1
-house,1
-occupations,1
-school,1
-shopping,1
+business,0
+emotions,0
+family,0
+medical terms,0
+occupations,0
+personal qualities,0
+plants,0
+shopping,0
+animals,1
+colors,1
+computer,1
+desserts,1
+food,1
+fruits,1
+music,1
 cooking,2
 driving,2
 restaurant,2
 sports,2
 transportations,2
 weather,2
-emotions,3
-family,3
-medical terms,3
-personal qualities,3
-plants,3
-animals,4
-computer,4
-music,4
-body,5
-shapes,6
+clothes,3
+furniture,3
+house,3
+school,3
+shoes,3
+body,4
+shapes,5

@@ -6,13 +6,13 @@ Global,cs,0
 Global,da,0
 Global,pl,0
 Global,hu,0
+Global,el,0
 Global,NB,0
 Global,it,1
 Global,es,1
 Global,PT-PT,1
 Global,ro,1
 Global,fr,1
-Global,el,1
 animals,en,0
 animals,de,0
 animals,nl,0
@@ -20,13 +20,13 @@ animals,cs,0
 animals,da,0
 animals,pl,0
 animals,hu,0
+animals,el,0
 animals,NB,0
 animals,it,1
 animals,es,1
 animals,PT-PT,1
 animals,ro,1
 animals,fr,1
-animals,el,1
 body,it,0
 body,es,0
 body,PT-PT,0
@@ -55,6 +55,7 @@ business,es,1
 business,PT-PT,1
 business,ro,1
 business,fr,1
+clothes,cs,0
 clothes,it,0
 clothes,es,0
 clothes,PT-PT,0
@@ -65,7 +66,6 @@ clothes,el,0
 clothes,en,1
 clothes,de,1
 clothes,nl,1
-clothes,cs,1
 clothes,da,1
 clothes,hu,1
 clothes,NB,1
@@ -73,16 +73,16 @@ colors,en,0
 colors,de,0
 colors,nl,0
 colors,cs,0
+colors,it,0
+colors,es,0
+colors,PT-PT,0
+colors,ro,0
 colors,da,0
+colors,fr,0
 colors,pl,0
 colors,hu,0
+colors,el,0
 colors,NB,0
-colors,it,1
-colors,es,1
-colors,PT-PT,1
-colors,ro,1
-colors,fr,1
-colors,el,1
 computer,en,0
 computer,de,0
 computer,nl,0
@@ -90,13 +90,13 @@ computer,cs,0
 computer,da,0
 computer,pl,0
 computer,hu,0
+computer,el,0
 computer,NB,0
 computer,it,1
 computer,es,1
 computer,PT-PT,1
 computer,ro,1
 computer,fr,1
-computer,el,1
 cooking,en,0
 cooking,de,0
 cooking,nl,0
@@ -104,13 +104,13 @@ cooking,cs,0
 cooking,da,0
 cooking,pl,0
 cooking,hu,0
+cooking,el,0
 cooking,NB,0
 cooking,it,1
 cooking,es,1
 cooking,PT-PT,1
 cooking,ro,1
 cooking,fr,1
-cooking,el,1
 desserts,en,0
 desserts,de,0
 desserts,nl,0
@@ -132,13 +132,13 @@ driving,cs,0
 driving,da,0
 driving,pl,0
 driving,hu,0
+driving,el,0
 driving,NB,0
 driving,it,1
 driving,es,1
 driving,PT-PT,1
 driving,ro,1
 driving,fr,1
-driving,el,1
 emotions,de,0
 emotions,nl,0
 emotions,cs,0
@@ -153,16 +153,16 @@ emotions,es,1
 emotions,PT-PT,1
 emotions,ro,1
 emotions,fr,1
-family,en,0
-family,de,0
-family,nl,0
-family,da,0
-family,NB,0
-family,it,1
-family,es,1
-family,PT-PT,1
-family,ro,1
-family,fr,1
+family,it,0
+family,es,0
+family,PT-PT,0
+family,ro,0
+family,fr,0
+family,en,1
+family,de,1
+family,nl,1
+family,da,1
+family,NB,1
 family,cs,2
 family,pl,2
 family,hu,2
@@ -230,13 +230,13 @@ medical terms,cs,0
 medical terms,da,0
 medical terms,pl,0
 medical terms,hu,0
+medical terms,el,0
 medical terms,NB,0
 medical terms,it,1
 medical terms,es,1
 medical terms,PT-PT,1
 medical terms,ro,1
 medical terms,fr,1
-medical terms,el,1
 music,en,0
 music,de,0
 music,nl,0
@@ -286,13 +286,13 @@ plants,cs,0
 plants,da,0
 plants,pl,0
 plants,hu,0
+plants,el,0
 plants,NB,0
 plants,it,1
 plants,es,1
 plants,PT-PT,1
 plants,ro,1
 plants,fr,1
-plants,el,1
 restaurant,cs,0
 restaurant,it,0
 restaurant,es,0
@@ -321,20 +321,20 @@ school,PT-PT,1
 school,ro,1
 school,fr,1
 school,el,1
-shapes,it,0
-shapes,es,0
-shapes,PT-PT,0
-shapes,ro,0
-shapes,fr,0
-shapes,pl,0
-shapes,el,0
-shapes,en,1
-shapes,de,1
-shapes,nl,1
-shapes,cs,1
-shapes,da,1
-shapes,hu,1
-shapes,NB,1
+shapes,en,0
+shapes,de,0
+shapes,nl,0
+shapes,cs,0
+shapes,da,0
+shapes,hu,0
+shapes,NB,0
+shapes,it,1
+shapes,es,1
+shapes,PT-PT,1
+shapes,ro,1
+shapes,fr,1
+shapes,pl,1
+shapes,el,1
 shoes,cs,0
 shoes,it,0
 shoes,es,0
@@ -355,6 +355,7 @@ shopping,nl,0
 shopping,cs,0
 shopping,da,0
 shopping,hu,0
+shopping,el,0
 shopping,NB,0
 shopping,it,1
 shopping,es,1
@@ -362,7 +363,6 @@ shopping,PT-PT,1
 shopping,ro,1
 shopping,fr,1
 shopping,pl,1
-shopping,el,1
 sports,en,0
 sports,de,0
 sports,nl,0
@@ -370,13 +370,13 @@ sports,cs,0
 sports,da,0
 sports,pl,0
 sports,hu,0
+sports,el,0
 sports,NB,0
 sports,it,1
 sports,es,1
 sports,PT-PT,1
 sports,ro,1
 sports,fr,1
-sports,el,1
 transportations,en,0
 transportations,de,0
 transportations,nl,0
@@ -384,19 +384,20 @@ transportations,cs,0
 transportations,da,0
 transportations,pl,0
 transportations,hu,0
+transportations,el,0
 transportations,NB,0
 transportations,it,1
 transportations,es,1
 transportations,PT-PT,1
 transportations,ro,1
 transportations,fr,1
-transportations,el,1
 weather,en,0
 weather,de,0
 weather,nl,0
 weather,cs,0
 weather,da,0
 weather,hu,0
+weather,el,0
 weather,NB,0
 weather,it,1
 weather,es,1
@@ -404,4 +405,3 @@ weather,PT-PT,1
 weather,ro,1
 weather,fr,1
 weather,pl,1
-weather,el,1
