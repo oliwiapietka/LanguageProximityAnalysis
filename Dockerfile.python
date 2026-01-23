@@ -1,0 +1,35 @@
+# ===========================================
+# Language Proximity Analysis - Python Only
+# Simple single-stage Dockerfile
+# ===========================================
+FROM python:3.11-slim
+
+# Install system dependencies for igraph and leidenalg
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    cmake \
+    libxml2-dev \
+    zlib1g-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# Copy and install Python dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy Python scripts
+COPY python_scripts/ ./python_scripts/
+
+# Copy data directory
+COPY data/ ./data/
+
+# Set environment variables
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONDONTWRITEBYTECODE=1
+
+# Create volume mount point for data persistence
+VOLUME ["/app/data"]
+
+# Default command runs the proximity analysis
+CMD ["python", "python_scripts/compute_proximity.py"]

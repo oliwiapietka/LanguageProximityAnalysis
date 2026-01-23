@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  # ===========================================
+  # Python Analysis Service
+  # ===========================================
+  python-analysis:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: python-runtime
+    container_name: language-proximity-python
+    volumes:
+      # Mount data directory for input/output persistence
+      - ./data:/app/data
+    environment:
+      - PYTHONUNBUFFERED=1
+    # Runs compute_proximity.py by default
+    # Override with: docker-compose run python-analysis python python_scripts/translate_words.py
+
+  # ===========================================
+  # Java GUI Service (requires X11 forwarding on Linux/Mac)
+  # ===========================================
+  java-gui:
+    build:
+      context: .
+      dockerfile: Dockerfile.java
+    container_name: language-proximity-java
+    volumes:
+      - ./data:/app/data
+    environment:
+      - DISPLAY=${DISPLAY:-:0}
+    # For Linux X11 forwarding:
+    # volumes:
+    #   - /tmp/.X11-unix:/tmp/.X11-unix
+    # For Windows, use VcXsrv or similar X server
+    profiles:
+      - gui  # Only start with: docker-compose --profile gui up
+
+  # ===========================================
+  # Development Service (interactive shell)
+  # ===========================================
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: python-base
+    container_name: language-proximity-dev
+    volumes:
+      - ./data:/app/data
+      - ./python_scripts:/app/python_scripts
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+    profiles:
+      - dev  # Only start with: docker-compose --profile dev up
+
+# ===========================================
+# Networks
+# ===========================================
+networks:
+  default:
+    name: language-proximity-network
