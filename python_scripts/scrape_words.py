@@ -77,7 +77,7 @@ SOURCES = {
         "selector": "div.wordlist-item"
     },
     "driving": {
-        "url": "https://www.enchantedlearning.com/wordlist/cooking.shtml",
+        "url": "https://www.enchantedlearning.com/wordlist/driving.shtml",
         "selector": "div.wordlist-item"
     },
     "desserts": {
